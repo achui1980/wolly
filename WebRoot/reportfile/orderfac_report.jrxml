@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="orderfac_report"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="2" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="STR_SQL" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA["1=1"]]></defaultValueExpression>
+	</parameter>
+	<queryString><![CDATA[select obj.ORDER_NO, obj.ORDER_TIME, obj.SEND_TIME, d.*, f.SHORT_NAME from
+cot_order_fac obj, cot_order_facdetail d, cot_factory f
+where $P!{STR_SQL} and obj.ID = d.order_id and d.FACTORY_ID = f.ID
+]]></queryString>
+
+	<field name="ORDER_NO" class="java.lang.String"/>
+	<field name="ORDER_TIME" class="java.sql.Timestamp"/>
+	<field name="SEND_TIME" class="java.sql.Timestamp"/>
+	<field name="ID" class="java.lang.Integer"/>
+	<field name="ELE_ID" class="java.lang.String"/>
+	<field name="ELE_PARENT" class="java.lang.Integer"/>
+	<field name="ELE_NAME" class="java.lang.String"/>
+	<field name="ELE_NAME_EN" class="java.lang.String"/>
+	<field name="ELE_FLAG" class="java.math.BigDecimal"/>
+	<field name="ELE_DESC" class="java.lang.String"/>
+	<field name="ELE_FROM" class="java.lang.String"/>
+	<field name="ELE_COMPOSETYPE" class="java.lang.String"/>
+	<field name="ELE_GRADE" class="java.lang.String"/>
+	<field name="ELE_UNIT" class="java.lang.String"/>
+	<field name="ELE_FACTORY" class="java.lang.String"/>
+	<field name="ELE_COL" class="java.lang.String"/>
+	<field name="ELE_METERIAL" class="java.lang.String"/>
+	<field name="ELE_SIZE_DESC" class="java.lang.String"/>
+	<field name="ELE_INCH_DESC" class="java.lang.String"/>
+	<field name="ELE_REMARK" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV1" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV2" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV3" class="java.lang.String"/>
+	<field name="ELE_ADD_TIME" class="java.sql.Timestamp"/>
+	<field name="ELE_PRO_TIME" class="java.sql.Timestamp"/>
+	<field name="ELE_FOR_PERSON" class="java.lang.String"/>
+	<field name="ELE_MOD" class="java.lang.Integer"/>
+	<field name="ELE_UNITNUM" class="java.lang.Integer"/>
+	<field name="BOX_UINT" class="java.lang.String"/>
+	<field name="BOX_CBM" class="java.math.BigDecimal"/>
+	<field name="BOX_T_L" class="java.math.BigDecimal"/>
+	<field name="BOX_T_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_T_W" class="java.math.BigDecimal"/>
+	<field name="BOX_T_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_T_D" class="java.math.BigDecimal"/>
+	<field name="BOX_T_D_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_L" class="java.math.BigDecimal"/>
+	<field name="BOX_B_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_W" class="java.math.BigDecimal"/>
+	<field name="BOX_B_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_D" class="java.math.BigDecimal"/>
+	<field name="BOX_B_D_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_L" class="java.math.BigDecimal"/>
+	<field name="BOX_W" class="java.math.BigDecimal"/>
+	<field name="BOX_H" class="java.math.BigDecimal"/>
+	<field name="BOX_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_GROSS_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_NET_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_TYPE" class="java.lang.String"/>
+	<field name="BOX_MB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_TYPE" class="java.lang.String"/>
+	<field name="BOX_OB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_TYPE" class="java.lang.String"/>
+	<field name="BOX_CUFT" class="java.math.BigDecimal"/>
+	<field name="BOX_REMARK" class="java.lang.String"/>
+	<field name="BOX_20_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_40_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_40HQ_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_BDESC" class="java.lang.String"/>
+	<field name="BOX_TDESC" class="java.lang.String"/>
+	<field name="BOX_HANDLEH" class="java.math.BigDecimal"/>
+	<field name="PIC_NAME" class="java.lang.String"/>
+	<field name="PIC_Path" class="java.lang.String"/>
+	<field name="PIC_IMG" class="java.lang.Object"/>
+	<field name="PRICE_FAC" class="java.math.BigDecimal"/>
+	<field name="PRICE_OUT" class="java.math.BigDecimal"/>
+	<field name="FACTORY_ID" class="java.lang.Integer"/>
+	<field name="ELE_TYPEID_LV1" class="java.lang.Integer"/>
+	<field name="HS_ID" class="java.lang.Integer"/>
+	<field name="price_fac_uint" class="java.lang.Integer"/>
+	<field name="price_out_unit" class="java.lang.Integer"/>
+	<field name="order_id" class="java.lang.Integer"/>
+	<field name="box_type_id" class="java.lang.Integer"/>
+	<field name="orderdetail_id" class="java.lang.Integer"/>
+	<field name="BOX_COUNT" class="java.math.BigDecimal"/>
+	<field name="CONTAINER_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_45_COUNT" class="java.math.BigDecimal"/>
+	<field name="add_time" class="java.sql.Date"/>
+	<field name="TOTAL_CBM" class="java.math.BigDecimal"/>
+	<field name="TOTAL_GROSS_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="TOTAL_NET_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="TOTAL_FAC" class="java.math.BigDecimal"/>
+	<field name="TOTAL_MONEY" class="java.math.BigDecimal"/>
+	<field name="CUST_NO" class="java.lang.String"/>
+	<field name="FACTORY_NO" class="java.lang.String"/>
+	<field name="ORDER_PRICE" class="java.math.BigDecimal"/>
+	<field name="CURRENCY_ID" class="java.lang.Integer"/>
+	<field name="BOX_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="SHORT_NAME" class="java.lang.String"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="50"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="129"
+						y="0"
+						width="266"
+						height="50"
+						key="staticText-1"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="STSong-Light" size="30" isBold="false" isItalic="false" isUnderline="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[采购单]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="50"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="10"
+						y="0"
+						width="80"
+						height="25"
+						key="staticText-4"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" size="12" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[发票编号：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="260"
+						y="0"
+						width="80"
+						height="25"
+						key="staticText-5"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" size="12" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[签单日期：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="260"
+						y="25"
+						width="80"
+						height="25"
+						key="staticText-6"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" size="12" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[交货日期：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="10"
+						y="25"
+						width="80"
+						height="25"
+						key="staticText-7"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" size="12" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[采购厂家：]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Transparent"
+						x="90"
+						y="0"
+						width="150"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" size="12" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{ORDER_NO}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="90"
+						y="25"
+						width="150"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" size="12" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{SHORT_NAME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="340"
+						y="0"
+						width="150"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" size="12" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.sql.Timestamp"><![CDATA[$F{ORDER_TIME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="340"
+						y="25"
+						width="150"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" size="12" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.sql.Timestamp"><![CDATA[$F{SEND_TIME}]]></textFieldExpression>
+				</textField>
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="30"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="10"
+						y="0"
+						width="50"
+						height="30"
+						key="staticText-2"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" size="10" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[货号]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="60"
+						y="0"
+						width="100"
+						height="30"
+						key="staticText-3"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[中文名称]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="160"
+						y="0"
+						width="100"
+						height="30"
+						key="staticText-8"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[英文名称]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="260"
+						y="0"
+						width="50"
+						height="30"
+						key="staticText-9"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[采购数量]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="360"
+						y="0"
+						width="60"
+						height="30"
+						key="staticText-10"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[单价]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="420"
+						y="0"
+						width="60"
+						height="30"
+						key="staticText-11"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[总价]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="310"
+						y="0"
+						width="50"
+						height="30"
+						key="staticText-12"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[箱数]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="480"
+						y="0"
+						width="50"
+						height="30"
+						key="staticText-13"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[币种]]></text>
+				</staticText>
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="30"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="10"
+						y="0"
+						width="50"
+						height="30"
+						key="textField"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{ELE_ID}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="60"
+						y="0"
+						width="100"
+						height="30"
+						key="textField"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{ELE_NAME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="160"
+						y="0"
+						width="100"
+						height="30"
+						key="textField"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{ELE_NAME_EN}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="260"
+						y="0"
+						width="50"
+						height="30"
+						key="textField"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_COUNT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="310"
+						y="0"
+						width="50"
+						height="30"
+						key="textField"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{CONTAINER_COUNT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="360"
+						y="0"
+						width="60"
+						height="30"
+						key="textField"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{ORDER_PRICE}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="420"
+						y="0"
+						width="60"
+						height="30"
+						key="textField"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{TOTAL_MONEY}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="480"
+						y="0"
+						width="50"
+						height="30"
+						key="textField"/>
+					<box>					<pen lineWidth="0.5" lineStyle="Solid"/>
+					<topPen lineWidth="0.5" lineStyle="Solid"/>
+					<leftPen lineWidth="0.5" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="STSong-Light" isBold="false" isItalic="false" isUnderline="false" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.Integer"><![CDATA[$F{CURRENCY_ID}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

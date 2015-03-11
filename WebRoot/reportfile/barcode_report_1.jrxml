@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="barcode_report_1"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="STR_SQL" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA[" 1=1 "]]></defaultValueExpression>
+	</parameter>
+	<parameter name="IMG_PATH" isForPrompting="false" class="java.lang.String"/>
+	<queryString><![CDATA[select *  FROM
+cot_barcode AS obj ,
+cot_elements_new AS e 
+WHERE
+ $P!{STR_SQL} AND
+obj.ELE_ID = e.ELE_ID
+ORDER BY obj.ELE_ID DESC]]></queryString>
+
+	<field name="ID" class="java.lang.Integer"/>
+	<field name="ELE_ID" class="java.lang.String"/>
+	<field name="ADD_EMP" class="java.lang.Integer"/>
+	<field name="ELE_PARENTID" class="java.lang.Integer"/>
+	<field name="ELE_NAME" class="java.lang.String"/>
+	<field name="ELE_NAME_EN" class="java.lang.String"/>
+	<field name="ELE_FLAG" class="java.math.BigDecimal"/>
+	<field name="ELE_DESC" class="java.lang.String"/>
+	<field name="ELE_FROM" class="java.lang.String"/>
+	<field name="ELE_COMPOSETYPE" class="java.lang.String"/>
+	<field name="ELE_GRADE" class="java.lang.String"/>
+	<field name="ELE_UNIT" class="java.lang.String"/>
+	<field name="ELE_FACTORY" class="java.lang.String"/>
+	<field name="ELE_COL" class="java.lang.String"/>
+	<field name="ELE_METERIAL" class="java.lang.String"/>
+	<field name="ELE_SIZE_DESC" class="java.lang.String"/>
+	<field name="ELE_INCH_DESC" class="java.lang.String"/>
+	<field name="ELE_REMARK" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV1" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV2" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV3" class="java.lang.String"/>
+	<field name="ELE_ADD_TIME" class="java.sql.Timestamp"/>
+	<field name="ELE_PRO_TIME" class="java.sql.Timestamp"/>
+	<field name="ELE_FOR_PERSON" class="java.lang.String"/>
+	<field name="ELE_MOD" class="java.lang.Integer"/>
+	<field name="ELE_UNITNUM" class="java.lang.Integer"/>
+	<field name="BOX_UINT" class="java.lang.String"/>
+	<field name="BOX_CBM" class="java.math.BigDecimal"/>
+	<field name="BOX_T_L" class="java.math.BigDecimal"/>
+	<field name="BOX_T_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_T_W" class="java.math.BigDecimal"/>
+	<field name="BOX_T_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_T_D" class="java.math.BigDecimal"/>
+	<field name="BOX_T_D_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_L" class="java.math.BigDecimal"/>
+	<field name="BOX_B_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_W" class="java.math.BigDecimal"/>
+	<field name="BOX_B_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_D" class="java.math.BigDecimal"/>
+	<field name="BOX_B_D_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_L" class="java.math.BigDecimal"/>
+	<field name="BOX_W" class="java.math.BigDecimal"/>
+	<field name="BOX_H" class="java.math.BigDecimal"/>
+	<field name="BOX_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_GROSS_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_NET_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_TYPE" class="java.lang.String"/>
+	<field name="BOX_MB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_TYPE" class="java.lang.String"/>
+	<field name="BOX_OB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_TYPE" class="java.lang.String"/>
+	<field name="BOX_CUFT" class="java.math.BigDecimal"/>
+	<field name="BOX_REMARK" class="java.lang.String"/>
+	<field name="BOX_20_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_40_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_40HQ_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_BDESC" class="java.lang.String"/>
+	<field name="BOX_TDESC" class="java.lang.String"/>
+	<field name="BOX_HANDLEH" class="java.math.BigDecimal"/>
+	<field name="PIC_NAME" class="java.lang.String"/>
+	<field name="PIC_Path" class="java.lang.String"/>
+	<field name="PRICE_FAC" class="java.math.BigDecimal"/>
+	<field name="PRICE_OUT" class="java.math.BigDecimal"/>
+	<field name="FACTORY_ID" class="java.lang.Integer"/>
+	<field name="ELE_TYPEID_LV1" class="java.lang.Integer"/>
+	<field name="HS_ID" class="java.lang.Integer"/>
+	<field name="price_fac_uint" class="java.lang.Integer"/>
+	<field name="price_out_unit" class="java.lang.Integer"/>
+	<field name="box_type_id" class="java.lang.Integer"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="40"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="132"
+						y="0"
+						width="268"
+						height="40"
+						key="staticText-1"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" size="24" isBold="true"/>
+					</textElement>
+				<text><![CDATA[条形码预览]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="100"  isSplitAllowed="true" >
+				<image  scaleImage="RetainShape" vAlign="Top" hAlign="Left" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						mode="Opaque"
+						x="134"
+						y="16"
+						width="270"
+						height="64"
+						forecolor="#000000"
+						backcolor="#FFFFFF"
+						key="barcode-1"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch" fill="Solid" />
+					<imageExpression class="java.awt.Image"><![CDATA[it.businesslogic.ireport.barcode.BcImage.getBarcodeImage(9,$F{ELE_ID},true,false,null,0,0)]]></imageExpression>
+				</image>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="1"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

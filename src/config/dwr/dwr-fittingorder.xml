@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<!--配件采购记录信息 -->		
+		<convert converter="bean" javascript="CotFittingOrder"
+			match="com.sail.cot.domain.CotFittingOrder" />
+		<convert converter="bean" javascript="CotFittingsOrderdetail" 
+			match="com.sail.cot.domain.CotFittingsOrderdetail"/>	
+		<convert converter="bean" javascript="VOrderFitorderId"
+			match="com.sail.cot.domain.VOrderFitorderId" />		
+		<create creator="spring" javascript="cotFitOrderService">
+			<param name="beanName" value="CotFitOrderService"/>
+		</create>
+	</allow>
+	<signatures>
+	<![CDATA[ 
+		import com.sail.cot.domain.CotFittingOrder;
+		import com.sail.cot.domain.CotFittingsOrderdetail;  
+		import com.sail.cot.domain.CotFinaceAccountdeal;
+		cotFitOrderService.setFitNoMap(String fitNo, CotFittingsOrderdetail cotFittingsOrderdetail);
+		cotFitOrderService.saveOrUpdate(CotFittingOrder cotFittingOrder, String orderDate,String sendDate);
+		cotFitOrderService.modifyFitOrderDetail(List<CotFittingsOrderdetail> detailList);
+		cotFitOrderService.deleteFitOrderList(List<Integer> fitList);
+		cotFitOrderService.saveAccountdeal(CotFinaceAccountdeal dealDetail,String amountDate,String priceScal,String prePrice);
+		cotFitOrderService.checkIsHaveDeal(List<CotFittingOrder> orderList);
+		cotFitOrderService.checkIsImport(List<Integer> ids);
+		cotFitOrderService.deleteByAccount(List<Integer> ids);
+		cotFitOrderService.deleteByIds(List<Integer> ids);
+	]]> 
+	</signatures>
+</dwr>

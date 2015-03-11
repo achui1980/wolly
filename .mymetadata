@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="CotDenMarkNew"
+  id="myeclipse.1217319285166"
+  context-root="/CotSystem"
+  j2ee-spec="5.0"
+  archive="CotDenMarkNew.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

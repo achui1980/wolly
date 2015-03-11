@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+     
+     <!-- 配置Service层逻辑 -->
+
+     <!-- 城市信息配置 -->
+     <!-- <bean id="MailService" parent="baseTxProxy">
+     	<property name="target">
+     		<bean class="com.sail.cot.mail.service.impl.MailServiceImpl">
+     			<property name="mailDao"><ref bean="CotBaseDao"/></property>
+     		</bean>
+     	</property>
+     </bean> 
+     <bean id="MailService" class="com.sail.cot.email.service.impl.MailServiceImpl" />   
+    --> 
+   
+     <bean id="MailSendService" parent="baseTxProxy">
+     	<property name="target">
+     		<bean class="com.sail.cot.email.service.impl.MailSendServiceImpl">
+     			<property name="cotBaseDao"><ref bean="CotBaseDao"/></property>
+     		</bean>
+     	</property>
+     </bean>
+
+     
+</beans>

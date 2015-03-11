@@ -1,0 +1,226 @@
+	.calendarLite,.yearMonthSelector {
+		background:#FFFFFF none repeat scroll 0 0;
+		border:1px solid #718BB7;
+		position:absolute;
+		width:240px;
+	}
+	
+	.yearMonthSelector {
+		font-size:11px;
+	}
+
+	.calendarData , .yearMonthSelectorTable {
+		border-collapse:separate;
+		table-layout:fixed;
+		width:100%;
+	}
+	.calendarData thead {
+		background-color:#DFECFB;
+		
+	}
+	
+	.calendarData td,.calendarData th {
+		text-align:center;
+		border-collapse:separate;
+		width:25px;
+		font-family:arial,helvetica,tahoma,sans-serif;
+		font-size:11px;
+		font-size-adjust:none;
+		font-stretch:normal;
+		font-style:normal;
+		font-variant:normal;
+		font-weight:normal;
+		line-height:normal;
+		padding:1px 0px;
+	}
+	
+	.calendarData th {	
+		background:#DFECFB url(../images/glass-bg.gif) repeat-x scroll left top;
+		overflow:hidden;
+		border-bottom:1px solid #A3BAD9;
+		color:#233D6D;
+		cursor:default;
+		font-size:10px;
+		padding-top:2px;
+	}
+	
+	
+	.calendarData .prevday a, .calendarData .nextday a {
+		color:#AAAAAA;
+		text-decoration:none !important;
+	}
+	
+	.calendarData a ,.yearMonthSelector a {
+		outline:none;
+	} 
+	.calendarData a {
+		overflow:hidden;
+		color:black;
+		display:block;
+		text-decoration:none;
+	}
+	
+	.calendarData a:hover {
+		background:#DDECFE none repeat scroll 0 0;
+	}
+	
+	td.date-mp-sel a {
+		background:#DFECFB url(../images/glass-bg.gif) repeat-x scroll left top;
+		border:1px solid #8DB2E3;
+		padding:1px 3px;
+	}
+
+	.calendarData .date-selected a {
+		 overflow:hidden;
+		background:#DFECFB url(../images/glass-bg.gif) repeat-x scroll left top;
+		border:1px solid #8DB2E3;
+		padding:1px 4px;
+		font-weight:bold;
+	}
+	.calendarData .date-today a {
+		border:1px solid darkred;
+	}
+	
+	
+	.calendarData tfoot td ,.yearMonthSelectorTable tfoot td {
+		background:#DFECFB url(../images/glass-bg.gif) repeat-x scroll left top;
+		border-top:1px solid #A3BAD9;
+		padding:4px;
+		text-align:center;
+		/*ie 一定要设置宽度，才能正确居中！*/
+		width:230px;
+	}
+	
+	.calendarLite .navibar {
+		-system-font:none;
+		background:transparent url(../images/hd-sprite.gif) repeat-x scroll 0 -83px;
+		color:#FFFFFF;
+		font-family:"sans serif",tahoma,verdana,helvetica;
+		font-size:12px;
+		font-size-adjust:none;
+		font-stretch:normal;
+		font-style:normal;
+		font-variant:normal;
+		font-weight:bold;
+		line-height:normal;
+		overflow:hidden;
+	}
+	
+	
+	.navibar a {
+		background-position:center center;
+		background-repeat:no-repeat;
+		cursor:pointer;
+		display:block;
+		height:16px;
+		opacity:0.6;
+		width:16px;
+		filter: alpha(opacity=60);
+	}
+	
+	.navibar a:hover {
+		opacity:1;
+		filter: alpha(opacity=100);
+	}
+	
+	.navibar .leftBtn {
+		float:left;
+		width:18px;
+		background-image:url(../images/left-btn.gif);
+		margin-left:2px;
+	}
+	
+	.navibar .rightBtn {
+		float:right;
+		width:18px;
+		background-image:url(../images/right-btn.gif);
+		margin-right:2px;
+	}
+	
+	.navibar .monthYear {
+		margin-left:30px;
+		float:left;
+	}
+	.navibar {
+		padding:5px 0;
+	}
+	
+	.calendarData thead tr th span {
+		display:block;
+		padding:2px 7px 2px 2px;
+	}
+	
+	
+	.navibar .btn-arrow {
+		background:transparent url(../images/btn-arrow-light.gif) no-repeat scroll right 0;
+		width:auto;
+		color:white;
+		padding-right:10px;
+		display:block;
+		border:none;
+		cursor:pointer;
+	}
+	
+	
+	td.date-mp-month, td.date-mp-year, td.date-mp-ybtn {
+		border:0 none;
+		text-align:center;
+		vertical-align:middle;
+		width:25%;
+	}
+		
+	td.date-mp-sep {
+		border-right:1px solid #C5D2DF;
+	}
+	
+	td.date-mp-month a, td.date-mp-year a {
+		color:#15428B;
+		display:block;
+		padding:4px 4px !important;
+		padding:5px 4px;
+		
+		text-align:center;
+		text-decoration:none;
+	}
+
+	td.date-mp-month a:hover, td.date-mp-year a:hover {
+		background:#DDECFE none repeat scroll 0 0;
+	}
+	
+	
+	.date-mp-ybtn a {
+		background:transparent url(../images/tool-sprites.gif) no-repeat scroll 0 0;
+		cursor:pointer;
+		display:block;
+		height:15px;
+		margin:0 auto;
+		overflow:hidden;
+		width:15px;
+	}
+	
+	.date-mp-ybtn a.date-mp-prev {
+		background-position:0 -105px;
+	}
+	
+	.date-mp-ybtn a.date-mp-prev:hover {
+		background-position:-15px -105px;
+	}
+	
+	.date-mp-ybtn a.date-mp-next:hover {
+		background-position:-15px -120px;
+	}
+	
+	.date-mp-ybtn a.date-mp-next {
+		background-position:0 -120px;
+	}
+	
+	.date-btn {
+		background:#083772 none repeat scroll 0 0;
+		border-color:#3366CC #000055 #000055 #3366CC;
+		border-style:solid;
+		border-width:1px;
+		color:white;
+		cursor:pointer;
+		margin-right:5px;
+		
+	}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    
+     <!-- 配置Service层逻辑 -->
+
+     <!-- 员工管理配置 -->
+     <bean id="CotEmpsDao" class="com.sail.cot.dao.system.impl.CotEmpsDaoImpl">
+    	<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+   	</bean>
+     <bean id="CotEmpsService" parent="baseTxProxy">
+     	<property name="target">
+     		<bean class="com.sail.cot.service.system.impl.CotEmpsServiceImpl">
+     			<property name="empsDao"><ref local="CotEmpsDao"/></property>
+     			<property name="registService"><ref bean="CotRegistService"/></property>
+     			<property name="sysLogService"><ref bean="CotSysLogService"/></property>
+     		</bean>
+     	</property>
+     </bean>    
+
+</beans>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow> 
+
+	<!-- 保存邮件 --> 
+	<convert converter="bean" javascript="CotEmps" match="com.sail.cot.domain.CotEmps"/>
+	 	 <create javascript="mailSendService" creator="spring">
+			<param name="beanName" value="MailSendService"></param>
+		</create>
+	</allow>  
+	<signatures>
+	<![CDATA[ 
+	]]> 
+	
+	</signatures>
+</dwr>

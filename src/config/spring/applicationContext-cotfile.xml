@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    
+    <bean id="CotFileDao" class="com.sail.cot.dao.sample.impl.CotFileDaoImpl">
+    	<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+    </bean>
+     <!-- 配置Service层逻辑 -->
+
+     <!-- 联系人信息配置 -->
+     <bean id="CotFileService" parent="baseTxProxy">
+     	<property name="target">
+     		<bean class="com.sail.cot.service.sample.impl.CotFileServiceImpl">
+     			<property name="cotBaseDao"><ref bean="CotBaseDao"/></property>
+     			<property name="cotFileDao"><ref bean="CotFileDao"/></property>
+     		</bean>
+     	</property>
+     </bean>    
+
+</beans>
+
+

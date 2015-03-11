@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotCommisionType" match="com.sail.cot.domain.CotCommisionType"/>	
+	<create creator="spring" javascript="cotCommisionService">
+    	<param name="beanName" value="CotCommisionService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.systemdic.impl.CotCommisionServiceImpl; 
+import com.sail.cot.domain.CotCommisionType; 
+cotCommisionService.addCommision(List<CotCommisionType> CommisionList);
+cotCommisionService.modifyCommision(List<CotCommisionType> CommisionList);
+cotCommisionService.deleteCommision(List<CotCommisionType> CommisionList);
+ 
+]]> 
+ 
+</signatures>
+</dwr>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webflow-project-description>
+	<version>1</version>
+	<pluginVersion><![CDATA[2.2.0.zmyeclipse75020090612]]></pluginVersion>
+	<configs>
+		<config>
+			<file>WebRoot/flow.xml</file>
+			<name><![CDATA[flow]]></name>
+		</config>
+	</configs>
+</webflow-project-description>

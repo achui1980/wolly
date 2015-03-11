@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotImportresult" match="com.sail.cot.domain.CotImportresult"/>	
+	<create creator="spring" javascript="cotImportResultService">
+    	<param name="beanName" value="CotImportResultService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.sample.impl.CotImportResultServiceImpl; 
+import com.sail.cot.domain.CotImportresult; 
+cotImportResultService.deleteCotImportresult(List<CotImportresult>  importresultList); 
+]]> 
+ 
+</signatures>
+</dwr>

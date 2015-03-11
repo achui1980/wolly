@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<convert converter="bean" javascript="CotBalanceType"
+			match="com.sail.cot.domain.CotBalanceType" />
+		<create creator="spring" javascript="cotBalanceTypeService">
+			<param name="beanName" value="CotBalanceTypeService" />
+		</create>
+	</allow>
+ 
+	<signatures>
+		<![CDATA[ 
+			import java.util.List; 
+			import com.sail.cot.domain.CotBalanceType; 
+			
+			cotBalanceTypeService.addBalanceTypes(List<CotBalanceType> balanceTypesList);
+			cotBalanceTypeService.deleteBalanceTypes(List<CotBalanceType> balanceTypesList);
+			cotBalanceTypeService.modifyBalanceTypes(List<CotBalanceType> balanceTypesList);
+		]]> 
+	
+	</signatures>
+</dwr>

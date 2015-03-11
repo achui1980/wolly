@@ -1,0 +1,41 @@
+
+
+
+
+
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</HEAD>
+<BODY background="/CotSystem/common/images/midbar.gif" leftMargin=0 topMargin=0 marginheight="0" marginwidth="0">
+<SCRIPT language=javascript>
+function HideList(ss)
+{
+	if (frmHide.liststatus.value==0)
+	{
+		ss.src="common/images/rightarrow.gif";
+		parent.tt.cols="0,10,*";
+	}
+	else
+	{
+		ss.src="common/images/leftarrow.gif";
+		parent.tt.cols="175,10,*";
+	}
+	frmHide.liststatus.value = 1 - frmHide.liststatus.value;
+}
+</SCRIPT>
+
+<TABLE width="10" height="100%" border=0 cellPadding=0 cellSpacing=0 onclick=HideList(arrow) style="cursor: hand;">
+  <TBODY>
+  <TR>
+      <TD>
+        <FORM name=frmHide>
+          <A onMouseOver="window.status='隐藏/显示菜单';return true;" onMouseOut="window.status='';return true;" ><IMG border=0 name=arrow src="common/images/leftarrow.gif"></A>
+          <INPUT name=liststatus type=hidden value=0>
+        </FORM>
+      </TD>
+  </TR>
+  </TBODY>
+</TABLE>
+</BODY>
+</HTML>

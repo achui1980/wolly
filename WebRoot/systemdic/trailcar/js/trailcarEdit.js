@@ -1,0 +1,88 @@
+Ext.onReady(function(){
+	
+	var form=new Ext.form.FormPanel({
+	title:"新增|编辑",
+	labelWidth:100,
+	labelAlign:"right",
+	layout:"form",
+	width:650,
+	height:260,
+	padding:"5px",
+	formId:"queryTrailCarForm",
+	buttonAlign:"center",
+	renderTo:Ext.getBody(),
+	monitorValid:true,
+	frame:true,
+	fbar:[
+		{
+			text:"保存",
+			handler:saveOrUpdate,
+			formBind:true,
+			iconCls:"page_mod"
+		},
+		{
+			text:"取消",
+			iconCls:"page_cancel",
+			handler:function(){
+				reloadGrid('trailGrid');
+			}
+			
+		}
+	],
+	items:[
+		{
+			xtype:"textfield",
+			fieldLabel:"<font color='red'>拖车行名称</font>",
+			allowBlank:false,
+			blankText:"请输入拖车行名称",
+			id:"name",
+			name:"name",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"拖车行英文名",
+			id:"nameEn",
+			name:"nameEn",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"联系人",
+			id:"contactPerson",
+			name:"contactPerson",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"联系电话",
+			id:"contactPhone",
+			name:"contactPhone",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"传真",
+			id:"trailFax",
+			name:"trailFax",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"中文地址",
+			id:"addr",
+			name:"addr",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"英文地址",
+			id:"addrEn",
+			name:"addrEn",
+			anchor:"100%"
+		}
+	]
+});
+//初始化页面
+initForm();
+});

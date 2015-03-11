@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<!--配件采购记录信息 -->		
+		<convert converter="bean" javascript="CotPackingOrder"
+			match="com.sail.cot.domain.CotPackingOrder" />
+		<convert converter="bean" javascript="CotPackingOrderdetail" 
+			match="com.sail.cot.domain.CotPackingOrderdetail"/>	
+		<convert converter="bean" javascript="VOrderPackorderId"
+			match="com.sail.cot.domain.VOrderPackorderId" />
+		<create creator="spring" javascript="cotPackOrderService">
+			<param name="beanName" value="CotPackOrderService"/>
+		</create>
+	</allow>
+	<signatures>
+	<![CDATA[ 
+		import com.sail.cot.domain.CotPackingOrder;
+		import com.sail.cot.domain.CotPackingOrderdetail;  
+		import com.sail.cot.domain.CotFinaceAccountdeal;
+		import com.sail.cot.domain.CotOrderDetail;
+		cotPackOrderService.setPackNoMap(String packNo, CotPackingOrderdetail cotPackingOrderdetail);
+		cotPackOrderService.saveOrUpdate(CotPackingOrder cotPackingOrder, String orderDate,String sendDate);
+		cotPackOrderService.modifyPackOrderDetail(List<CotPackingOrderdetail> detailList);
+		cotPackOrderService.deletePackOrderList(List<Integer> packList);
+		cotPackOrderService.saveAccountdeal(CotFinaceAccountdeal dealDetail,String amountDate,String priceScal,String prePrice);
+		cotPackOrderService.checkIsHaveDeal(List<CotPackingOrder> orderList);
+		cotPackOrderService.getPackPriceByType(CotOrderDetail detail, Integer boxPackingId);
+		cotPackOrderService.checkIsImport(List<Integer> ids);
+		cotPackOrderService.deleteByAccount(List<Integer> ids);
+		cotPackOrderService.deleteByIds(List<Integer> ids);
+	]]> 
+	</signatures>
+</dwr>

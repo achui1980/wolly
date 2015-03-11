@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<convert converter="bean" javascript="CotOrderFac"
+			match="com.sail.cot.domain.CotOrderFac" />
+		<convert converter="bean" javascript="CotOrderFacdetail"
+			match="com.sail.cot.domain.CotOrderFacdetail" />
+		<convert converter="bean" javascript="VOrderOrderfacId"
+			match="com.sail.cot.domain.VOrderOrderfacId" />
+		<convert converter="bean" javascript="VDetailStatusId" match="com.sail.cot.domain.VDetailStatusId" />		
+				
+		<create creator="spring" javascript="cotOrderFacService">
+			<param name="beanName" value="CotOrderFacService"/>
+		</create>
+	</allow>
+	<signatures>
+	<![CDATA[ 
+	import com.sail.cot.domain.CotOrderFac; 
+	import com.sail.cot.domain.CotOrderFacdetail;
+	import com.sail.cot.domain.CotFinaceAccountdeal;
+	cotOrderFacService.setOrderFacMap(String eleId,CotOrderFacdetail cotOrderFacdetail);
+	cotOrderFacService.deleteOrderFacs(List<CotOrderFac> orderFacList);
+	cotOrderFacService.addOrderFacDetails(List<CotOrderFacdetail> details);
+	cotOrderFacService.modifyOrderFacDetails(List<CotOrderFacdetail> details);
+	cotOrderFacService.deleteDetailByIds(List<Integer> ids);
+	cotOrderFacService.modifyFacTotalByMap(HashMap<Integer, Integer> map);
+	cotOrderFacService.saveOrUpdateOrderFac(CotOrderFac cotOrderFac,String orderTime, String sendTime, String shipmentDate,String addTime, boolean flag,String oderFacText);
+	cotOrderFacService.saveAccountdeal(CotFinaceAccountdeal dealDetail,String amountDate,String priceScal,String prePrice);
+	cotOrderFacService.isOrderStatus(List<CotOrderFac> orderfacList);
+	cotOrderFacService.saveOrderStatus(Integer id,Long status);
+	cotOrderFacService.checkIsHaveDeal(List<CotOrderFac> orderfacList);
+	cotOrderFacService.checkIsHaveTrans(Integer[] ids);
+	cotOrderFacService.checkIsInputOrder(Integer[] ids);
+	cotOrderFacService.checkIsOtherToOrder(List<CotOrderFac> orderfacList);
+	cotOrderFacService.checkIsOtherToOrderOut(List<CotOrderFac> orderfacList);
+	cotOrderFacService.getOrderFacId(HashMap<Integer, Integer> map);
+	cotOrderFacService.saveToMap(CotOrderFacdetail detail);
+	cotOrderFacService.calPriceAll(CotOrderFacdetail elements);
+	cotOrderFacService.checkIsImport(List<Integer> ids);
+	cotOrderFacService.deleteByAccount(List<Integer> ids);
+	cotOrderFacService.deleteByIds(List<Integer> ids);
+	cotOrderFacService.saveAccountDeal(CotFinaceAccountdeal recvDetail,String amountDate, String priceScal, String prePrice);
+	cotOrderFacService.updateOrderFac(CotOrderFac cotOrderFac);
+	cotOrderFacService.updateOrderStatusCon(Integer orderfacId,Integer orderId)
+	]]> 
+	</signatures>
+</dwr>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotCustomer" match="com.sail.cot.domain.CotCustomer"/>
+    <convert converter="bean" javascript="CotCustSeq" match="com.sail.cot.domain.CotCustSeq"/>		
+    <convert converter="bean" javascript="CotClaim" match="com.sail.cot.domain.CotClaim"/>
+    <convert converter="bean" javascript="CotCustPc" match="com.sail.cot.domain.CotCustPc"/>
+	<create creator="spring" javascript="cotCustomerService">
+    	<param name="beanName" value="CotCustomerService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.customer.impl.CotCustomerServiceImpl; 
+import com.sail.cot.domain.CotCustomer;  
+import com.sail.cot.domain.CotClaim; 
+import com.sail.cot.domain.CotCustPc; 
+import com.sail.cot.domain.CotCustLog; 
+cotCustomerService.saveOrUpdateClaim(CotClaim cotClaim);
+cotCustomerService.deleteClaimByList(List<Integer> ids);
+cotCustomerService.deleteCustomer(List<CotCustomer> CustomerList);
+cotCustomerService.deleteCustPcs((List<Integer> ids);
+]]> 
+
+</signatures>
+</dwr>

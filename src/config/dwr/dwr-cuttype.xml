@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotCutType" match="com.sail.cot.domain.CotCutType"/>	
+	<create creator="spring" javascript="cotCutTypeService">
+    	<param name="beanName" value="CotCutTypeService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.systemdic.impl.CotCutTypeServiceImpl; 
+import com.sail.cot.domain.CotCutType; 
+cotCutTypeService.addCutType(List<CotCutType> CutTypeList);
+cotCutTypeService.modifyCutType(List<CotCutType> CutTypeList);
+cotCutTypeService.deleteCutType(List<CotCutType> CutTypeList);
+]]> 
+
+</signatures>
+</dwr>

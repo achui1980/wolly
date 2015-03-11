@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotElePrice" match="com.sail.cot.domain.CotElePrice"/>	
+	<create creator="spring" javascript="cotElePriceService">
+    	<param name="beanName" value="CotElePriceService"/>
+ 	 </create>					 
+</allow> 
+ 
+	<signatures>
+	<![CDATA[ 
+		import com.sail.cot.domain.CotElePrice; 
+		cotElePriceService.saveOrUpdateElePrice(CotElePrice elePrice,Double oldPrice,Integer oldCur);
+		cotElePriceService.deleteElePrices(List<Integer> ids);
+	]]> 
+	</signatures>
+</dwr>
+
+

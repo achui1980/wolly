@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow> 
+	    <convert converter="bean" javascript="CotStatPopedom" match="com.sail.cot.domain.CotStatPopedom"/>	
+	    <convert converter="bean" javascript="CotStatistics" match="com.sail.cot.domain.CotStatistics"/>
+		<create creator="spring" javascript="cotStatPopedomService">
+	    	<param name="beanName" value="CotStatisticsService"/>
+	 	 </create>					 
+	</allow> 
+
+ 
+	<signatures>
+	<![CDATA[ 
+		import com.sail.cot.service.statistics.impl.CotStatisticsServiceImpl;
+		import com.sail.cot.domain.CotStatPopedom;
+		cotStatPopedomService.addPopedom(List<CotStatPopedom> popedomList);
+		cotStatPopedomService.delStatsById(List<Integer> list);
+	]]> 
+	
+	</signatures>
+</dwr>

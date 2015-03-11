@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    
+     <!-- 配置Service层逻辑 -->
+	 <bean id="CotPopedomDao" class="com.sail.cot.dao.system.impl.CotPopedomDaoImpl">
+    	<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+    	</bean>
+     <!-- 城市信息配置 -->
+     <bean id="CotPopedomService" parent="baseTxProxy">
+     	<property name="target">
+     		<bean class="com.sail.cot.service.system.impl.CotPopedomServiceImpl">
+     			<property name="cotPopedomDao"><ref local="CotPopedomDao"/></property>
+     		</bean>
+     	</property>
+     </bean>    
+
+</beans>

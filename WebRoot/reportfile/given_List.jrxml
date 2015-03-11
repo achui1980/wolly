@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="given_List"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="STR_SQL" isForPrompting="false" class="java.lang.String"/>
+	<queryString><![CDATA[select * FROM
+cot_customer AS c ,
+cot_given AS g ,
+cot_given_detail AS obj
+WHERE
+g.CUST_ID =  c.ID AND
+obj.GIVEN_ID =  g.ID
+and $P!{STR_SQL}]]></queryString>
+
+	<field name="ID" class="java.lang.Integer"/>
+	<field name="CUSTOMER_SHORT_NAME" class="java.lang.String"/>
+	<field name="CUSTOMER_NO" class="java.lang.String"/>
+	<field name="CUSTOM_PHOTO" class="java.lang.String"/>
+	<field name="PRI_CONTACT" class="java.lang.String"/>
+	<field name="FULL_NAME_CN" class="java.lang.String"/>
+	<field name="FULL_NAME_EN" class="java.lang.String"/>
+	<field name="CONTACT_NBR" class="java.lang.String"/>
+	<field name="CUSTOMER_ADDRESS" class="java.lang.String"/>
+	<field name="CUSTOMER_EMAIL" class="java.lang.String"/>
+	<field name="CUSTOMER_POST" class="java.lang.String"/>
+	<field name="CUSTOMER_ADDR_EN" class="java.lang.String"/>
+	<field name="CUSTOMER_BANK" class="java.lang.String"/>
+	<field name="CUSTOMER_ACCOUNT" class="java.lang.String"/>
+	<field name="CUSTOMER_FAX" class="java.lang.String"/>
+	<field name="COMMISION_SCALE" class="java.math.BigDecimal"/>
+	<field name="CUT_SCALE" class="java.math.BigDecimal"/>
+	<field name="COOPERATE_LV" class="java.lang.String"/>
+	<field name="CUSTOMER_ZM" class="java.lang.String"/>
+	<field name="CUSTOMER_REMARK" class="java.lang.String"/>
+	<field name="CUSTOMER_MB" class="java.lang.String"/>
+	<field name="CUSTOMER_CM" class="java.lang.String"/>
+	<field name="CUSTOMER_NM" class="java.lang.String"/>
+	<field name="CUSTOMER_ZHM" class="java.lang.String"/>
+	<field name="ADD_TIME" class="java.sql.Timestamp"/>
+	<field name="ADD_PERSORN" class="java.lang.String"/>
+	<field name="EMP_ID" class="java.lang.Integer"/>
+	<field name="DEPT_ID" class="java.lang.Integer"/>
+	<field name="SHIPPORT_ID" class="java.lang.Integer"/>
+	<field name="TRGPORT_ID" class="java.lang.Integer"/>
+	<field name="NATION_ID" class="java.lang.Integer"/>
+	<field name="PROVINCE_ID" class="java.lang.Integer"/>
+	<field name="CITY_ID" class="java.lang.Integer"/>
+	<field name="CUST_TYPE_ID" class="java.lang.Integer"/>
+	<field name="CUST_LV_ID" class="java.lang.Integer"/>
+	<field name="CLAUSE_ID" class="java.lang.Integer"/>
+	<field name="COMMISION_TYPE_ID" class="java.lang.Integer"/>
+	<field name="PAY_TYPE_ID" class="java.lang.Integer"/>
+	<field name="CUT_TYPE_ID" class="java.lang.Integer"/>
+	<field name="PIC_IMG" class="java.lang.Object"/>
+	<field name="CUST_IMG" class="java.lang.Object"/>
+	<field name="GIVEN_NO" class="java.lang.String"/>
+	<field name="GIVEN_TIME" class="java.sql.Timestamp"/>
+	<field name="CUST_REQUIRETIME" class="java.sql.Timestamp"/>
+	<field name="PLAN_GIVENTIME" class="java.sql.Timestamp"/>
+	<field name="REAL_GIVENTIME" class="java.sql.Timestamp"/>
+	<field name="GIVEN_ADDR" class="java.lang.String"/>
+	<field name="FOLLOW_PERSON" class="java.lang.String"/>
+	<field name="GIVEN_REMARK" class="java.lang.String"/>
+	<field name="GIVEN_ISCHECK" class="java.math.BigDecimal"/>
+	<field name="GIVEN_STATUS" class="java.math.BigDecimal"/>
+	<field name="GIVEN_CHECKREASON" class="java.lang.String"/>
+	<field name="ADD_PERSON" class="java.lang.String"/>
+	<field name="GIVEN_ID" class="java.lang.Integer"/>
+	<field name="BALANCE_TYPE_ID" class="java.lang.Integer"/>
+	<field name="CUST_ID" class="java.lang.Integer"/>
+	<field name="BUSINESS_PERSON" class="java.lang.Integer"/>
+	<field name="ELE_PARENTID" class="java.lang.Integer"/>
+	<field name="ELE_ID" class="java.lang.String"/>
+	<field name="ELE_NAME" class="java.lang.String"/>
+	<field name="ELE_NAME_EN" class="java.lang.String"/>
+	<field name="ELE_FLAG" class="java.math.BigDecimal"/>
+	<field name="ELE_DESC" class="java.lang.String"/>
+	<field name="ELE_FROM" class="java.lang.String"/>
+	<field name="ELE_COMPOSETYPE" class="java.lang.String"/>
+	<field name="ELE_GRADE" class="java.lang.String"/>
+	<field name="ELE_UNIT" class="java.lang.String"/>
+	<field name="ELE_FACTORY" class="java.lang.String"/>
+	<field name="ELE_COL" class="java.lang.String"/>
+	<field name="ELE_METERIAL" class="java.lang.String"/>
+	<field name="ELE_SIZE_DESC" class="java.lang.String"/>
+	<field name="ELE_INCH_DESC" class="java.lang.String"/>
+	<field name="ELE_REMARK" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV1" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV2" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV3" class="java.lang.String"/>
+	<field name="ELE_ADD_TIME" class="java.sql.Timestamp"/>
+	<field name="ELE_PRO_TIME" class="java.sql.Timestamp"/>
+	<field name="ELE_FOR_PERSON" class="java.lang.String"/>
+	<field name="ELE_MOD" class="java.lang.Integer"/>
+	<field name="ELE_UNITNUM" class="java.lang.Integer"/>
+	<field name="BOX_UINT" class="java.lang.String"/>
+	<field name="CUST_NO" class="java.lang.String"/>
+	<field name="FACTORY_NO" class="java.lang.String"/>
+	<field name="BOX_CBM" class="java.math.BigDecimal"/>
+	<field name="BOX_T_L" class="java.math.BigDecimal"/>
+	<field name="BOX_T_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_T_W" class="java.math.BigDecimal"/>
+	<field name="BOX_T_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_T_D" class="java.math.BigDecimal"/>
+	<field name="BOX_T_D_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_L" class="java.math.BigDecimal"/>
+	<field name="BOX_B_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_W" class="java.math.BigDecimal"/>
+	<field name="BOX_B_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_D" class="java.math.BigDecimal"/>
+	<field name="BOX_B_D_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_L" class="java.math.BigDecimal"/>
+	<field name="BOX_W" class="java.math.BigDecimal"/>
+	<field name="BOX_H" class="java.math.BigDecimal"/>
+	<field name="BOX_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_GROSS_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_NET_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_TYPE" class="java.lang.String"/>
+	<field name="BOX_MB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_TYPE" class="java.lang.String"/>
+	<field name="BOX_OB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_TYPE" class="java.lang.String"/>
+	<field name="BOX_CUFT" class="java.math.BigDecimal"/>
+	<field name="BOX_REMARK" class="java.lang.String"/>
+	<field name="BOX_20_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_40_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_40HQ_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_BDESC" class="java.lang.String"/>
+	<field name="BOX_TDESC" class="java.lang.String"/>
+	<field name="BOX_HANDLEH" class="java.math.BigDecimal"/>
+	<field name="PIC_NAME" class="java.lang.String"/>
+	<field name="PIC_PATH" class="java.lang.String"/>
+	<field name="PRICE_FAC" class="java.math.BigDecimal"/>
+	<field name="PRICE_OUT" class="java.math.BigDecimal"/>
+	<field name="SIGN_REQUIRE" class="java.lang.String"/>
+	<field name="FACTORY_ID" class="java.lang.Integer"/>
+	<field name="ELE_TYPEID_LV1" class="java.lang.Integer"/>
+	<field name="HS_ID" class="java.lang.Integer"/>
+	<field name="price_fac_uint" class="java.lang.Integer"/>
+	<field name="price_out_unit" class="java.lang.Integer"/>
+	<field name="box_type_id" class="java.lang.Integer"/>
+	<field name="GIVEN_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_45_COUNT" class="java.math.BigDecimal"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="126"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="55"
+						y="41"
+						width="174"
+						height="28"
+						key="textField"/>
+					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica" size="12" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{FULL_NAME_CN}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="55"
+						y="88"
+						width="174"
+						height="28"
+						key="textField"/>
+					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica" size="12" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{CUSTOMER_ADDRESS}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="247"
+						y="33"
+						width="76"
+						height="30"
+						key="staticText-1"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="微软雅黑" pdfFontName="Helvetica-Bold" size="10" isBold="true"/>
+					</textElement>
+				<text><![CDATA[TEL:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="247"
+						y="64"
+						width="76"
+						height="30"
+						key="staticText-2"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="微软雅黑" pdfFontName="Helvetica-Bold" size="10" isBold="true"/>
+					</textElement>
+				<text><![CDATA[FAX:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="247"
+						y="95"
+						width="76"
+						height="31"
+						key="staticText-3"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font fontName="微软雅黑" pdfFontName="Helvetica-Bold" size="10" isBold="true"/>
+					</textElement>
+				<text><![CDATA[E-MAIL:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="332"
+						y="95"
+						width="203"
+						height="25"
+						key="textField"/>
+					<box>					<pen lineWidth="0.0" lineStyle="Solid"/>
+					<topPen lineWidth="0.0" lineStyle="Solid"/>
+					<leftPen lineWidth="0.0" lineStyle="Solid"/>
+					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+					<rightPen lineWidth="0.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{CUSTOMER_EMAIL}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="332"
+						y="65"
+						width="203"
+						height="25"
+						key="textField"/>
+					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{CUSTOMER_FAX}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="332"
+						y="34"
+						width="203"
+						height="25"
+						key="textField"/>
+					<box>					<bottomPen lineWidth="0.5" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{CONTACT_NBR}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="535"
+						height="33"
+						key="staticText-4"/>
+					<box>					<bottomPen lineWidth="1.0" lineStyle="Solid"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="18" isBold="true"/>
+					</textElement>
+				<text><![CDATA[送样单明细表]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="39"
+						width="55"
+						height="35"
+						key="staticText-21"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="微软雅黑" pdfFontName="Helvetica-Bold" size="10" isBold="true"/>
+					</textElement>
+				<text><![CDATA[中文全称:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="86"
+						width="55"
+						height="35"
+						key="staticText-22"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font fontName="微软雅黑" pdfFontName="Helvetica-Bold" size="10" isBold="true"/>
+					</textElement>
+				<text><![CDATA[公司地址:]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="29"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="377"
+						y="7"
+						width="75"
+						height="17"
+						key="staticText-6"/>
+					<box></box>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica" size="12" isBold="false"/>
+					</textElement>
+				<text><![CDATA[下单日期:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="yyyy/MM/dd" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="454"
+						y="7"
+						width="81"
+						height="17"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.sql.Timestamp"><![CDATA[$F{GIVEN_TIME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="58"
+						y="7"
+						width="109"
+						height="17"
+						key="textField"/>
+					<box></box>
+					<textElement verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{GIVEN_NO}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="7"
+						width="58"
+						height="17"
+						key="staticText-23"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica" size="12" isBold="false"/>
+					</textElement>
+				<text><![CDATA[送样单号:]]></text>
+				</staticText>
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="44"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="67"
+						y="-1"
+						width="60"
+						height="45"
+						key="staticText-8"/>
+					<box>					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.0"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[数 量]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="127"
+						y="-1"
+						width="148"
+						height="25"
+						key="staticText-9"/>
+					<box>					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+</box>
+					<textElement textAlignment="Center">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[尺  寸]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="127"
+						y="24"
+						width="50"
+						height="20"
+						key="staticText-10"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[长]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="177"
+						y="24"
+						width="50"
+						height="20"
+						key="staticText-11"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[宽]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="227"
+						y="24"
+						width="48"
+						height="20"
+						key="staticText-12"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[高]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="325"
+						y="-1"
+						width="125"
+						height="25"
+						key="staticText-14"/>
+					<box>					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[重  量]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="325"
+						y="24"
+						width="59"
+						height="20"
+						key="staticText-15"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[毛重]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="384"
+						y="24"
+						width="66"
+						height="20"
+						key="staticText-16"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[净重]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="275"
+						y="-1"
+						width="50"
+						height="45"
+						key="staticText-18"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.0"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[单  位]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="450"
+						y="-1"
+						width="85"
+						height="45"
+						key="staticText-19"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[CBM]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="-1"
+						width="67"
+						height="45"
+						key="staticText-20"/>
+					<box>					<pen lineWidth="0.5"/>
+					<topPen lineWidth="0.5"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.5"/>
+					<rightPen lineWidth="0.5"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[产品货号]]></text>
+				</staticText>
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="36"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="127"
+						y="0"
+						width="50"
+						height="36"
+						key="textField"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_OB_L}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="177"
+						y="0"
+						width="50"
+						height="36"
+						key="textField"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_OB_W}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="227"
+						y="0"
+						width="48"
+						height="36"
+						key="textField"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_OB_H}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="275"
+						y="0"
+						width="50"
+						height="36"
+						key="textField"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{ELE_UNIT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="325"
+						y="0"
+						width="59"
+						height="36"
+						key="textField"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_GROSS_WEIGTH}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="384"
+						y="0"
+						width="66"
+						height="36"
+						key="textField"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_NET_WEIGTH}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="67"
+						y="0"
+						width="60"
+						height="36"
+						key="textField"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{GIVEN_COUNT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="0"
+						y="0"
+						width="67"
+						height="36"
+						key="textField"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.5"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{ELE_ID}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="450"
+						y="0"
+						width="85"
+						height="36"
+						key="textField"/>
+					<box>					<pen lineWidth="0.25"/>
+					<topPen lineWidth="0.0"/>
+					<leftPen lineWidth="0.0"/>
+					<bottomPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+</box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_CBM}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="43"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="67"
+						height="26"
+						key="staticText-17"/>
+					<box></box>
+					<textElement textAlignment="Left" verticalAlignment="Top">
+						<font pdfFontName="Helvetica-Bold" size="12" isBold="true"/>
+					</textElement>
+				<text><![CDATA[备  注:]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="68"
+						y="1"
+						width="467"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement verticalAlignment="Top">
+						<font fontName="SansSerif" pdfFontName="Helvetica" size="12" isBold="false"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{GIVEN_REMARK}]]></textFieldExpression>
+				</textField>
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin name="E3001_004" extends="E3001">
+	<!--边线颜色--> 
+	<constant name="borderColor" value="#ccc"/>	
+</skin>

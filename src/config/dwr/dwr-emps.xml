@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<!--员工管理 -->
+		<convert converter="bean" javascript="CotEmps"
+			match="com.sail.cot.domain.CotEmps" />
+		<create creator="spring" javascript="cotEmpsService">
+			<param name="beanName" value="CotEmpsService" />
+		</create>
+	</allow>
+ 
+	<signatures>
+		<![CDATA[ 
+			import java.util.List; 
+			import com.sail.cot.domain.CotEmps; 
+			cotEmpsService.addEmps(List<CotEmps> empsList);
+			cotEmpsService.modifyEmps(List<CotEmps> empsList);
+			cotEmpsService.getMailAlarmByEmpId(Integer empId,boolean isPublic);
+		]]> 
+	
+	</signatures>
+</dwr>

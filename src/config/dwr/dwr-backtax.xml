@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotBacktax" match="com.sail.cot.domain.CotBacktax"/>	
+	<create creator="spring" javascript="cotBackTaxService">
+    	<param name="beanName" value="CotBackTaxService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.backtax.impl.CotBackTaxServiceImpl; 
+import com.sail.cot.domain.CotBacktax; 
+cotBackTaxService.savaOrUpdateBackTax(CotBacktax cotBackTax,String taxDate,String[] auditNos);
+cotBackTaxService.deleteBackTax(List<CotBacktax> backtaxList);
+cotBackTaxService.modifyTaxId(Integer taxId,Integer[] ids);
+]]> 
+
+</signatures>
+</dwr>
+

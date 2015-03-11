@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="samplerpt_pic"
+		 columnCount="2"
+		 printOrder="Vertical"
+		 orientation="Landscape"
+		 pageWidth="960"
+		 pageHeight="595"
+		 columnWidth="410"
+		 columnSpacing="80"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="0" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="STR_SQL" isForPrompting="false" class="java.lang.String"/>
+	<parameter name="IMG_PATH" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA["E:\\apache-tomcat-6.0.18\\webapps\\CotSystem\\"]]></defaultValueExpression>
+	</parameter>
+	<queryString><![CDATA[select * from cot_elements_new ele
+where $P!{STR_SQL}]]></queryString>
+
+	<field name="ID" class="java.lang.Integer"/>
+	<field name="ELE_PARENTID" class="java.lang.Integer"/>
+	<field name="ELE_ID" class="java.lang.String"/>
+	<field name="ELE_NAME" class="java.lang.String"/>
+	<field name="ELE_NAME_EN" class="java.lang.String"/>
+	<field name="ELE_FLAG" class="java.math.BigDecimal"/>
+	<field name="ELE_DESC" class="java.lang.String"/>
+	<field name="ELE_FROM" class="java.lang.String"/>
+	<field name="ELE_COMPOSETYPE" class="java.lang.String"/>
+	<field name="ELE_GRADE" class="java.lang.String"/>
+	<field name="ELE_UNIT" class="java.lang.String"/>
+	<field name="ELE_FACTORY" class="java.lang.String"/>
+	<field name="ELE_COL" class="java.lang.String"/>
+	<field name="ELE_METERIAL" class="java.lang.String"/>
+	<field name="ELE_SIZE_DESC" class="java.lang.String"/>
+	<field name="ELE_INCH_DESC" class="java.lang.String"/>
+	<field name="ELE_REMARK" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV1" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV2" class="java.lang.String"/>
+	<field name="ELE_TYPENAME_LV3" class="java.lang.String"/>
+	<field name="ELE_ADD_TIME" class="java.sql.Timestamp"/>
+	<field name="ELE_PRO_TIME" class="java.sql.Timestamp"/>
+	<field name="ELE_FOR_PERSON" class="java.lang.String"/>
+	<field name="ELE_MOD" class="java.lang.Integer"/>
+	<field name="ELE_UNITNUM" class="java.lang.Integer"/>
+	<field name="BOX_UINT" class="java.lang.String"/>
+	<field name="BOX_CBM" class="java.math.BigDecimal"/>
+	<field name="BOX_T_L" class="java.math.BigDecimal"/>
+	<field name="BOX_T_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_T_W" class="java.math.BigDecimal"/>
+	<field name="BOX_T_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_T_D" class="java.math.BigDecimal"/>
+	<field name="BOX_T_D_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_L" class="java.math.BigDecimal"/>
+	<field name="BOX_B_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_W" class="java.math.BigDecimal"/>
+	<field name="BOX_B_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_B_D" class="java.math.BigDecimal"/>
+	<field name="BOX_B_D_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_L" class="java.math.BigDecimal"/>
+	<field name="BOX_W" class="java.math.BigDecimal"/>
+	<field name="BOX_H" class="java.math.BigDecimal"/>
+	<field name="BOX_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_L" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_L_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_W" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_W_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_H" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_H_INCH" class="java.math.BigDecimal"/>
+	<field name="BOX_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_GROSS_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_NET_WEIGTH" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_IB_TYPE" class="java.lang.String"/>
+	<field name="BOX_MB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_MB_TYPE" class="java.lang.String"/>
+	<field name="BOX_OB_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_OB_TYPE" class="java.lang.String"/>
+	<field name="BOX_CUFT" class="java.math.BigDecimal"/>
+	<field name="BOX_REMARK" class="java.lang.String"/>
+	<field name="BOX_20_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_40_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_40HQ_COUNT" class="java.math.BigDecimal"/>
+	<field name="BOX_BDESC" class="java.lang.String"/>
+	<field name="BOX_TDESC" class="java.lang.String"/>
+	<field name="BOX_HANDLEH" class="java.math.BigDecimal"/>
+	<field name="PIC_NAME" class="java.lang.String"/>
+	<field name="PIC_Path" class="java.lang.String"/>
+	<field name="PIC_IMG" class="java.io.InputStream"/>
+	<field name="PRICE_FAC" class="java.math.BigDecimal"/>
+	<field name="PRICE_OUT" class="java.math.BigDecimal"/>
+	<field name="FACTORY_ID" class="java.lang.Integer"/>
+	<field name="ELE_TYPEID_LV1" class="java.lang.Integer"/>
+	<field name="HS_ID" class="java.lang.Integer"/>
+	<field name="price_fac_uint" class="java.lang.Integer"/>
+	<field name="price_out_unit" class="java.lang.Integer"/>
+	<field name="box_type_id" class="java.lang.Integer"/>
+	<field name="FACTORY_NO" class="java.lang.String"/>
+	<field name="BOX_45_COUNT" class="java.math.BigDecimal"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="40"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="782"
+						height="40"
+						key="staticText-1"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font fontName="宋体" pdfFontName="STSong-Light" size="22" isBold="true" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[样品清单]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="192"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="88"
+						height="25"
+						key="staticText-2"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="14" isBold="false" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[货号：]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="88"
+						y="0"
+						width="165"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="14" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{ELE_ID}]]></textFieldExpression>
+				</textField>
+				<image  scaleImage="RetainShape" onErrorType="Icon" isUsingCache="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="253"
+						y="0"
+						width="150"
+						height="154"
+						key="image-1"/>
+					<box></box>
+					<graphicElement stretchType="NoStretch"/>
+					<imageExpression class="java.io.InputStream"><![CDATA[$F{PIC_IMG}]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement
+						x="0"
+						y="25"
+						width="88"
+						height="25"
+						key="staticText-3"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="14" isBold="false" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[品名：]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="88"
+						y="25"
+						width="165"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="14" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{ELE_NAME}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement
+						x="0"
+						y="50"
+						width="129"
+						height="28"
+						key="staticText-4"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="12" isBold="false" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[装箱率(长宽高)：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="78"
+						width="129"
+						height="25"
+						key="staticText-5"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="12" isBold="false" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[内盒规格(长宽高)：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="103"
+						width="88"
+						height="25"
+						key="staticText-6"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="14" isBold="false" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[CBM：]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="0"
+						y="128"
+						width="88"
+						height="26"
+						key="staticText-7"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="14" isBold="false" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<text><![CDATA[备注：]]></text>
+				</staticText>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="129"
+						y="50"
+						width="41"
+						height="28"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="12" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_IB_COUNT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="170"
+						y="50"
+						width="43"
+						height="28"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="12" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_MB_COUNT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="213"
+						y="50"
+						width="40"
+						height="28"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="12" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_OB_COUNT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="129"
+						y="78"
+						width="41"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="12" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_IB_L}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="170"
+						y="78"
+						width="43"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="12" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_IB_W}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="213"
+						y="78"
+						width="40"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="12" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_IB_H}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" pattern="##0.00" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="88"
+						y="103"
+						width="165"
+						height="25"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="12" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.math.BigDecimal"><![CDATA[$F{BOX_CBM}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="true" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="88"
+						y="128"
+						width="165"
+						height="64"
+						key="textField"/>
+					<box></box>
+					<textElement>
+						<font fontName="宋体" pdfFontName="STSong-Light" size="12" isPdfEmbedded ="true" pdfEncoding ="UniGB-UCS2-H"/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{BOX_REMARK}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="30"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<lastPageFooter>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</lastPageFooter>
+		<summary>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

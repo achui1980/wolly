@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+	<convert converter="bean" javascript="ImportMsgVO" match="com.sail.cot.domain.vo.ImportMsgVO"/>	
+	<create creator="spring" javascript="importPictureService">
+    	 <param name="beanName" value="ImportPictureService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.sample.impl.ImportPictureServiceImpl; 
+import com.sail.cot.domain.vo.ImportMsgVO;
+import com.sail.cot.domain.CotElePic; 
+import com.sail.cot.domain.CotPicture; 
+import com.sail.cot.domain.CotElementsNew; 
+importPictureService.getFileNameList(String oldPath,List<CotPicture> res,String systemPath);
+importPictureService.copyFolder(String newPath, String oldPath, boolean isCover,
+			boolean isAdd, int coverSum, int addSum, int crossSum,String crossMsg,
+			List<CotElePic> cotPicCoverList, List<CotElePic> cotPicAddList,
+			List<CotElementsNew> cotEleList, List<ImportMsgVO> msgList,
+			ImportMsgVO importMsgVO);
+]]> 
+
+</signatures>
+</dwr>
+
+

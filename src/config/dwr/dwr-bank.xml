@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotBank" match="com.sail.cot.domain.CotBank"/>	
+	<create creator="spring" javascript="cotBankService">
+    	<param name="beanName" value="CotBankService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.systemdic.impl.CotBankServiceImpl; 
+import com.sail.cot.domain.CotBank; 
+cotBankService.addTypeList(List<CotBank> list);
+cotBankService.modifyTypeList(List<CotBank> list);
+cotBankService.deleteList(List<CotBank> list);
+ 
+]]> 
+ 
+</signatures>
+</dwr>
+

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="cust_report"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="2" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<parameter name="STR_SQL" isForPrompting="false" class="java.lang.String">
+		<defaultValueExpression ><![CDATA["1=1"]]></defaultValueExpression>
+	</parameter>
+	<queryString><![CDATA[select * from
+cot_customer obj
+where $P!{STR_SQL}
+
+]]></queryString>
+
+	<field name="ID" class="java.lang.Integer"/>
+	<field name="CUSTOMER_SHORT_NAME" class="java.lang.String"/>
+	<field name="CUSTOMER_NO" class="java.lang.String"/>
+	<field name="CUSTOM_PHOTO" class="java.lang.String"/>
+	<field name="PRI_CONTACT" class="java.lang.String"/>
+	<field name="FULL_NAME_CN" class="java.lang.String"/>
+	<field name="FULL_NAME_EN" class="java.lang.String"/>
+	<field name="CONTACT_NBR" class="java.lang.String"/>
+	<field name="CUSTOMER_ADDRESS" class="java.lang.String"/>
+	<field name="CUSTOMER_EMAIL" class="java.lang.String"/>
+	<field name="CUSTOMER_POST" class="java.lang.String"/>
+	<field name="CUSTOMER_ADDR_EN" class="java.lang.String"/>
+	<field name="CUSTOMER_BANK" class="java.lang.String"/>
+	<field name="CUSTOMER_ACCOUNT" class="java.lang.String"/>
+	<field name="CUSTOMER_FAX" class="java.lang.String"/>
+	<field name="COMMISION_SCALE" class="java.math.BigDecimal"/>
+	<field name="CUT_SCALE" class="java.math.BigDecimal"/>
+	<field name="COOPERATE_LV" class="java.lang.String"/>
+	<field name="CUSTOMER_ZM" class="java.lang.String"/>
+	<field name="CUSTOMER_REMARK" class="java.lang.String"/>
+	<field name="CUSTOMER_MB" class="java.lang.String"/>
+	<field name="CUSTOMER_CM" class="java.lang.String"/>
+	<field name="CUSTOMER_NM" class="java.lang.String"/>
+	<field name="CUSTOMER_ZHM" class="java.lang.String"/>
+	<field name="ADD_TIME" class="java.sql.Timestamp"/>
+	<field name="ADD_PERSORN" class="java.lang.String"/>
+	<field name="EMP_ID" class="java.lang.Integer"/>
+	<field name="DEPT_ID" class="java.lang.Integer"/>
+	<field name="SHIPPORT_ID" class="java.lang.Integer"/>
+	<field name="TRGPORT_ID" class="java.lang.Integer"/>
+	<field name="NATION_ID" class="java.lang.Integer"/>
+	<field name="PROVINCE_ID" class="java.lang.Integer"/>
+	<field name="CITY_ID" class="java.lang.Integer"/>
+	<field name="CUST_TYPE_ID" class="java.lang.Integer"/>
+	<field name="CUST_LV_ID" class="java.lang.Integer"/>
+	<field name="CLAUSE_ID" class="java.lang.Integer"/>
+	<field name="COMMISION_TYPE_ID" class="java.lang.Integer"/>
+	<field name="PAY_TYPE_ID" class="java.lang.Integer"/>
+	<field name="CUT_TYPE_ID" class="java.lang.Integer"/>
+
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="50"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="129"
+						y="5"
+						width="266"
+						height="44"
+						key="staticText-1"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font size="24"/>
+					</textElement>
+				<text><![CDATA[客户信息表]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="46"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="7"
+						y="0"
+						width="66"
+						height="28"
+						key="staticText-2"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[客户编号]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="119"
+						y="0"
+						width="66"
+						height="28"
+						key="staticText-3"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[客户简称]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="231"
+						y="0"
+						width="66"
+						height="28"
+						key="staticText-4"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[主要联系人]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="455"
+						y="0"
+						width="66"
+						height="28"
+						key="staticText-5"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[客户地址]]></text>
+				</staticText>
+				<staticText>
+					<reportElement
+						x="343"
+						y="0"
+						width="66"
+						height="28"
+						key="staticText-6"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12"/>
+					</textElement>
+				<text><![CDATA[联系电话]]></text>
+				</staticText>
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="100"  isSplitAllowed="true" >
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="6"
+						y="0"
+						width="66"
+						height="28"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{CUSTOMER_NO}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="118"
+						y="0"
+						width="66"
+						height="28"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{CUSTOMER_SHORT_NAME}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="230"
+						y="0"
+						width="66"
+						height="28"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{PRI_CONTACT}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="343"
+						y="0"
+						width="66"
+						height="28"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{CONTACT_NBR}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="false" isBlankWhenNull="false" evaluationTime="Now" hyperlinkType="None"  hyperlinkTarget="Self" >
+					<reportElement
+						x="455"
+						y="0"
+						width="66"
+						height="28"
+						key="textField"/>
+					<box></box>
+					<textElement textAlignment="Center">
+						<font/>
+					</textElement>
+				<textFieldExpression   class="java.lang.String"><![CDATA[$F{CUSTOMER_ADDRESS}]]></textFieldExpression>
+				</textField>
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="30"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<lastPageFooter>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</lastPageFooter>
+		<summary>
+			<band height="50"  isSplitAllowed="true" >
+			</band>
+		</summary>
+</jasperReport>

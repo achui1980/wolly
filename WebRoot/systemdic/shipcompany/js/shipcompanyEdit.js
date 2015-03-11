@@ -1,0 +1,77 @@
+Ext.onReady(function(){
+	var form=new Ext.form.FormPanel({
+	title:"新增|编辑",
+	labelWidth:100,
+	labelAlign:"right",
+	layout:"form",
+	formId:"queryForm",
+	width:400,
+	height:260,
+	renderTo:Ext.getBody(),
+	padding:"5px",
+	monitorValid:true,
+	frame:true,
+	buttonAlign:"center",
+	fbar:[
+		{
+			text:"保存",
+			iconCls:"page_mod",
+			handler:mod,
+			formBind:true
+		},
+		{
+			text:"取消",
+			iconCls:"page_cancel",
+			hander:function(){
+				closeandreflashEC(true,"shipGrid",false);
+			}
+		}
+	],
+	items:[
+		{
+			xtype:"textfield",
+			fieldLabel:"<font color='red'>中文名</font>",
+			id:"companyName",
+			name:"companyName",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"<font color='red'>英文名</font>",
+			id:"companyNameEn",
+			name:"companyNameEn",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"联系人",
+			id:"companyContact",
+			name:"companyContact",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"联系电话",
+			id:"companyNbr",
+			name:"companyNbr",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"传真",
+			id:"companyFax",
+			name:"companyFax",
+			anchor:"100%"
+		},
+		{
+			xtype:"textfield",
+			fieldLabel:"地址",
+			id:"companyAddr",
+			name:"companyAddr",
+			anchor:"100%"
+		}
+	]
+});
+//初始化页面
+initForm();
+});

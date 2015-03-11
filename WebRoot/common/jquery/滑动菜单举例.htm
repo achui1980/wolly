@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE> demo </TITLE>
+<SCRIPT LANGUAGE="JavaScript" src="jquery.js"></SCRIPT>
+ </HEAD>
+<style>
+.css1{
+width:300px;height:100px;border:1px solid red;padding:30px; 
+}
+.css2{
+width:100px;height:100px;border:1px solid green;
+}
+li.parent{
+background:green;width:200px;cursor:pointer;list-style:none;
+color:#fff}
+</style>
+ <BODY>
+滑动菜单举例
+<ul>
+<li class="parent" id="m1" onClick="slide('m1')">Parent Menu
+	<ul  style="display:none">
+	<li>sub1.1</li>
+	<li>sub1.2</li>
+	</ul>
+</li>
+<li class="parent" id="m2"  onClick="slide('m2')">Parent2 Menu
+	<ul style="display:none">
+	<li>sub2.1</li>
+	<li>sub2.2</li>
+	</ul>
+</li>
+</ul>
+<SCRIPT LANGUAGE="JavaScript">
+  <!--
+	
+	function slide(id){
+	 $("li.parent ul").hide();
+	 $("li#"+id+" ul").show("slow");
+	}
+	
+  //-->
+  </SCRIPT>
+
+
+
+ <div id="div1" class="css1"> <b>div innerHTML </b></div>
+ <input type="button"  onClick="test1();" value="demo1" />
+  <SCRIPT LANGUAGE="JavaScript">
+  <!--
+	
+	function test1(){
+	alert("html:  " + $("#div1").html() );
+	alert("text:  " + $("#div1").text() );
+	alert("下面将利用函数设置html 即.html('这里是html')");
+	$("#div1").html("<i>haha, Nice day. 可以用不同的途径来获取同一目标标记</i>");	
+	alert("通过css dom来获取对应的element");
+	alert("html:" + $("div.css1").html() );
+	alert("ajax load...(load myself again)");
+	$('#div1').load('demo.html');
+	}
+	
+  //-->
+  </SCRIPT>
+<p>这个例子主要是两个方面：1)实现简单的滑动菜单。2)用不同的途径来获取同一目标标记.3)jQuery的简单应用</p>
+<br>
+<p>来自http://jquery.com/的Plugin,具体记不清是哪个了.
+ </BODY>
+</HTML>

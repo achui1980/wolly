@@ -1,0 +1,198 @@
+.label_2{
+width: 2%;
+float: left;
+margin-top:5px;
+text-align: center
+}
+.label_4{
+width: 4%;
+float: left;
+margin-top:5px;
+text-align: center
+}
+.label_5{
+width: 5%;
+float: left;
+margin-top:5px;
+text-align: center
+}
+.label_6{
+width: 6%;
+float: left;
+margin-top:5px;
+text-align: center
+}
+.label_12{
+width: 12%;
+float: left;
+margin-top: 8px;
+text-align: right;
+}
+.label_13{
+width: 13%;
+float: left;
+margin-top: 8px;
+text-align: right;
+}
+.label_14{
+width: 14%;
+float: left;
+margin-top: 8px;
+text-align: right;
+}
+.label_15{
+width: 15%;
+float: left;
+margin-top: 8px;
+text-align: right;
+}
+.label_16{
+width: 16%;
+float: left;
+margin-top: 8px;
+text-align: right;
+}
+.label_22{
+width: 22%;
+float: left;
+margin-top: 8px;
+text-align: right;
+}
+.label_40{
+width: 40%;
+float: left;
+margin-top: 5px;
+text-align: right;
+}
+.input_11{
+width:11%;
+float: left;
+}
+.input_12{
+width:12%;
+float: left;
+}
+.input_13{
+width:13%;
+float: left;
+}
+.input_14{
+width:14%;
+float: left;
+}
+.input_15{
+width:15%;
+float: left;
+}
+.input_16{
+width:16%;
+float: left;
+}
+.input_17{
+width:17%;
+float: left;
+}
+.input_18{
+width:18%;
+float: left;
+}
+.input_19{
+width:19%;
+float: left;
+}
+.input_20{
+width:20%;
+float: left;
+}
+.input_21{
+width:21%;
+float: left;
+}
+.input_22{
+width:22%;
+float: left;
+}
+.input_23{
+width:23%;
+float: left;
+margin-top:3px;
+}
+.input_24{
+width:24%;
+float: left;
+}
+.input_25{
+width:25%;
+float: left;
+margin-top:3px;
+BACKGROUND: #fff;
+BORDER-TOP: #ABA6A6 1px solid;
+BORDER-LEFT: #ABA6A6 1px solid;
+BORDER-RIGHT: #ABA6A6 1px solid; 
+BORDER-BOTTOM: #ABA6A6 1px solid;
+}
+.input_26{
+width:26%;
+float: left;
+margin-top:3px;
+}
+.input_30{
+width30%;
+float: left;
+margin-top:3px;
+}
+.input_32{
+width:32%;
+float: left;
+margin-top:3px;
+}
+.input_34{
+width:34%;
+float: left;
+}
+.input_35{
+width:35%;
+float: left;
+}
+.input_36{
+width:36%;
+float: left;
+}
+.input_37{
+width:37%;
+float: left;
+}
+.input_38{
+width:38%;
+float: left;
+}
+.input_76{
+width:76%;
+float: left;
+margin-top:3px;
+}
+.input_77{
+width:77%;
+float: left;
+margin-top:3px;
+}
+.input_78{
+width:78%;
+float: left;
+margin-top:3px;
+}
+.input_79{
+width:79%;
+float: left;
+margin-top:3px;
+}
+.input_80{
+width:80%;
+float: left;
+margin-top:3px;
+}
+.div_1{
+float: left;
+width: 100%;
+margin-top: 3px;
+}

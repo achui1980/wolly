@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotInsureContract" match="com.sail.cot.domain.CotInsureContract"/>	
+	<create creator="spring" javascript="cotInsureContractService">
+    	<param name="beanName" value="CotInsureContractService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.systemdic.impl.CotInsureContractServiceImpl; 
+import com.sail.cot.domain.CotInsureContract;
+cotInsureContractService.deleteInsureContract(List<CotInsureContract> InsureContractList);
+]]> 
+
+</signatures>
+</dwr>
+

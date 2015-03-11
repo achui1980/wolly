@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotServerInfo" match="com.sail.cot.domain.CotServerInfo"/>	
+	<create creator="spring" javascript="cotRegistService">
+    	<param name="beanName" value="CotRegistService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.system.impl.CotRegistServiceImpl; 
+import com.sail.cot.domain.CotServerInfo; 
+cotRegistService.addRegistInfo(List<CotServerInfo> registList);
+cotRegistService.modifyRegistInfo(List<CotServerInfo> registList);
+cotRegistService.deleteRegistInfo(List<CotServerInfo> registList);
+]]> 
+
+</signatures>
+</dwr>

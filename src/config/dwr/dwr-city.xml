@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotCity" match="com.sail.cot.domain.CotCity"/>	
+	<create creator="spring" javascript="cotCityService">
+    	<param name="beanName" value="CotCityService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.system.impl.CotCityServiceImpl; 
+import com.sail.cot.domain.CotCity; 
+cotCityService.addCity(List<CotCity> cotCiytList);
+cotCityService.deleteCity(List<CotCity> cotCiytList);
+cotCityService.modifyCity(List<CotCity> cotCiytList);
+]]> 
+
+</signatures>
+</dwr>

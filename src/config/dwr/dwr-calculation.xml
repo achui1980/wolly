@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotCalculation" match="com.sail.cot.domain.CotCalculation"/>	
+	<create creator="spring" javascript="cotCalculationService">
+    	<param name="beanName" value="CotCalculationService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.price.CotCalculationServiceImpl; 
+import com.sail.cot.domain.CotCalculation;
+cotCalculationService.deleteCalculation(List<CotCalculation> CalculationList);
+]]> 
+
+</signatures>
+</dwr>
+

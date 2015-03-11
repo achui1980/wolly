@@ -1,0 +1,42 @@
+﻿/* --------------- 修改 Ext CSS -------------- */
+/* FF下中文显示 */
+.x-window-footer{position: relative; top: 0; right: 0;}
+.x-tab-strip SPAN.x-tab-strip-text{font-size: 12px;}
+.x-panel-header{font-size: 12px;}
+.x-tree-node{font-size: 12px;}
+.x-grid3-hd-row TD{font-size: 12px;}
+.x-grid3-row TD{font-size: 12px;LINE-HEIGHT: 18px;}
+.x-grid3-col-text{font:宋体, tahoma, arial, helvetica, sans-serif;}
+.x-tip .x-tip-bd{font-size: 12px;}
+.x-tip h3{font-size: 12px;}
+.x-tip .x-tip-bd-inner{font-size:12px;}
+.x-panel-tl .x-panel-header{font: 12px 宋体, tahoma, arial, helvetica, sans-serif;}
+.x-form-field{font: 12px 宋体, tahoma, arial, helvetica, sans-serif;}
+.x-small-editor .x-form-field{font: 12px 宋体, tahoma, arial, helvetica, sans-serif;}
+.x-combo-list-item{font: 12px 宋体, tahoma, arial, helvetica, sans-serif;}
+.x-menu-list-item{font: 12px 宋体, tahoma, arial, helvetica, sans-serif;}
+.x-window-tl .x-window-header{font: bold 12px 宋体, tahoma, arial, helvetica, sans-serif;}
+.x-form-item{font: 12px 宋体, tahoma, arial, helvetica, sans-serif;}
+.x-grid-group-hd DIV{font: bold 12px 宋体, tahoma, arial, helvetica, sans-serif;}
+.ext-ie .x-btn button{padding-top:5px;}
+.ext-gecko .x-btn button{font-size: 12px; padding-top: 0;}
+.ext-gecko .x-btn-text-icon .x-btn-center .x-btn-text{padding: 2px 0 2px 18px;}
+.x-toolbar .ytb-text{padding:2px;FONT: 12px tahoma,arial,helvetica,sans-serif;}
+.x-progress-text .x-progress-text-back{FONT: 12px tahoma,arial,helvetica,sans-serif;}
+.x-fieldset-header-text{font: bold 12px tahoma,arial,helvetica,sans-serif; padding: 2px;}
+.ext-ie .x-btn-text-icon .x-btn-center .x-btn-text{padding: 5px 0 0 20px;}
+td .x-form-field-wrap .x-form-trigger{margin-top:0px;}
+.x-mask-loading div{font: 12px 宋体, tahoma, arial, helvetica, sans-serif;}
+.x-form-item label{padding:5px 3px 3px 0;}
+/*
+.ext-ie .x-form-text{margin-top:1px;}
+.x-form-field-wrap .x-form-trigger{*margin-top:2px;}
+*/
+
+/*grid宽度bug*/
+.x-grid3-header-offset{width:auto;}
+
+/*修正check-group,radio-group*/
+.x-form-check-wrap,.x-form-radio-wrap{padding:3px 0 0 0;line-height:15px;width:100px;}
+.x-form-check-group .x-form-check-wrap,.x-form-radio-group .x-form-radio-wrap{height:15px;}
+.ext-ie .x-form-check-group .x-form-check-wrap,.ext-ie .x-form-radio-group .x-form-radio-wrap{height:17px;}

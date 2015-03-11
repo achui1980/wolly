@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+     
+     <!-- <bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl" autowire="byName">   
+        <property name="host" value="smtp.163.com"/>   
+        <property name="username" value="achui_1980"/>   
+        <property name="password" value="344135"/>  
+        <property name="javaMailProperties">
+        <props>
+           <prop key="mail.debug">true</prop>
+	       <prop key="mail.smtp.auth">false</prop>
+	       <prop key="mail.smtp.timeout">30000</prop>
+        </props>
+    </property>
+        
+         
+    </bean>   
+  
+    <bean id="easyMailExecutorPool" class="com.sail.cot.mail.EasyMailExecutorPool" autowire="byName">   
+        <property name="poolSize">   
+            <value>5</value>   
+        </property>   
+    </bean>   
+       
+    <bean id="easyMailService" class="com.sail.cot.mail.EasyMailServieImpl" autowire="byName">   
+        <property name="from" value="achui_1980@163.com"/>   
+    </bean>
+    
+     <bean id="mailService" parent="baseTxProxy">
+     	<property name="target">
+     		<bean  class="com.sail.cot.mail.service.impl.MailServiceImpl">
+     			 <property name="mailDao"><ref bean="CotBaseDao"/></property>
+     			 <property name="easyMailService"><ref local="easyMailService"/></property>	
+     			 <property name="count" value="15"></property> 
+     			 <property name="easyMailExecutorPool"><ref local="easyMailExecutorPool"/></property> 			 
+     		</bean>	
+     	</property>
+     </bean>  
+ 	-->
+</beans>

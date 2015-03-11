@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotFile" match="com.sail.cot.domain.CotFile"/>	
+	<create creator="spring" javascript="cotFileService">
+    	<param name="beanName" value="CotFileService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.sample.impl.CotFileServiceImpl; 
+import com.sail.cot.domain.CotFile; 
+cotFileService.addFile(List<CotFile> fileList);
+cotFileService.modifyFile(List<CotFile> fileList);
+cotFileService.deleteFile(List<CotFile> fileList);
+cotFileService.findExistName(String name);
+cotFileService.deleteUploadFileById(Integer Id);
+cotFileService.deleteByFileName(String fileName);
+]]> 
+ 
+</signatures>
+</dwr>
+
+

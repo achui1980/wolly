@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<convert converter="bean" javascript="CotLabel"
+			match="com.sail.cot.domain.CotLabel" />
+		<convert converter="bean" javascript="CotLabeldetail"
+			match="com.sail.cot.domain.CotLabeldetail" />
+		<convert converter="bean" javascript="CotLabelPicture"
+			match="com.sail.cot.domain.CotLabelPicture" />
+			
+		<create creator="spring" javascript="cotLabelService">
+			<param name="beanName" value="CotLabelService"/>
+		</create>
+	</allow>
+	<signatures>
+	<![CDATA[ 
+		import com.sail.cot.domain.CotLabel;
+		import com.sail.cot.domain.CotLabelPicture;
+		cotLabelService.saveOrUpdateLabel(CotLabel cotLabel, String sendDate);
+		cotLabelService.deleteLabel(List<Integer> orderIds);
+		cotLabelService.getOtherPicHtml(int currentPage, int countOnEachPage,CotLabelPicture queryCondition ,int imgHeigth,int imgWidth);
+		cotLabelService.findOtherPicCount(CotLabelPicture queryCondition);
+	]]> 
+	</signatures>
+</dwr>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotTargetPort" match="com.sail.cot.domain.CotTargetPort"/>	
+	<create creator="spring" javascript="cotTargetPortService">
+    	<param name="beanName" value="CotTargetPortService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.systemdic.impl.CotTargetPortServiceImpl; 
+import com.sail.cot.domain.CotTargetPort; 
+cotTargetPortService.addTargetPort(List<CotTargetPort> TargetPortList);
+cotTargetPortService.modifyTargetPort(List<CotTargetPort> TargetPortList);
+cotTargetPortService.deleteTargetPort(List<CotTargetPort> TargetPortList);
+]]> 
+
+</signatures>
+</dwr>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotArea" match="com.sail.cot.domain.CotArea"/>	
+	<create creator="spring" javascript="cotAreaService">
+    	<param name="beanName" value="CotAreaService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.system.impl.CotAreaServiceImpl; 
+import com.sail.cot.domain.CotArea; 
+cotAreaService.addArea(List<CotArea> areaList);
+cotAreaService.modifyArea(List<CotArea> areaList);
+cotAreaService.deleteArea(List<CotArea> areaList);
+]]> 
+
+</signatures>
+</dwr>
+

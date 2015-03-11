@@ -1,0 +1,3580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/cotmodule.do" location="540,3162" dimension="295,104" />
+  <StrutsActivity path="/cotrole.do" location="4836,5880" dimension="276,104" />
+  <StrutsActivity path="/cotqueryall.do" location="3963,2136" dimension="236,104" />
+  <StrutsActivity path="/cotcheck.do" location="2404,2840" dimension="222,104" />
+  <StrutsActivity path="/cotcompany.do" location="721,4974" dimension="305,104" />
+  <StrutsActivity path="/cotcustomize.do" location="4775,5276" dimension="337,104" />
+  <StrutsActivity path="/cotdept.do" location="4513,5880" dimension="278,104" />
+  <StrutsActivity path="/cotcity.do" location="5157,5880" dimension="271,104" />
+  <StrutsActivity path="/cotdays.do" location="3050,50" dimension="295,104" />
+  <StrutsActivity path="/cotemps.do" location="1533,3162" dimension="282,104" />
+  <StrutsActivity path="/cotarea.do" location="5777,4974" dimension="277,104" />
+  <StrutsActivity path="/cotfactory.do" location="1026,2488" dimension="292,104" />
+  <StrutsActivity path="/cotelements.do" location="2821,1634" dimension="304,104" />
+  <StrutsActivity path="/cotcontact.do" location="4186,4974" dimension="294,104" />
+  <StrutsActivity path="/custcontact.do" location="2561,3766" dimension="333,104" />
+  <StrutsActivity path="/customervisitedlog.do" location="2398,4672" dimension="361,104" />
+  <StrutsActivity path="/cotfile.do" location="4870,4370" dimension="271,104" />
+  <StrutsActivity path="/cotpricefac.do" location="4684,3766" dimension="299,104" />
+  <StrutsActivity path="/cotpriceout.do" location="3641,3766" dimension="301,104" />
+  <StrutsActivity path="/cotprod.do" location="4021,4370" dimension="280,104" />
+  <StrutsActivity path="/cotrpttype.do" location="5344,4068" dimension="300,104" />
+  <StrutsActivity path="/cotrptfile.do" location="2692,3464" dimension="291,104" />
+  <StrutsActivity path="/report.do" location="3840,5880" dimension="292,104" />
+  <StrutsActivity path="/elepriceexcel.do" location="1116,5578" dimension="326,104" />
+  <StrutsActivity path="/importPicture.do" location="5815,5578" dimension="311,104" />
+  <StrutsActivity path="/cotimportresult.do" location="0,5578" dimension="327,104" />
+  <StrutsActivity path="/cotpopedom.do" location="1878,4974" dimension="307,104" />
+  <StrutsActivity path="/index.do" location="36,5880" dimension="219,104" />
+  <StrutsActivity path="/cotpwd.do" location="2177,3162" dimension="274,104" />
+  <StrutsActivity path="/cotsysdic.do" location="3121,4370" dimension="287,104" />
+  <StrutsActivity path="/cotboxtype.do" location="2809,5880" dimension="300,104" />
+  <StrutsActivity path="/cotpicture.do" location="4177,5880" dimension="291,104" />
+  <StrutsActivity path="/previewrpt.do" location="3602,3464" dimension="305,104" />
+  <StrutsActivity path="/newpreviewrpt.do" location="4007,3464" dimension="293,104" />
+  <StrutsActivity path="/cotlogininfo.do" location="1762,5880" dimension="305,104" />
+  <StrutsActivity path="/cotgiventype.do" location="372,5578" dimension="327,104" />
+  <StrutsActivity path="/cotbalancetype.do" location="381,3766" dimension="340,104" />
+  <StrutsActivity path="/cotmeettype.do" location="2383,4068" dimension="325,104" />
+  <StrutsActivity path="/cotprovince.do" location="2577,5578" dimension="316,104" />
+  <StrutsActivity path="/cotnation.do" location="1411,5880" dimension="306,104" />
+  <StrutsActivity path="/cotnationcity.do" location="744,5578" dimension="327,104" />
+  <StrutsActivity path="/cotshipport.do" location="2938,5578" dimension="316,104" />
+  <StrutsActivity path="/cotsigntype.do" location="1487,5578" dimension="320,104" />
+  <StrutsActivity path="/cotcuttype.do" location="4380,5578" dimension="314,104" />
+  <StrutsActivity path="/cotcustomertype.do" location="3205,5276" dimension="351,104" />
+  <StrutsActivity path="/cotcustomer.do" location="1247,2136" dimension="320,104" />
+  <StrutsActivity path="/cotsign.do" location="5473,5880" dimension="259,104" />
+  <StrutsActivity path="/cottargetport.do" location="5913,5276" dimension="329,104" />
+  <StrutsActivity path="/cotcustomerlv.do" location="5157,5276" dimension="335,104" />
+  <StrutsActivity path="/cotcommisiontype.do" location="5139,3464" dimension="332,104" />
+  <StrutsActivity path="/cotclause.do" location="2112,5880" dimension="305,104" />
+  <StrutsActivity path="/cotpricecfg.do" location="3660,5578" dimension="315,104" />
+  <StrutsActivity path="/cottraffictype.do" location="5537,5276" dimension="331,104" />
+  <StrutsActivity path="/cottradetype.do" location="342,4068" dimension="329,104" />
+  <StrutsActivity path="/cottaxtype.do" location="307,4370" dimension="315,104" />
+  <StrutsActivity path="/cotconsigncompany.do" location="448,3464" dimension="369,104" />
+  <StrutsActivity path="/cothscompany.do" location="1472,3766" dimension="337,104" />
+  <StrutsActivity path="/cotinsurecontract.do" location="2808,5276" dimension="352,104" />
+  <StrutsActivity path="/cotcalculation.do" location="5158,4672" dimension="302,104" />
+  <StrutsActivity path="/cotprice.do" location="1534,0" dimension="267,104" />
+  <StrutsActivity path="/cotgiven.do" location="3284,4068" dimension="273,104" />
+  <StrutsActivity path="/cotElePicShow.do" location="1293,4974" dimension="317,104" />
+  <StrutsActivity path="/cotorder.do" location="4981,0" dimension="278,104" />
+  <StrutsActivity path="/cotmail.do" location="4246,4068" dimension="259,104" />
+  <StrutsActivity path="/cotmailtemplate.do" location="5457,5578" dimension="313,104" />
+  <StrutsActivity path="/cotmailimport.do" location="3154,5880" dimension="299,104" />
+  <StrutsActivity path="/cotmailcontrol.do" location="2462,5880" dimension="302,104" />
+  <StrutsActivity path="/cotmailrule.do" location="2430,5276" dimension="284,104" />
+  <StrutsActivity path="/cotmailcheck.do" location="225,4672" dimension="294,104" />
+  <StrutsActivity path="/cotmailcfg.do" location="178,5276" dimension="279,104" />
+  <StrutsActivity path="/cotmailsend.do" location="4660,4068" dimension="288,104" />
+  <StrutsActivity path="/cotelecfg.do" location="3105,3162" dimension="289,104" />
+  <StrutsActivity path="/cotquery.do" location="14818,0" dimension="222,104" />
+  <StrutsActivity path="/cotstatistics.do" location="979,4672" dimension="309,104" />
+  <StrutsActivity path="/cotbarcode.do" location="353,5880" dimension="308,104" />
+  <StrutsActivity path="/cotorderout.do" location="1129,922" dimension="318,104" />
+  <StrutsActivity path="/cotorderfac.do" location="8093,0" dimension="314,104" />
+  <StrutsActivity path="/cotmessagetype.do" location="1380,4068" dimension="312,104" />
+  <StrutsActivity path="/cotsplitinfo.do" location="2821,2488" dimension="259,104" />
+  <StrutsActivity path="/cotsymbol.do" location="3950,2488" dimension="295,104" />
+  <StrutsActivity path="/cotmessage.do" location="5322,2488" dimension="311,104" />
+  <StrutsActivity path="/reportApplet.do" location="4400,3464" dimension="305,104" />
+  <StrutsActivity path="/cotsyslog.do" location="3623,4974" dimension="296,104" />
+  <StrutsActivity path="/cotbank.do" location="5259,4974" dimension="296,104" />
+  <StrutsActivity path="/cotshipcompany.do" location="1685,3464" dimension="347,104" />
+  <StrutsActivity path="/backup.do" location="4721,4974" dimension="273,104" />
+  <StrutsActivity path="/importpic.do" location="2613,0" dimension="301,104" />
+  <StrutsActivity path="/cotboxpacking.do" location="4557,3162" dimension="334,104" />
+  <StrutsActivity path="/cottrailcar.do" location="119,4974" dimension="312,104" />
+  <StrutsActivity path="/cotaudit.do" location="3869,4672" dimension="269,104" />
+  <StrutsActivity path="/cotbacktax.do" location="3129,4672" dimension="303,104" />
+  <StrutsActivity path="/cotfinancegiven.do" location="4385,4672" dimension="319,104" />
+  <StrutsActivity path="/cotlabel.do" location="1147,4370" dimension="269,104" />
+  <StrutsActivity path="/cotfinacerecv.do" location="5635,4672" dimension="304,104" />
+  <StrutsActivity path="/cotdeal.do" location="5655,4370" dimension="270,104" />
+  <StrutsActivity path="/cotrecv.do" location="1075,5276" dimension="271,104" />
+  <StrutsActivity path="/cotfittings.do" location="712,2840" dimension="290,104" />
+  <StrutsActivity path="/cottypelv3.do" location="4739,5578" dimension="314,104" />
+  <StrutsActivity path="/cotlibrary.do" location="584,5276" dimension="287,104" />
+  <StrutsActivity path="/coteleprice.do" location="3498,5880" dimension="297,104" />
+  <StrutsActivity path="/cotfittingorder.do" location="3603,2840" dimension="324,104" />
+  <StrutsActivity path="/cotfitanys.do" location="1961,5276" dimension="316,104" />
+  <StrutsActivity path="/cotpackingorder.do" location="4552,2840" dimension="351,104" />
+  <StrutsActivity path="/cotpackanys.do" location="4387,5276" dimension="343,104" />
+  <StrutsActivity path="/cottypelv.do" location="5098,5578" dimension="314,104" />
+  <StrutsActivity path="/cotcontainertype.do" location="3601,5276" dimension="351,104" />
+  <StrutsActivity path="/coteleother.do" location="2215,5578" dimension="317,104" />
+  <StrutsActivity path="/cottype.do" location="1059,5880" dimension="307,104" />
+  <StrutsActivity path="/cotcurrency.do" location="1852,5578" dimension="318,104" />
+  <StrutsActivity path="/cotpricesituation.do" location="3997,5276" dimension="345,104" />
+  <StrutsActivity path="/cotpaytype.do" location="4020,5578" dimension="315,104" />
+  <StrutsActivity path="/cotcontract.do" location="3299,5578" dimension="316,104" />
+  <StrutsActivity path="/cotexpcompany.do" location="1676,4672" dimension="343,104" />
+  <StrutsActivity path="/cotmodprice.do" location="706,5880" dimension="308,104" />
+  <StrutsActivity path="/cotdatatone.do" location="2182,4370" dimension="304,104" />
+  <StrutsActivity path="/cotemplog.do" location="2467,4974" dimension="306,104" />
+  <StrutsActivity path="/cotcustlog.do" location="3043,4974" dimension="311,104" />
+  <StrutsActivity path="/cotseq.do" location="1543,5276" dimension="272,104" />
+  <StrutsActivity path="/cotorderstatus.do" location="5450,2250" dimension="272,104" />
+  <StrutsActivity path="/cotfaq.do" location="3350,550" dimension="264,104" />
+  <StrutsActivity path="/cotpan.do" location="3950,550" dimension="253,104" />
+  <StrutsActivity path="/cotorg.do" location="4550,550" dimension="230,104" />
+  <StrutsActivity path="failure;6" location="5990,5880" dimension="154,87" />
+  <StrutsActivity path="success;6" location="5777,5880" dimension="168,87" />
+  <StrutsActivity path="/system/module/moduledetail.jsp" location="0,3366" dimension="227,53" />
+  <StrutsActivity path="/systemdic/stattree.jsp" location="327,3366" dimension="163,53" />
+  <StrutsActivity path="/system/module/module.jsp" location="590,3366" dimension="195,53" />
+  <StrutsActivity path="/system/module/moduleTest.jsp" location="885,3366" dimension="219,53" />
+  <StrutsActivity path="/menu.jsp" location="1204,3366" dimension="89,53" />
+  <StrutsActivity path="/system/role/role.jsp" location="4897,6084" dimension="153,53" />
+  <StrutsActivity path="/queryAll/queryPriceFac.jsp" location="2844,2390" dimension="189,53" />
+  <StrutsActivity path="/queryAll/queryOrderOut.jsp" location="3133,2390" dimension="198,53" />
+  <StrutsActivity path="/queryAll/querySign.jsp" location="3431,2390" dimension="167,53" />
+  <StrutsActivity path="/queryAll/querySample.jsp" location="3698,2390" dimension="185,53" />
+  <StrutsActivity path="/queryAll/queryOrderFac.jsp" location="3983,2390" dimension="196,53" />
+  <StrutsActivity path="/queryAll/queryPrice.jsp" location="4279,2390" dimension="170,53" />
+  <StrutsActivity path="/queryAll/queryGiven.jsp" location="4549,2390" dimension="174,53" />
+  <StrutsActivity path="/queryAll/queryAllTable.jsp" location="4823,2390" dimension="188,53" />
+  <StrutsActivity path="/queryAll/queryOrder.jsp" location="5111,2390" dimension="177,53" />
+  <StrutsActivity path="/check/queryOrderOut.jsp" location="1742,3064" dimension="184,53" />
+  <StrutsActivity path="/check/queryOrderFac.jsp" location="2026,3064" dimension="182,53" />
+  <StrutsActivity path="/check/queryPrice.jsp" location="2308,3064" dimension="156,53" />
+  <StrutsActivity path="/check/queryGiven.jsp" location="2564,3064" dimension="160,53" />
+  <StrutsActivity path="/check/checkAllTable.jsp" location="2824,3064" dimension="174,53" />
+  <StrutsActivity path="/check/queryOrder.jsp" location="3098,3064" dimension="163,53" />
+  <StrutsActivity path="/system/company/companyEdit.jsp" location="594,5178" dimension="235,53" />
+  <StrutsActivity path="/system/company/company.jsp" location="929,5178" dimension="213,53" />
+  <StrutsActivity path="/system/customize/customize.jsp" location="4832,5480" dimension="223,53" />
+  <StrutsActivity path="/system/dept/cotdept.jsp" location="4562,6084" dimension="179,53" />
+  <StrutsActivity path="/system/city/cotcitylist.jsp" location="5203,6084" dimension="179,53" />
+  <StrutsActivity path="/systemdic/days/cotdayslist.jsp" location="50,950" dimension="212,53" />
+  <StrutsActivity path="/main.jsp" location="1393,3366" dimension="85,53" />
+  <StrutsActivity path="/system/emps/empsEdit.jsp" location="1578,3366" dimension="193,53" />
+  <StrutsActivity path="/system/emps/cotemps.jsp" location="1871,3366" dimension="189,53" />
+  <StrutsActivity path="/system/emps/changepwd.jsp" location="2160,3366" dimension="206,53" />
+  <StrutsActivity path="/system/factory/tree.jsp" location="5690,5178" dimension="170,53" />
+  <StrutsActivity path="/system/area/cotarealist.jsp" location="5960,5178" dimension="193,53" />
+  <StrutsActivity path="/system/factory/contactEdit.jsp" location="0,2742" dimension="211,53" />
+  <StrutsActivity path="/system/factory/factoryEdit.jsp" location="311,2742" dimension="209,53" />
+  <StrutsActivity path="/system/factory/cust/cust.jsp" location="620,2742" dimension="198,53" />
+  <StrutsActivity path="/system/factory/contactGird.jsp" location="918,2742" dimension="214,53" />
+  <StrutsActivity path="/system/factory/main.jsp" location="1232,2742" dimension="175,53" />
+  <StrutsActivity path="/system/factory/cotpricefac.jsp" location="1507,2742" dimension="211,53" />
+  <StrutsActivity path="/system/factory/orderFac.jsp" location="1818,2742" dimension="199,53" />
+  <StrutsActivity path="/system/factory/factory.jsp" location="2117,2742" dimension="187,53" />
+  <StrutsActivity path="/system/factory/orderFacFen.jsp" location="4550,950" dimension="219,53" />
+  <StrutsActivity path="/sample/elements/child.jsp" location="0,2038" dimension="188,53" />
+  <StrutsActivity path="/sample/elements/signInfo.jsp" location="288,2038" dimension="208,53" />
+  <StrutsActivity path="/sample/elements/custNoInfo.jsp" location="596,2038" dimension="225,53" />
+  <StrutsActivity path="/sample/elements/elefitting.jsp" location="921,2038" dimension="211,53" />
+  <StrutsActivity path="/sample/elements/childAdd.jsp" location="1232,2038" dimension="212,53" />
+  <StrutsActivity path="/sample/elements/givenInfo.jsp" location="1544,2038" dimension="215,53" />
+  <StrutsActivity path="/sample/elements/elementsAdd.jsp" location="1859,2038" dimension="237,53" />
+  <StrutsActivity path="/sample/elements/priceInfo.jsp" location="2196,2038" dimension="213,53" />
+  <StrutsActivity path="/sample/elements/elementsUpdate.jsp" location="2509,2038" dimension="256,53" />
+  <StrutsActivity path="/sample/elements/orderInfo.jsp" location="2865,2038" dimension="217,53" />
+  <StrutsActivity path="/sample/elements/uploadOtherPic.jsp" location="3182,2038" dimension="251,53" />
+  <StrutsActivity path="/sample/elements/elements.jsp" location="3533,2038" dimension="213,53" />
+  <StrutsActivity path="/sample/elements/treeframe.jsp" location="3846,2038" dimension="218,53" />
+  <StrutsActivity path="/sample/elements/showPicture.jsp" location="4164,2038" dimension="230,53" />
+  <StrutsActivity path="/sample/elements/cotelepacking.jsp" location="4494,2038" dimension="242,53" />
+  <StrutsActivity path="/sample/elements/childMod.jsp" location="4836,2038" dimension="216,53" />
+  <StrutsActivity path="/sample/elements/orderfacInfo.jsp" location="5152,2038" dimension="234,53" />
+  <StrutsActivity path="/sample/elements/elementsBatchUpdate.jsp" location="5486,2038" dimension="288,53" />
+  <StrutsActivity path="/sample/eleprice/elePrice.jsp" location="5874,2038" dimension="200,53" />
+  <StrutsActivity path="/system/contact/contactEdit.jsp" location="4076,5178" dimension="213,53" />
+  <StrutsActivity path="/pan/contactEdit.jsp" location="4250,1050" dimension="148,53" />
+  <StrutsActivity path="/system/contact/contact.jsp" location="4389,5178" dimension="191,53" />
+  <StrutsActivity path="/customer/custcontact/custcontactModify.jsp" location="2198,3970" dimension="292,53" />
+  <StrutsActivity path="/customer/custcontact/custcontactAdd.jsp" location="2590,3970" dimension="275,53" />
+  <StrutsActivity path="/customer/custcontact/custcontactlist.jsp" location="2965,3970" dimension="267,53" />
+  <StrutsActivity path="/customer/custvisitedlog/custvisitedlogEdit.jsp" location="2233,4876" dimension="301,53" />
+  <StrutsActivity path="/customer/custvisitedlog/custvisitedlog.jsp" location="2634,4876" dimension="279,53" />
+  <StrutsActivity path="/sample/file/cotfiledetail.jsp" location="4620,4574" dimension="193,53" />
+  <StrutsActivity path="/sample/file/uploadFile.jsp" location="4913,4574" dimension="186,53" />
+  <StrutsActivity path="/sample/file/fileGird.jsp" location="5199,4574" dimension="168,53" />
+  <StrutsActivity path="/sample/cotpricefac/cotpricefacModify.jsp" location="4326,3970" dimension="278,53" />
+  <StrutsActivity path="/sample/cotpricefac/cotPriceFacEdit.jsp" location="4704,3970" dimension="260,53" />
+  <StrutsActivity path="/sample/cotpricefac/cotpricefaclist.jsp" location="5064,3970" dimension="253,53" />
+  <StrutsActivity path="/sample/cotpriceout/cotpriceoutModify.jsp" location="3277,3970" dimension="282,53" />
+  <StrutsActivity path="/sample/cotpriceout/cotpriceoutAdd.jsp" location="3659,3970" dimension="265,53" />
+  <StrutsActivity path="/sample/cotpriceout/cotpriceoutlist.jsp" location="4024,3970" dimension="257,53" />
+  <StrutsActivity path="/sample/prod/cotprodAdd.jsp" location="3739,4574" dimension="209,53" />
+  <StrutsActivity path="/sample/prod/cotprodModify.jsp" location="4048,4574" dimension="226,53" />
+  <StrutsActivity path="/sample/prod/cotprodlist.jsp" location="4374,4574" dimension="201,53" />
+  <StrutsActivity path="/sample/rpttype/cotrpttypeModify.jsp" location="5025,4272" dimension="252,53" />
+  <StrutsActivity path="/sample/rpttype/cotrpttypeAdd.jsp" location="5377,4272" dimension="235,53" />
+  <StrutsActivity path="/sample/rpttype/cotrpttypelist.jsp" location="5712,4272" dimension="227,53" />
+  <StrutsActivity path="/sample/rptfile/upload.jsp" location="2452,3668" dimension="184,53" />
+  <StrutsActivity path="/sample/rptfile/uploadFile.jsp" location="2736,3668" dimension="203,53" />
+  <StrutsActivity path="/sample/rptfile/uploadImg.jsp" location="3039,3668" dimension="207,53" />
+  <StrutsActivity path="/sample/rptfile/cotrptfilelist.jsp" location="3346,3668" dimension="211,53" />
+  <StrutsActivity path="/sample/report/report.jsp" location="3894,6084" dimension="183,53" />
+  <StrutsActivity path="/sample/report/reportElePrice.jsp" location="1165,5782" dimension="228,53" />
+  <StrutsActivity path="/sample/importPicture/importPicture.jsp" location="5838,5782" dimension="265,53" />
+  <StrutsActivity path="/sample/cotimportresult/cotimportresult.jsp" location="20,5782" dimension="287,53" />
+  <StrutsActivity path="/system/role/rolepopedom.jsp" location="1768,5178" dimension="211,53" />
+  <StrutsActivity path="/system/emps/emppopedom.jsp" location="2079,5178" dimension="223,53" />
+  <StrutsActivity path="/index.jsp" location="0,6084" dimension="88,53" />
+  <StrutsActivity path="/framework.jsp" location="188,6084" dimension="120,53" />
+  <StrutsActivity path="/system/sysdic/cotsysdicAdd.jsp" location="2828,4574" dimension="219,53" />
+  <StrutsActivity path="/system/sysdic/cotsysdicModify.jsp" location="3147,4574" dimension="236,53" />
+  <StrutsActivity path="/system/sysdic/cotsysdiclist.jsp" location="3483,4574" dimension="211,53" />
+  <StrutsActivity path="/system/boxtype/boxtype.jsp" location="2858,6084" dimension="201,53" />
+  <StrutsActivity path="/sample/elements/elepicture.jsp" location="4213,6084" dimension="218,53" />
+  <StrutsActivity path="/report.jsp" location="3631,3668" dimension="94,53" />
+  <StrutsActivity path="/applet1.jsp" location="4103,3668" dimension="101,53" />
+  <StrutsActivity path="/system/logininfo/loginInfo.jsp" location="1809,6084" dimension="210,53" />
+  <StrutsActivity path="/systemdic/giventype/giventype.jsp" location="417,5782" dimension="236,53" />
+  <StrutsActivity path="/systemdic/balancetype/balancetypeUpdate.jsp" location="0,3970" dimension="307,53" />
+  <StrutsActivity path="/systemdic/balancetype/balancetypeAdd.jsp" location="407,3970" dimension="288,53" />
+  <StrutsActivity path="/systemdic/balancetype/balancetype.jsp" location="795,3970" dimension="264,53" />
+  <StrutsActivity path="/systemdic/meettype/meettypeUpdate.jsp" location="2043,4272" dimension="275,53" />
+  <StrutsActivity path="/systemdic/meettype/meettypeAdd.jsp" location="2418,4272" dimension="256,53" />
+  <StrutsActivity path="/systemdic/meettype/meettype.jsp" location="2774,4272" dimension="232,53" />
+  <StrutsActivity path="/systemdic/province/provincelist.jsp" location="2615,5782" dimension="240,53" />
+  <StrutsActivity path="/systemdic/nation/nationlist.jsp" location="1458,6084" dimension="212,53" />
+  <StrutsActivity path="/systemdic/nationcity/nationcitylist.jsp" location="782,5782" dimension="250,53" />
+  <StrutsActivity path="/systemdic/shipport/shipport.jsp" location="2985,5782" dimension="222,53" />
+  <StrutsActivity path="/systemdic/signtype/signtype.jsp" location="1536,5782" dimension="222,53" />
+  <StrutsActivity path="/systemdic/cuttype/cuttype.jsp" location="4433,5782" dimension="208,53" />
+  <StrutsActivity path="/systemdic/customertype/customertypelist.jsp" location="3232,5480" dimension="298,53" />
+  <StrutsActivity path="/customer/customer/customerModify.jsp" location="0,2390" dimension="270,53" />
+  <StrutsActivity path="/customer/customer/orderPic.jsp" location="370,2390" dimension="224,53" />
+  <StrutsActivity path="/customer/customer/uploadPhoto.jsp" location="694,2390" dimension="250,53" />
+  <StrutsActivity path="/mail/cust/cust.jsp" location="1044,2390" dimension="137,53" />
+  <StrutsActivity path="/customer/customer/customerAdd.jsp" location="1281,2390" dimension="253,53" />
+  <StrutsActivity path="/customer/custPc/custPcEdit.jsp" location="2750,1350" dimension="215,53" />
+  <StrutsActivity path="/customer/customer/uploadMb.jsp" location="1634,2390" dimension="236,53" />
+  <StrutsActivity path="/customer/claim/claimEdit.jsp" location="1970,2390" dimension="203,53" />
+  <StrutsActivity path="/customer/claim/claim.jsp" location="2273,2390" dimension="181,53" />
+  <StrutsActivity path="/customer/custPc/custPc.jsp" location="3950,1350" dimension="193,53" />
+  <StrutsActivity path="/customer/customer/customerlist.jsp" location="2554,2390" dimension="245,53" />
+  <StrutsActivity path="/sign/sign/signEdit.jsp" location="5522,6084" dimension="161,53" />
+  <StrutsActivity path="/systemdic/targetport/targetportlist.jsp" location="5948,5480" dimension="260,53" />
+  <StrutsActivity path="/systemdic/customerlv/cotcustomerlvlist.jsp" location="5183,5480" dimension="284,53" />
+  <StrutsActivity path="/systemdic/commision/cotcommisionModify.jsp" location="4750,3668" dimension="309,53" />
+  <StrutsActivity path="/systemdic/commision/cotcommisionAdd.jsp" location="5159,3668" dimension="292,53" />
+  <StrutsActivity path="/systemdic/commision/cotcommisionlist.jsp" location="5551,3668" dimension="284,53" />
+  <StrutsActivity path="/systemdic/clause/clause.jsp" location="2166,6084" dimension="196,53" />
+  <StrutsActivity path="/systemdic/pricecfg/pricecfg.jsp" location="3708,5782" dimension="218,53" />
+  <StrutsActivity path="/systemdic/traffictype/traffictype.jsp" location="5583,5480" dimension="240,53" />
+  <StrutsActivity path="/systemdic/tradetype/tradetypeModify.jsp" location="0,4272" dimension="277,53" />
+  <StrutsActivity path="/systemdic/tradetype/tradetypeAdd.jsp" location="377,4272" dimension="260,53" />
+  <StrutsActivity path="/systemdic/tradetype/tradetypelist.jsp" location="737,4272" dimension="252,53" />
+  <StrutsActivity path="/systemdic/taxtype/taxtypeModify.jsp" location="0,4574" dimension="249,53" />
+  <StrutsActivity path="/systemdic/taxtype/taxtypeAdd.jsp" location="349,4574" dimension="232,53" />
+  <StrutsActivity path="/systemdic/taxtype/taxtypelist.jsp" location="681,4574" dimension="224,53" />
+  <StrutsActivity path="/systemdic/consigncompany/consigncompanyModify.jsp" location="0,3668" dimension="361,53" />
+  <StrutsActivity path="/systemdic/consigncompany/consigncompanyAdd.jsp" location="461,3668" dimension="344,53" />
+  <StrutsActivity path="/systemdic/consigncompany/consigncompanylist.jsp" location="905,3668" dimension="336,53" />
+  <StrutsActivity path="/systemdic/hscompany/hscompanyModify.jsp" location="1104,3970" dimension="297,53" />
+  <StrutsActivity path="/systemdic/hscompany/hscompanyAdd.jsp" location="1501,3970" dimension="280,53" />
+  <StrutsActivity path="/systemdic/hscompany/hscompanylist.jsp" location="1881,3970" dimension="272,53" />
+  <StrutsActivity path="/systemdic/insurecontract/insurecontract.jsp" location="2840,5480" dimension="288,53" />
+  <StrutsActivity path="/price/calculation/calculationEdit.jsp" location="5025,4876" dimension="240,53" />
+  <StrutsActivity path="/price/calculation/calculation.jsp" location="5365,4876" dimension="218,53" />
+  <StrutsActivity path="/price/eleFrame.jsp" location="779,824" dimension="144,53" />
+  <StrutsActivity path="/price/priceAdd.jsp" location="1832,824" dimension="144,53" />
+  <StrutsActivity path="/importPic/importPic.jsp" location="2611,824" dimension="172,53" />
+  <StrutsActivity path="/price/priceElePrice.jsp" location="1023,824" dimension="165,53" />
+  <StrutsActivity path="/price/priceFitting.jsp" location="524,824" dimension="155,53" />
+  <StrutsActivity path="/price/priceDetail.jsp" location="2076,824" dimension="153,53" />
+  <StrutsActivity path="/price/uploadCheckMachine.jsp" location="1288,824" dimension="216,53" />
+  <StrutsActivity path="/customer/customer/price.jsp" location="220,824" dimension="204,53" />
+  <StrutsActivity path="/price/price.jsp" location="0,824" dimension="120,53" />
+  <StrutsActivity path="/price/eleTable.jsp" location="2883,824" dimension="140,53" />
+  <StrutsActivity path="/price/report.jsp" location="1604,824" dimension="128,53" />
+  <StrutsActivity path="/price/cusTable.jsp" location="3123,824" dimension="142,53" />
+  <StrutsActivity path="/price/addToMessage.jsp" location="2329,824" dimension="182,53" />
+  <StrutsActivity path="/given/finaceOther.jsp" location="3051,4272" dimension="160,53" />
+  <StrutsActivity path="/given/givenEdit.jsp" location="3311,4272" dimension="146,53" />
+  <StrutsActivity path="/customer/customer/given.jsp" location="3557,4272" dimension="206,53" />
+  <StrutsActivity path="/given/givenlist.jsp" location="3863,4272" dimension="140,53" />
+  <StrutsActivity path="/sample/elements/elepiclist.jsp" location="1187,5178" dimension="211,53" />
+  <StrutsActivity path="/sample/elements/elepicshow.jsp" location="1498,5178" dimension="225,53" />
+  <StrutsActivity path="/order/finaceOther.jsp" location="5988,824" dimension="162,53" />
+  <StrutsActivity path="/order/orderPc.jsp" location="5150,1550" dimension="141,53" />
+  <StrutsActivity path="/order/eleFrame.jsp" location="4653,824" dimension="148,53" />
+  <StrutsActivity path="/order/orderPcEdit.jsp" location="5750,1550" dimension="163,53" />
+  <StrutsActivity path="/order/orderAdd.jsp" location="6482,824" dimension="152,53" />
+  <StrutsActivity path="/order/timeOrder.jsp" location="3628,824" dimension="155,53" />
+  <StrutsActivity path="/order/orderDetail.jsp" location="5465,824" dimension="161,53" />
+  <StrutsActivity path="/order/orderElePrice.jsp" location="4380,824" dimension="173,53" />
+  <StrutsActivity path="/order/uploadCheckMachine.jsp" location="7020,824" dimension="220,53" />
+  <StrutsActivity path="/order/facToOrder.jsp" location="5726,824" dimension="162,53" />
+  <StrutsActivity path="/order/uploadMB.jsp" location="4901,824" dimension="156,53" />
+  <StrutsActivity path="/order/priceToOrder.jsp" location="8683,824" dimension="174,53" />
+  <StrutsActivity path="/order/orderFitting.jsp" location="3365,824" dimension="163,53" />
+  <StrutsActivity path="/order/order.jsp" location="3883,824" dimension="128,53" />
+  <StrutsActivity path="/order/orderModify.jsp" location="4111,824" dimension="169,53" />
+  <StrutsActivity path="/order/report.jsp" location="6250,824" dimension="132,53" />
+  <StrutsActivity path="/order/addToMessage.jsp" location="6734,824" dimension="186,53" />
+  <StrutsActivity path="/order/orderToFac.jsp" location="7340,824" dimension="162,53" />
+  <StrutsActivity path="/customer/customer/order.jsp" location="5157,824" dimension="208,53" />
+  <StrutsActivity path="/mail/inbox/print.jsp" location="4047,4272" dimension="150,53" />
+  <StrutsActivity path="/mail/send/signature.jsp" location="4553,4272" dimension="173,53" />
+  <StrutsActivity path="/mail/inbox/inbox.jsp" location="4298,4272" dimension="155,53" />
+  <StrutsActivity path="/mail/template/template.jsp" location="5517,5782" dimension="193,53" />
+  <StrutsActivity path="/mail/import/import.jsp" location="3219,6084" dimension="169,53" />
+  <StrutsActivity path="/mail/control/control.jsp" location="2526,6084" dimension="173,53" />
+  <StrutsActivity path="/mail/rule/ruleAdd.jsp" location="2369,5480" dimension="159,53" />
+  <StrutsActivity path="/mail/rule/rule.jsp" location="2628,5480" dimension="135,53" />
+  <StrutsActivity path="/mail/check/checkAdd.jsp" location="0,4876" dimension="181,53" />
+  <StrutsActivity path="/mail/check/mailCheck.jsp" location="281,4876" dimension="183,53" />
+  <StrutsActivity path="/mail/check/check.jsp" location="564,4876" dimension="157,53" />
+  <StrutsActivity path="/mail/mailcfg/mailCfgAdd.jsp" location="0,5480" dimension="201,53" />
+  <StrutsActivity path="/mail/cfg/cfg.jsp" location="301,5480" dimension="127,53" />
+  <StrutsActivity path="/mail/send/send.jsp" location="4833,4272" dimension="147,53" />
+  <StrutsActivity path="/sample/cotelecfg/cotelecfg.jsp" location="2496,3366" dimension="215,53" />
+  <StrutsActivity path="/sample/cotelecfg/elecfgAdd.jsp" location="2811,3366" dimension="221,53" />
+  <StrutsActivity path="/sample/cotelecfg/faccalculator.jsp" location="3132,3366" dimension="235,53" />
+  <StrutsActivity path="/sample/cotelecfg/calculator.jsp" location="3467,3366" dimension="218,53" />
+  <StrutsActivity path="/sample/cotelecfg/elecfg.jsp" location="3785,3366" dimension="197,53" />
+  <StrutsActivity path="/order/orderfacEdit.jsp" location="10129,824" dimension="167,53" />
+  <StrutsActivity path="/commonQuery/consignCompanyTable.jsp" location="16019,824" dimension="280,53" />
+  <StrutsActivity path="/price/orderToPrice.jsp" location="18167,824" dimension="167,53" />
+  <StrutsActivity path="/orderfac/orderToOrderFac.jsp" location="11713,824" dimension="214,53" />
+  <StrutsActivity path="/commonQuery/contractTable.jsp" location="14489,824" dimension="227,53" />
+  <StrutsActivity path="/commonQuery/queryTrailCar.jsp" location="19325,824" dimension="226,53" />
+  <StrutsActivity path="/commonQuery/newEleAdd.jsp" location="13545,824" dimension="212,53" />
+  <StrutsActivity path="/price/showPriceInfo.jsp" location="10685,824" dimension="172,53" />
+  <StrutsActivity path="/commonQuery/hsCompanyTable.jsp" location="16399,824" dimension="248,53" />
+  <StrutsActivity path="/price/givenToPrice.jsp" location="11270,824" dimension="165,53" />
+  <StrutsActivity path="/commonQuery/nationTable.jsp" location="18734,824" dimension="216,53" />
+  <StrutsActivity path="/order/givenToOrder.jsp" location="17891,824" dimension="176,53" />
+  <StrutsActivity path="/commonQuery/eleTable.jsp" location="12027,824" dimension="197,53" />
+  <StrutsActivity path="/order/orderToOrder.jsp" location="17010,824" dimension="178,53" />
+  <StrutsActivity path="/commonQuery/cusTable.jsp" location="12324,824" dimension="199,53" />
+  <StrutsActivity path="/commonQuery/queryOrderNo.jsp" location="15143,824" dimension="234,53" />
+  <StrutsActivity path="/commonQuery/showPrint.jsp" location="12623,824" dimension="204,53" />
+  <StrutsActivity path="/commonQuery/empTable.jsp" location="20311,824" dimension="206,53" />
+  <StrutsActivity path="/commonQuery/facTable.jsp" location="19651,824" dimension="197,53" />
+  <StrutsActivity path="/commonQuery/queryPriceNo.jsp" location="14816,824" dimension="227,53" />
+  <StrutsActivity path="/commonQuery/eleQuery.jsp" location="18434,824" dimension="200,53" />
+  <StrutsActivity path="/sign/sign/givenTosign.jsp" location="12927,824" dimension="185,53" />
+  <StrutsActivity path="/commonQuery/orderTable.jsp" location="10957,824" dimension="213,53" />
+  <StrutsActivity path="/order/showPriceInfo.jsp" location="17288,824" dimension="176,53" />
+  <StrutsActivity path="/commonQuery/printAll.jsp" location="10396,824" dimension="189,53" />
+  <StrutsActivity path="/test.jsp" location="11535,824" dimension="78,53" />
+  <StrutsActivity path="/commonQuery/tong.jsp" location="19050,824" dimension="175,53" />
+  <StrutsActivity path="/commonQuery/childEleQuery.jsp" location="17564,824" dimension="227,53" />
+  <StrutsActivity path="/commonQuery/companyTable.jsp" location="13212,824" dimension="233,53" />
+  <StrutsActivity path="/orderfac/showPriceInfo.jsp" location="14196,824" dimension="193,53" />
+  <StrutsActivity path="/given/priceToGiven.jsp" location="15477,824" dimension="169,53" />
+  <StrutsActivity path="/commonQuery/targetPortTable.jsp" location="13857,824" dimension="239,53" />
+  <StrutsActivity path="/commonQuery/cusTableToContract.jsp" location="19948,824" dimension="263,53" />
+  <StrutsActivity path="/price/priceToPrice.jsp" location="16747,824" dimension="163,53" />
+  <StrutsActivity path="/given/orderToGiven.jsp" location="15746,824" dimension="173,53" />
+  <StrutsActivity path="/statistics/statpopedom.jsp" location="766,4876" dimension="190,53" />
+  <StrutsActivity path="/statistics/statrpt/statrpt.jsp" location="6350,1950" dimension="192,53" />
+  <StrutsActivity path="/statistics/statrpt/statrptEddit.jsp" location="50,2150" dimension="222,53" />
+  <StrutsActivity path="/statistics/stattree.jsp" location="1056,4876" dimension="155,53" />
+  <StrutsActivity path="/statistics/report.jsp" location="1311,4876" dimension="148,53" />
+  <StrutsActivity path="/barcode/cotbarcode.jsp" location="418,6084" dimension="178,53" />
+  <StrutsActivity path="/orderout/finaceRecvOther.jsp" location="0,1536" dimension="208,53" />
+  <StrutsActivity path="/orderout/eleFrame.jsp" location="308,1536" dimension="167,53" />
+  <StrutsActivity path="/orderout/conToAllocate.jsp" location="575,1536" dimension="196,53" />
+  <StrutsActivity path="/orderoutdel/orderOut.jsp" location="3950,1650" dimension="186,53" />
+  <StrutsActivity path="/orderout/dealFinaceOther.jsp" location="871,1536" dimension="208,53" />
+  <StrutsActivity path="/orderout/uploadMB.jsp" location="1542,1536" dimension="175,53" />
+  <StrutsActivity path="/orderout/orderFacDealToOrderOut.jsp" location="1179,1536" dimension="263,53" />
+  <StrutsActivity path="/orderout/orderToOrderOut.jsp" location="1817,1536" dimension="218,53" />
+  <StrutsActivity path="/orderoutdel/orderOutAdd.jsp" location="5450,1650" dimension="210,53" />
+  <StrutsActivity path="/orderout/orderAndAccount.jsp" location="2135,1536" dimension="216,53" />
+  <StrutsActivity path="/orderout/orderOuthsdetailInfo.jsp" location="2451,1536" dimension="236,53" />
+  <StrutsActivity path="/orderout/queryOrderFac.jsp" location="2787,1536" dimension="201,53" />
+  <StrutsActivity path="/orderout/orderRecvToOrderOut.jsp" location="3088,1536" dimension="245,53" />
+  <StrutsActivity path="/orderout/orderOutDetail.jsp" location="3433,1536" dimension="201,53" />
+  <StrutsActivity path="/orderout/orderOut.jsp" location="3734,1536" dimension="168,53" />
+  <StrutsActivity path="/orderout/report.jsp" location="4002,1536" dimension="151,53" />
+  <StrutsActivity path="/orderout/addToMessage.jsp" location="4253,1536" dimension="205,53" />
+  <StrutsActivity path="/orderoutdel/orderOuthsdetailInfo.jsp" location="1550,1750" dimension="254,53" />
+  <StrutsActivity path="/orderout/orderOutAdd.jsp" location="4558,1536" dimension="192,53" />
+  <StrutsActivity path="/orderout/eleFrameOut.jsp" location="4850,1536" dimension="188,53" />
+  <StrutsActivity path="/orderfac/orderPc.jsp" location="650,2250" dimension="158,53" />
+  <StrutsActivity path="/orderfac/eleFrame.jsp" location="7602,824" dimension="165,53" />
+  <StrutsActivity path="/orderfac/orderPcEdit.jsp" location="1850,2250" dimension="180,53" />
+  <StrutsActivity path="/orderfac/orderfacEdit.jsp" location="9245,824" dimension="184,53" />
+  <StrutsActivity path="/orderfac/timeOrder.jsp" location="650,1850" dimension="172,53" />
+  <StrutsActivity path="/orderfac/finaceOther.jsp" location="8131,824" dimension="179,53" />
+  <StrutsActivity path="/orderfac/uploadMB.jsp" location="8410,824" dimension="173,53" />
+  <StrutsActivity path="/orderfac/orderFac.jsp" location="7867,824" dimension="164,53" />
+  <StrutsActivity path="/orderfac/orderFacDetail.jsp" location="9832,824" dimension="197,53" />
+  <StrutsActivity path="/orderfac/orderFacAdd.jsp" location="8957,824" dimension="188,53" />
+  <StrutsActivity path="/orderfac/addToMessage.jsp" location="9529,824" dimension="203,53" />
+  <StrutsActivity path="/orderfac/artWork.jsp" location="4550,2250" dimension="160,53" />
+  <StrutsActivity path="/worklog/msgtype/cotmsgtypeModify.jsp" location="1034,4272" dimension="274,53" />
+  <StrutsActivity path="/worklog/msgtype/cotmsgtypeAdd.jsp" location="1408,4272" dimension="257,53" />
+  <StrutsActivity path="/worklog/msgtype/cotmsgtype.jsp" location="1765,4272" dimension="233,53" />
+  <StrutsActivity path="/split/split.jsp" location="2349,2742" dimension="110,53" />
+  <StrutsActivity path="/split/cotsplitModify.jsp" location="2559,2742" dimension="169,53" />
+  <StrutsActivity path="/commonQuery/orderDetailTable.jsp" location="2828,2742" dimension="246,53" />
+  <StrutsActivity path="/split/splitEdit.jsp" location="3174,2742" dimension="132,53" />
+  <StrutsActivity path="/split/cotsplitAdd.jsp" location="3406,2742" dimension="152,53" />
+  <StrutsActivity path="/split/cotsplitlist.jsp" location="3990,2742" dimension="144,53" />
+  <StrutsActivity path="/commonQuery/orderoutTable.jsp" location="3658,2742" dimension="232,53" />
+  <StrutsActivity path="/worklog/message/sendMessage.jsp" location="4290,2742" dimension="248,53" />
+  <StrutsActivity path="/worklog/message/handleMessage.jsp" location="4638,2742" dimension="259,53" />
+  <StrutsActivity path="/worklog/message/addMessage.jsp" location="4997,2742" dimension="243,53" />
+  <StrutsActivity path="/home.jsp" location="5340,2742" dimension="90,53" />
+  <StrutsActivity path="/worklog/message/messagelist.jsp" location="5530,2742" dimension="235,53" />
+  <StrutsActivity path="/worklog/message/message.jsp" location="5865,2742" dimension="219,53" />
+  <StrutsActivity path="/worklog/syslog/showsyslog.jsp" location="3505,5178" dimension="219,53" />
+  <StrutsActivity path="/worklog/syslog/cotsyslog.jsp" location="3824,5178" dimension="207,53" />
+  <StrutsActivity path="/systemdic/bank/bankEdit.jsp" location="5159,5178" dimension="204,53" />
+  <StrutsActivity path="/systemdic/bank/bank.jsp" location="5463,5178" dimension="182,53" />
+  <StrutsActivity path="/systemdic/shipcompany/shipCompanyModify.jsp" location="1286,3668" dimension="321,53" />
+  <StrutsActivity path="/systemdic/shipcompany/shipCompanyAdd.jsp" location="1707,3668" dimension="304,53" />
+  <StrutsActivity path="/systemdic/shipcompany/shipCompanylist.jsp" location="2111,3668" dimension="296,53" />
+  <StrutsActivity path="/system/bak/backup.jsp" location="4625,5178" dimension="172,53" />
+  <StrutsActivity path="/system/bak/backupSuccess.jsp" location="4897,5178" dimension="217,53" />
+  <StrutsActivity path="/systemdic/boxpacking/addCalculator.jsp" location="4027,3366" dimension="273,53" />
+  <StrutsActivity path="/systemdic/boxpacking/boxpackingEdit.jsp" location="4400,3366" dimension="282,53" />
+  <StrutsActivity path="/systemdic/boxpacking/calculator.jsp" location="4782,3366" dimension="248,53" />
+  <StrutsActivity path="/systemdic/boxpacking/boxpacking.jsp" location="5130,3366" dimension="260,53" />
+  <StrutsActivity path="/systemdic/trailcar/trailcarEdit.jsp" location="0,5178" dimension="226,53" />
+  <StrutsActivity path="/systemdic/trailcar/trailcarList.jsp" location="326,5178" dimension="223,53" />
+  <StrutsActivity path="/audit/cotauditEdit.jsp" location="3665,4876" dimension="160,53" />
+  <StrutsActivity path="/audit/auditCreate.jsp" location="3925,4876" dimension="158,53" />
+  <StrutsActivity path="/audit/cotaudit.jsp" location="4183,4876" dimension="138,53" />
+  <StrutsActivity path="/backtax/audit.jsp" location="2958,4876" dimension="136,53" />
+  <StrutsActivity path="/backtax/backtaxEdit.jsp" location="3194,4876" dimension="174,53" />
+  <StrutsActivity path="/backtax/backtax.jsp" location="3468,4876" dimension="152,53" />
+  <StrutsActivity path="/finace/financegiven/financeGivenEdit.jsp" location="4366,4876" dimension="268,53" />
+  <StrutsActivity path="/finace/financegiven/financeGiven.jsp" location="4734,4876" dimension="246,53" />
+  <StrutsActivity path="/label/labelAdd.jsp" location="950,4574" dimension="142,53" />
+  <StrutsActivity path="/label/uploadOtherPic.jsp" location="1192,4574" dimension="180,53" />
+  <StrutsActivity path="/label/showPicture.jsp" location="1472,4574" dimension="159,53" />
+  <StrutsActivity path="/label/label.jsp" location="1731,4574" dimension="118,53" />
+  <StrutsActivity path="/finace/finacerecv/finacerecvEdit.jsp" location="5628,4876" dimension="239,53" />
+  <StrutsActivity path="/finace/finacerecv/finacerecv.jsp" location="5967,4876" dimension="217,53" />
+  <StrutsActivity path="/finace/deal/dealDetail.jsp" location="5412,4574" dimension="184,53" />
+  <StrutsActivity path="/finace/deal/transDetail.jsp" location="5696,4574" dimension="188,53" />
+  <StrutsActivity path="/finace/deal/deal.jsp" location="5984,4574" dimension="151,53" />
+  <StrutsActivity path="/finace/recv/recvDetail.jsp" location="987,5480" dimension="182,53" />
+  <StrutsActivity path="/finace/recv/recv.jsp" location="1269,5480" dimension="149,53" />
+  <StrutsActivity path="/fittings/report.jsp" location="0,3064" dimension="138,53" />
+  <StrutsActivity path="/fittings/fittingsAdd.jsp" location="238,3064" dimension="164,53" />
+  <StrutsActivity path="/fittings/hisPriceEdit.jsp" location="502,3064" dimension="167,53" />
+  <StrutsActivity path="/fittings/hisPriceTable.jsp" location="769,3064" dimension="177,53" />
+  <StrutsActivity path="/fittings/fitEleTable.jsp" location="1046,3064" dimension="161,53" />
+  <StrutsActivity path="/fittings/fittings.jsp" location="1307,3064" dimension="140,53" />
+  <StrutsActivity path="/fittings/eleTable.jsp" location="1547,3064" dimension="150,53" />
+  <StrutsActivity path="/systemdic/typelv3/typelvlist.jsp" location="4788,5782" dimension="215,53" />
+  <StrutsActivity path="/library/libraryInfoEdit.jsp" location="502,5480" dimension="181,53" />
+  <StrutsActivity path="/library/libraryInfo.jsp" location="783,5480" dimension="159,53" />
+  <StrutsActivity path="/sample/elements/elePrice.jsp" location="3543,6084" dimension="206,53" />
+  <StrutsActivity path="/fittingorder/fittingFrame.jsp" location="3306,3064" dimension="197,53" />
+  <StrutsActivity path="/fittingorder/finaceOther.jsp" location="3603,3064" dimension="195,53" />
+  <StrutsActivity path="/fittingorder/fittingOrderEdit.jsp" location="3898,3064" dimension="218,53" />
+  <StrutsActivity path="/fittingorder/fittingOrder.jsp" location="4216,3064" dimension="196,53" />
+  <StrutsActivity path="/order/fitAnys.jsp" location="1928,5480" dimension="133,53" />
+  <StrutsActivity path="/order/fittingQuery.jsp" location="2161,5480" dimension="163,53" />
+  <StrutsActivity path="/packingorder/finaceOther.jsp" location="4457,3064" dimension="208,53" />
+  <StrutsActivity path="/packingorder/packingOrderEdit.jsp" location="4765,3064" dimension="244,53" />
+  <StrutsActivity path="/packingorder/packingOrder.jsp" location="5109,3064" dimension="222,53" />
+  <StrutsActivity path="/order/packAnys.jsp" location="4484,5480" dimension="150,53" />
+  <StrutsActivity path="/systemdic/typelv2/typelv2.jsp" location="5152,5782" dimension="206,53" />
+  <StrutsActivity path="/systemdic/containertype/containertype.jsp" location="3636,5480" dimension="282,53" />
+  <StrutsActivity path="/systemdic/eleother/eleother.jsp" location="2263,5782" dimension="220,53" />
+  <StrutsActivity path="/systemdic/typelv/typelv.jsp" location="1116,6084" dimension="192,53" />
+  <StrutsActivity path="/systemdic/currency/currency.jsp" location="1900,5782" dimension="222,53" />
+  <StrutsActivity path="/systemdic/pricesitu/pricesitu.jsp" location="4059,5480" dimension="222,53" />
+  <StrutsActivity path="/systemdic/paytype/paytypelist.jsp" location="4061,5782" dimension="232,53" />
+  <StrutsActivity path="/systemdic/contract/contract.jsp" location="3348,5782" dimension="218,53" />
+  <StrutsActivity path="/systemdic/expcompany/expCompanyEdit.jsp" location="1504,4876" dimension="296,53" />
+  <StrutsActivity path="/systemdic/expcompany/expcompanylist.jsp" location="1900,4876" dimension="288,53" />
+  <StrutsActivity path="/sample/elements/modPrice.jsp" location="752,6084" dimension="216,53" />
+  <StrutsActivity path="/system/combination/failure.jsp" location="1894,4574" dimension="215,53" />
+  <StrutsActivity path="/system/combination/combination.jsp" location="2209,4574" dimension="251,53" />
+  <StrutsActivity path="/system/combination/success.jsp" location="2560,4574" dimension="223,53" />
+  <StrutsActivity path="/worklog/emplog/emplogAdd.jsp" location="2347,5178" dimension="229,53" />
+  <StrutsActivity path="/worklog/emplog/emplog.jsp" location="2676,5178" dimension="205,53" />
+  <StrutsActivity path="/customer/custlog/custlogAdd.jsp" location="2926,5178" dimension="229,53" />
+  <StrutsActivity path="/customer/custlog/custlog.jsp" location="3255,5178" dimension="205,53" />
+  <StrutsActivity path="/system/seq/seqEdit.jsp" location="1463,5480" dimension="171,53" />
+  <StrutsActivity path="/system/seq/seq.jsp" location="1734,5480" dimension="149,53" />
+  <StrutsActivity path="/queryAll/orderorderfacstatus.jsp" location="6050,2150" dimension="226,53" />
+  <StrutsActivity path="/queryAll/querydetailstatus.jsp" location="6350,2650" dimension="208,53" />
+  <StrutsActivity path="/pan/panFacAdd.jsp" location="50,2850" dimension="149,53" />
+  <StrutsActivity path="/pan/otherPics.jsp" location="350,2850" dimension="137,53" />
+  <StrutsActivity path="/pan/panAddHw.jsp" location="1250,2850" dimension="148,53" />
+  <StrutsActivity path="/pan/supplier.jsp" location="1550,2850" dimension="131,53" />
+  <StrutsActivity path="/pan/pan.jsp" location="1850,2850" dimension="106,53" />
+  <StrutsActivity path="/pan/panAdd.jsp" location="2150,2850" dimension="130,53" />
+  <StrutsActivity path="/queryAll/orgEdit.jsp" location="2750,2850" dimension="152,53" />
+  <StrutsActivity path="/common/error.jsp" location="5995,6067" dimension="143,53" />
+  <StrutsActivity path="/common/success.jsp" location="5782,6067" dimension="157,53" />
+  <StrutsActivity path="/cottypelv4.do" />
+  <StrutsActivity path="/systemdic/typelv4/typelv4.jsp" />
+  <StrutsTransition id="/cotquery.do,priceToGiven,/given/priceToGiven.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,52" />
+      <AbsolutePoint location="14929,850" />
+      <AbsolutePoint location="15561,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryEleFrame,/order/eleFrame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4981,95" />
+      <AbsolutePoint location="4795,95" />
+      <AbsolutePoint location="4795,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,chaDetailDel,/orderoutdel/orderOuthsdetailInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1288,974" />
+      <AbsolutePoint location="1288,1776" />
+      <AbsolutePoint location="1677,1776" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotbalancetype.do,querySuccess,/systemdic/balancetype/balancetype.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="721,3818" />
+      <AbsolutePoint location="927,3818" />
+      <AbsolutePoint location="927,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottraffictype.do,querySuccess,/systemdic/traffictype/traffictype.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5702,5380" />
+      <AbsolutePoint location="5702,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/coteleother.do,querySuccess,/systemdic/eleother/eleother.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2373,5682" />
+      <AbsolutePoint location="2373,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmodule.do,querySysDic,/systemdic/stattree.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="540,3244" />
+      <AbsolutePoint location="418,3244" />
+      <AbsolutePoint location="418,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottaxtype.do,add,/systemdic/taxtype/taxtypeAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="464,4474" />
+      <AbsolutePoint location="464,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotemps.do,querySuccess,/menu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1533,3184" />
+      <AbsolutePoint location="1265,3184" />
+      <AbsolutePoint location="1265,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotaudit.do,modify,/audit/cotauditEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3869,4724" />
+      <AbsolutePoint location="3754,4724" />
+      <AbsolutePoint location="3754,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryNation,/commonQuery/nationTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14959,0" />
+      <AbsolutePoint location="14959,-75" />
+      <AbsolutePoint location="18842,-75" />
+      <AbsolutePoint location="18842,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryTable,/orderout/orderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1440,1026" />
+      <AbsolutePoint location="1440,1076" />
+      <AbsolutePoint location="3818,1076" />
+      <AbsolutePoint location="3818,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotElePicShow.do,querySuccess,/sample/elements/elepicshow.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1513,5078" />
+      <AbsolutePoint location="1513,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryCompanyToContract,/commonQuery/companyTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,52" />
+      <AbsolutePoint location="14929,850" />
+      <AbsolutePoint location="13328,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,orderToOrder,/order/orderToOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14989,0" />
+      <AbsolutePoint location="14989,-45" />
+      <AbsolutePoint location="17099,-45" />
+      <AbsolutePoint location="17099,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcontact.do,modify,/system/contact/contactEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4274,5078" />
+      <AbsolutePoint location="4274,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,queryListSuccess,/sample/elements/elements.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3125,1676" />
+      <AbsolutePoint location="3649,1676" />
+      <AbsolutePoint location="3649,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryPriceNo,/commonQuery/queryPriceNo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14989,104" />
+      <AbsolutePoint location="14989,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,orderToPrice,/price/orderToPrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="15040,52" />
+      <AbsolutePoint location="18250,52" />
+      <AbsolutePoint location="18250,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryOther,/order/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5259,52" />
+      <AbsolutePoint location="6086,52" />
+      <AbsolutePoint location="6086,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittings.do,addFittings,/fittings/fittingsAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="827,2944" />
+      <AbsolutePoint location="827,2989" />
+      <AbsolutePoint location="326,2989" />
+      <AbsolutePoint location="326,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotqueryall.do,querySign,/queryAll/querySign.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3963,2218" />
+      <AbsolutePoint location="3514,2218" />
+      <AbsolutePoint location="3514,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmodule.do,queryModuleSuccess,/system/module/moduledetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="540,3214" />
+      <AbsolutePoint location="113,3214" />
+      <AbsolutePoint location="113,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsplitinfo.do,add,/split/splitEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3080,2570" />
+      <AbsolutePoint location="3240,2570" />
+      <AbsolutePoint location="3240,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpricefac.do,add,/sample/cotpricefac/cotPriceFacEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4833,3870" />
+      <AbsolutePoint location="4833,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,queryChildMod,/sample/elements/childMod.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3097,1738" />
+      <AbsolutePoint location="3097,2318" />
+      <AbsolutePoint location="4944,2318" />
+      <AbsolutePoint location="4944,2091" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotdatatone.do,combinationPage,/system/combination/combination.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2334,4474" />
+      <AbsolutePoint location="2334,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,orderOutDetail,/orderout/conToAllocate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1243,922" />
+      <AbsolutePoint location="1243,45" />
+      <AbsolutePoint location="694,45" />
+      <AbsolutePoint location="694,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="success;6,null,/common/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5861,5967" />
+      <AbsolutePoint location="5861,6067" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcontract.do,querySuccess,/systemdic/contract/contract.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3457,5682" />
+      <AbsolutePoint location="3457,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotqueryall.do,querySample,/queryAll/querySample.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3968,2240" />
+      <AbsolutePoint location="3968,2416" />
+      <AbsolutePoint location="3883,2416" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrptfile.do,modify,/sample/rptfile/upload.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2692,3516" />
+      <AbsolutePoint location="2544,3516" />
+      <AbsolutePoint location="2544,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsplitinfo.do,queryOrderForm,/commonQuery/orderoutTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3080,2510" />
+      <AbsolutePoint location="3774,2510" />
+      <AbsolutePoint location="3774,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotbalancetype.do,modify,/systemdic/balancetype/balancetypeUpdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="381,3818" />
+      <AbsolutePoint location="153,3818" />
+      <AbsolutePoint location="153,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryPrice,/price/showPriceInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14899,104" />
+      <AbsolutePoint location="14899,469" />
+      <AbsolutePoint location="10771,469" />
+      <AbsolutePoint location="10771,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailsend.do,querySuccess,/mail/send/send.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4848,4172" />
+      <AbsolutePoint location="4848,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcommisiontype.do,modify,/systemdic/commision/cotcommisionModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5139,3516" />
+      <AbsolutePoint location="4904,3516" />
+      <AbsolutePoint location="4904,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotconsigncompany.do,modify,/systemdic/consigncompany/consigncompanyModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="448,3516" />
+      <AbsolutePoint location="180,3516" />
+      <AbsolutePoint location="180,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryFacDeal,/orderout/orderFacDealToOrderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,1022" />
+      <AbsolutePoint location="1106,1022" />
+      <AbsolutePoint location="1106,1572" />
+      <AbsolutePoint location="1179,1572" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrpttype.do,modify,/sample/rpttype/cotrpttypeModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5344,4120" />
+      <AbsolutePoint location="5151,4120" />
+      <AbsolutePoint location="5151,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailrule.do,querySuccess,/mail/rule/rule.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2643,5380" />
+      <AbsolutePoint location="2643,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,addElements,/sample/elements/elementsAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2883,1738" />
+      <AbsolutePoint location="2883,1765" />
+      <AbsolutePoint location="1977,1765" />
+      <AbsolutePoint location="1977,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,orderFacDetail,/orderfac/orderFacAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8250,0" />
+      <AbsolutePoint location="8250,-75" />
+      <AbsolutePoint location="9051,-75" />
+      <AbsolutePoint location="9051,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsign.do,add,/sign/sign/signEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5602,5984" />
+      <AbsolutePoint location="5602,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailcfg.do,querySuccess,/mail/cfg/cfg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="347,5380" />
+      <AbsolutePoint location="347,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,queryDeal,/orderfac/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8220,104" />
+      <AbsolutePoint location="8220,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,orderDetail,/order/orderAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5259,35" />
+      <AbsolutePoint location="6558,35" />
+      <AbsolutePoint location="6558,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryAllocateDetail,/orderout/conToAllocate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,935" />
+      <AbsolutePoint location="604,935" />
+      <AbsolutePoint location="604,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,queryElementsSuccess,/sample/elements/elementsUpdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2829,1738" />
+      <AbsolutePoint location="2829,2064" />
+      <AbsolutePoint location="2765,2064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cothscompany.do,add,/systemdic/hscompany/hscompanyAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1640,3870" />
+      <AbsolutePoint location="1640,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessage.do,send,/worklog/message/sendMessage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5322,2510" />
+      <AbsolutePoint location="4414,2510" />
+      <AbsolutePoint location="4414,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsigntype.do,querySuccess,/systemdic/signtype/signtype.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1647,5682" />
+      <AbsolutePoint location="1647,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,conToAllocate,/orderout/conToAllocate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1181,1026" />
+      <AbsolutePoint location="1181,1238" />
+      <AbsolutePoint location="746,1238" />
+      <AbsolutePoint location="746,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,loadPackingInfo,/sample/elements/cotelepacking.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2973,1634" />
+      <AbsolutePoint location="2973,1618" />
+      <AbsolutePoint location="4615,1618" />
+      <AbsolutePoint location="4615,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittingorder.do,queryFinanceOther,/fittingorder/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3795,2944" />
+      <AbsolutePoint location="3795,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backup.do,backupPage,/system/bak/backup.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4782,5078" />
+      <AbsolutePoint location="4782,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailcfg.do,queryDetail,/mail/cfg/cfg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="317,5380" />
+      <AbsolutePoint location="317,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotgiven.do,givenDetail,/given/givenEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3390,4172" />
+      <AbsolutePoint location="3390,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,loadMail,/mail/cust/cust.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1266,2240" />
+      <AbsolutePoint location="1266,2416" />
+      <AbsolutePoint location="1181,2416" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryRecv,/orderout/finaceRecvOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,1005" />
+      <AbsolutePoint location="104,1005" />
+      <AbsolutePoint location="104,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotboxpacking.do,add,/systemdic/boxpacking/boxpackingEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4667,3266" />
+      <AbsolutePoint location="4667,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelecfg.do,add,/sample/cotelecfg/elecfgAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3105,3244" />
+      <AbsolutePoint location="2921,3244" />
+      <AbsolutePoint location="2921,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessage.do,querySuccess,/worklog/message/message.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5633,2540" />
+      <AbsolutePoint location="5974,2540" />
+      <AbsolutePoint location="5974,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,custPcEdit,/customer/custPc/custPcEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1519,2136" />
+      <AbsolutePoint location="1519,1376" />
+      <AbsolutePoint location="2750,1376" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryOrderPrice,/order/showPriceInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="15040,82" />
+      <AbsolutePoint location="17376,82" />
+      <AbsolutePoint location="17376,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotnation.do,querySuccess,/systemdic/nation/nationlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1564,5984" />
+      <AbsolutePoint location="1564,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,addToMessage,/orderfac/addToMessage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8220,0" />
+      <AbsolutePoint location="8220,-135" />
+      <AbsolutePoint location="9630,-135" />
+      <AbsolutePoint location="9630,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpricecfg.do,querySuccess,/systemdic/pricecfg/pricecfg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3817,5682" />
+      <AbsolutePoint location="3817,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,modify,/customer/customer/customerModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1247,2218" />
+      <AbsolutePoint location="135,2218" />
+      <AbsolutePoint location="135,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/reportApplet.do,queryApplet,/applet1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4552,3568" />
+      <AbsolutePoint location="4552,3694" />
+      <AbsolutePoint location="4204,3694" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailimport.do,querySuccess,/mail/import/import.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3303,5984" />
+      <AbsolutePoint location="3303,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,showUpload,/orderout/uploadMB.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1447,1018" />
+      <AbsolutePoint location="1629,1018" />
+      <AbsolutePoint location="1629,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,add,/orderfac/orderfacEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8407,22" />
+      <AbsolutePoint location="9337,22" />
+      <AbsolutePoint location="9337,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cothscompany.do,querySuccess,/systemdic/hscompany/hscompanylist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1809,3818" />
+      <AbsolutePoint location="2026,3818" />
+      <AbsolutePoint location="2026,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryFitOrder,/orderout/orderFacDealToOrderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1258,1026" />
+      <AbsolutePoint location="1258,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,loadOrderInfo,/sample/elements/orderInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3033,1738" />
+      <AbsolutePoint location="3033,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsplitinfo.do,queryDetail,/split/split.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2821,2540" />
+      <AbsolutePoint location="2434,2540" />
+      <AbsolutePoint location="2434,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,detail,/price/priceDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1801,52" />
+      <AbsolutePoint location="2152,52" />
+      <AbsolutePoint location="2152,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcommisiontype.do,add,/systemdic/commision/cotcommisionAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5305,3568" />
+      <AbsolutePoint location="5305,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfactory.do,querySuccess,/system/factory/factory.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1318,2510" />
+      <AbsolutePoint location="2211,2510" />
+      <AbsolutePoint location="2211,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcheck.do,querySuccess,/check/checkAllTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2626,2918" />
+      <AbsolutePoint location="2917,2918" />
+      <AbsolutePoint location="2917,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorg.do,orgEdit,/queryAll/orgEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4780,595" />
+      <AbsolutePoint location="7812,595" />
+      <AbsolutePoint location="7812,3049" />
+      <AbsolutePoint location="2839,3049" />
+      <AbsolutePoint location="2839,2903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customervisitedlog.do,modify,/customer/custvisitedlog/custvisitedlogEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2519,4776" />
+      <AbsolutePoint location="2519,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,showMachineUpload,/price/uploadCheckMachine.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1534,45" />
+      <AbsolutePoint location="1396,45" />
+      <AbsolutePoint location="1396,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,queryArtWork,/orderfac/artWork.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8190,0" />
+      <AbsolutePoint location="8190,-75" />
+      <AbsolutePoint location="6195,-75" />
+      <AbsolutePoint location="6195,2106" />
+      <AbsolutePoint location="4630,2106" />
+      <AbsolutePoint location="4630,2250" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,openDetail,/orderfac/orderFacDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8407,4" />
+      <AbsolutePoint location="9930,4" />
+      <AbsolutePoint location="9930,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailrule.do,addDetail,/mail/rule/ruleAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2513,5380" />
+      <AbsolutePoint location="2513,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotboxpacking.do,openCalculator,/systemdic/boxpacking/calculator.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4797,3266" />
+      <AbsolutePoint location="4797,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,queryPriceFittings,/price/priceFitting.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1667,104" />
+      <AbsolutePoint location="1667,625" />
+      <AbsolutePoint location="601,625" />
+      <AbsolutePoint location="601,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotshipcompany.do,add,/systemdic/shipcompany/shipCompanyAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1858,3568" />
+      <AbsolutePoint location="1858,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfinacerecv.do,queryRecvDetail,/finace/finacerecv/finacerecvEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5817,4776" />
+      <AbsolutePoint location="5817,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomertype.do,querySuccess,/systemdic/customertype/customertypelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3380,5380" />
+      <AbsolutePoint location="3380,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmeettype.do,add,/systemdic/meettype/meettypeAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2545,4172" />
+      <AbsolutePoint location="2545,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessagetype.do,querySuccess,/worklog/msgtype/cotmsgtype.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1692,4120" />
+      <AbsolutePoint location="1896,4120" />
+      <AbsolutePoint location="1896,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittings.do,queryEle,/fittings/eleTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="887,2944" />
+      <AbsolutePoint location="887,3019" />
+      <AbsolutePoint location="1622,3019" />
+      <AbsolutePoint location="1622,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderstatus.do,queryDetailStatus,/queryAll/querydetailstatus.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5722,2332" />
+      <AbsolutePoint location="6454,2332" />
+      <AbsolutePoint location="6454,2650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotarea.do,querySuccess,/system/area/cotarealist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5975,5078" />
+      <AbsolutePoint location="5975,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryHsCompany,/commonQuery/hsCompanyTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="15037,104" />
+      <AbsolutePoint location="15037,229" />
+      <AbsolutePoint location="16523,229" />
+      <AbsolutePoint location="16523,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/previewrpt.do,previewSuccess,/report.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3710,3568" />
+      <AbsolutePoint location="3710,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,uploadMb,/customer/customer/uploadMb.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1567,2218" />
+      <AbsolutePoint location="1744,2218" />
+      <AbsolutePoint location="1744,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotseq.do,querySuccess,/system/seq/seq.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1749,5380" />
+      <AbsolutePoint location="1749,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryFitFacDetail,/orderout/conToAllocate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1198,1026" />
+      <AbsolutePoint location="1198,1478" />
+      <AbsolutePoint location="760,1478" />
+      <AbsolutePoint location="760,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsysdic.do,queryDetailSuccess,/system/sysdic/cotsysdicModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3264,4474" />
+      <AbsolutePoint location="3264,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryOrderNo,/orderout/orderAndAccount.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1408,1026" />
+      <AbsolutePoint location="1408,1298" />
+      <AbsolutePoint location="2244,1298" />
+      <AbsolutePoint location="2244,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,loadCustNoInfo,/sample/elements/custNoInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2973,1738" />
+      <AbsolutePoint location="2973,1918" />
+      <AbsolutePoint location="708,1918" />
+      <AbsolutePoint location="708,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfactory.do,queryOrderFacFen,/system/factory/orderFacFen.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1172,2592" />
+      <AbsolutePoint location="1172,2718" />
+      <AbsolutePoint location="4765,2718" />
+      <AbsolutePoint location="4765,1003" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryEleFrameOut,/orderout/eleFrameOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1288,974" />
+      <AbsolutePoint location="1288,1562" />
+      <AbsolutePoint location="4944,1562" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotboxpacking.do,addCalculator,/systemdic/boxpacking/addCalculator.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4557,3214" />
+      <AbsolutePoint location="4163,3214" />
+      <AbsolutePoint location="4163,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotconsigncompany.do,add,/systemdic/consigncompany/consigncompanyAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="632,3568" />
+      <AbsolutePoint location="632,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpopedom.do,queryRolePopedomSuccess,/system/role/rolepopedom.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1964,5078" />
+      <AbsolutePoint location="1964,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcheck.do,queryGiven,/check/queryGiven.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2579,2944" />
+      <AbsolutePoint location="2579,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/coteleprice.do,querySuccess,/sample/elements/elePrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3646,5984" />
+      <AbsolutePoint location="3646,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotgiven.do,querySuccess,/given/givenlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3557,4120" />
+      <AbsolutePoint location="3939,4120" />
+      <AbsolutePoint location="3939,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,loadPriceInfo,/sample/elements/priceInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3003,1738" />
+      <AbsolutePoint location="3003,2018" />
+      <AbsolutePoint location="2302,2018" />
+      <AbsolutePoint location="2302,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/backup.do,backupSuccess,/system/bak/backupSuccess.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4912,5078" />
+      <AbsolutePoint location="4912,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotbacktax.do,queryAudit,/backtax/audit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3129,4724" />
+      <AbsolutePoint location="3026,4724" />
+      <AbsolutePoint location="3026,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailtemplate.do,querySuccess,/mail/template/template.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5613,5682" />
+      <AbsolutePoint location="5613,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotboxpacking.do,querySuccess,/systemdic/boxpacking/boxpacking.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4891,3214" />
+      <AbsolutePoint location="5260,3214" />
+      <AbsolutePoint location="5260,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessage.do,add,/worklog/message/addMessage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5322,2570" />
+      <AbsolutePoint location="5126,2570" />
+      <AbsolutePoint location="5126,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailcheck.do,addDetail,/mail/check/checkAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="225,4724" />
+      <AbsolutePoint location="90,4724" />
+      <AbsolutePoint location="90,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotinsurecontract.do,querySuccess,/systemdic/insurecontract/insurecontract.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2984,5380" />
+      <AbsolutePoint location="2984,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsplitinfo.do,splitDetail,/split/cotsplitAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3080,2540" />
+      <AbsolutePoint location="3482,2540" />
+      <AbsolutePoint location="3482,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,queryPriceElePrice,/price/priceElePrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1534,75" />
+      <AbsolutePoint location="1105,75" />
+      <AbsolutePoint location="1105,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomize.do,querySuccess,/system/customize/customize.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4943,5380" />
+      <AbsolutePoint location="4943,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotconsigncompany.do,querySuccess,/systemdic/consigncompany/consigncompanylist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="817,3516" />
+      <AbsolutePoint location="1073,3516" />
+      <AbsolutePoint location="1073,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.do,logoutSuccess,/index.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="73,5984" />
+      <AbsolutePoint location="73,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,loadSignInfo,/sample/elements/signInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2821,1649" />
+      <AbsolutePoint location="392,1649" />
+      <AbsolutePoint location="392,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcity.do,querySuccess,/system/city/cotcitylist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5292,5984" />
+      <AbsolutePoint location="5292,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottrailcar.do,add,/systemdic/trailcar/trailcarEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="211,5078" />
+      <AbsolutePoint location="211,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustlog.do,querySuccess,/customer/custlog/custlog.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3270,5078" />
+      <AbsolutePoint location="3270,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,orderToOrderOut,/orderout/orderToOrderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1447,996" />
+      <AbsolutePoint location="1926,996" />
+      <AbsolutePoint location="1926,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittings.do,showExcel,/fittings/report.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="712,2918" />
+      <AbsolutePoint location="69,2918" />
+      <AbsolutePoint location="69,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittingorder.do,addFittingOrder,/fittingorder/fittingOrderEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3883,2944" />
+      <AbsolutePoint location="3883,3090" />
+      <AbsolutePoint location="3898,3090" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,queryEleFrame,/orderfac/eleFrame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8093,52" />
+      <AbsolutePoint location="7684,52" />
+      <AbsolutePoint location="7684,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,detail,/orderout/orderOutDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1447,974" />
+      <AbsolutePoint location="3535,974" />
+      <AbsolutePoint location="3535,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotbalancetype.do,add,/systemdic/balancetype/balancetypeAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="551,3870" />
+      <AbsolutePoint location="551,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,querySuccessDel,/orderoutdel/orderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1447,956" />
+      <AbsolutePoint location="3679,956" />
+      <AbsolutePoint location="3679,1676" />
+      <AbsolutePoint location="3950,1676" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsplitinfo.do,modify,/split/cotsplitModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2821,2570" />
+      <AbsolutePoint location="2643,2570" />
+      <AbsolutePoint location="2643,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottypelv4.do,querySuccess,/systemdic/typelv4/typelv4.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="0,0" />
+      <AbsolutePoint location="0,0" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsplitinfo.do,queryOrderDetail,/commonQuery/orderDetailTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2950,2592" />
+      <AbsolutePoint location="2950,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryTong,/commonQuery/tong.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,52" />
+      <AbsolutePoint location="14929,850" />
+      <AbsolutePoint location="19137,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcheck.do,queryOrderOut,/check/queryOrderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2404,2918" />
+      <AbsolutePoint location="1834,2918" />
+      <AbsolutePoint location="1834,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotbacktax.do,modify,/backtax/backtaxEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3280,4776" />
+      <AbsolutePoint location="3280,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,queryChild,/sample/elements/childAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2821,1679" />
+      <AbsolutePoint location="1338,1679" />
+      <AbsolutePoint location="1338,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotqueryall.do,queryOrderOut,/queryAll/queryOrderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3963,2188" />
+      <AbsolutePoint location="3232,2188" />
+      <AbsolutePoint location="3232,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcommisiontype.do,querySuccess,/systemdic/commision/cotcommisionlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5471,3516" />
+      <AbsolutePoint location="5693,3516" />
+      <AbsolutePoint location="5693,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,loadElePrice,/sample/eleprice/elePrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3038,1634" />
+      <AbsolutePoint location="3038,1448" />
+      <AbsolutePoint location="5973,1448" />
+      <AbsolutePoint location="5973,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfile.do,querySuccess,/sample/file/fileGird.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5141,4422" />
+      <AbsolutePoint location="5292,4422" />
+      <AbsolutePoint location="5292,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,orderToOrderFac,/order/orderToFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8160,104" />
+      <AbsolutePoint location="8160,469" />
+      <AbsolutePoint location="7451,469" />
+      <AbsolutePoint location="7451,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotbacktax.do,querySuccess,/backtax/backtax.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3432,4724" />
+      <AbsolutePoint location="3544,4724" />
+      <AbsolutePoint location="3544,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,querySuccess,/sample/elements/treeframe.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3125,1635" />
+      <AbsolutePoint location="3887,1635" />
+      <AbsolutePoint location="3887,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfinacerecv.do,queryRecv,/finace/finacerecv/finacerecvEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5787,4776" />
+      <AbsolutePoint location="5787,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcalculation.do,add,/price/calculation/calculationEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5250,4776" />
+      <AbsolutePoint location="5250,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotbank.do,querySuccess,/systemdic/bank/bank.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5478,5078" />
+      <AbsolutePoint location="5478,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryCustomerToContract,/commonQuery/cusTableToContract.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,52" />
+      <AbsolutePoint location="14929,850" />
+      <AbsolutePoint location="20079,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsysdic.do,querySuccess,/system/sysdic/cotsysdiclist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3408,4422" />
+      <AbsolutePoint location="3588,4422" />
+      <AbsolutePoint location="3588,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/custcontact.do,modify,/customer/custcontact/custcontactModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2561,3818" />
+      <AbsolutePoint location="2344,3818" />
+      <AbsolutePoint location="2344,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,showExcel,/orderout/report.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1348,1026" />
+      <AbsolutePoint location="1348,1514" />
+      <AbsolutePoint location="4077,1514" />
+      <AbsolutePoint location="4077,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessage.do,queryUnHandleMessage,/worklog/message/messagelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5605,2592" />
+      <AbsolutePoint location="5605,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/previewrpt.do,queryApplet,/applet1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3754,3568" />
+      <AbsolutePoint location="3754,3694" />
+      <AbsolutePoint location="4103,3694" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottypelv3.do,querySuccess,/systemdic/typelv3/typelvlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4896,5682" />
+      <AbsolutePoint location="4896,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,orderToOrderFac,/orderfac/orderToOrderFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,52" />
+      <AbsolutePoint location="14929,850" />
+      <AbsolutePoint location="11820,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotqueryall.do,queryPrice,/queryAll/queryPrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4199,2218" />
+      <AbsolutePoint location="4364,2218" />
+      <AbsolutePoint location="4364,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryFitOrderDetail,/orderout/conToAllocate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,974" />
+      <AbsolutePoint location="582,974" />
+      <AbsolutePoint location="582,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/importpic.do,importPic,/importPic/importPic.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2727,104" />
+      <AbsolutePoint location="2727,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpan.do,querySuccess,/pan/pan.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4085,550" />
+      <AbsolutePoint location="4085,499" />
+      <AbsolutePoint location="7285,499" />
+      <AbsolutePoint location="7285,2989" />
+      <AbsolutePoint location="1903,2989" />
+      <AbsolutePoint location="1903,2903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessage.do,queryPlatForm,/home.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5415,2592" />
+      <AbsolutePoint location="5415,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,showPicture,/sample/elements/showPicture.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3063,1738" />
+      <AbsolutePoint location="3063,1965" />
+      <AbsolutePoint location="4279,1965" />
+      <AbsolutePoint location="4279,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpicture.do,queryPictureSuccess,/sample/elements/elepicture.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4322,5984" />
+      <AbsolutePoint location="4322,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,orderPcEdit,/orderfac/orderPcEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8385,104" />
+      <AbsolutePoint location="8385,2607" />
+      <AbsolutePoint location="1940,2607" />
+      <AbsolutePoint location="1940,2303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpriceout.do,modify,/sample/cotpriceout/cotpriceoutModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3641,3818" />
+      <AbsolutePoint location="3418,3818" />
+      <AbsolutePoint location="3418,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryOther,/orderout/orderRecvToOrderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1303,922" />
+      <AbsolutePoint location="1303,892" />
+      <AbsolutePoint location="3210,892" />
+      <AbsolutePoint location="3210,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpackingorder.do,addPackingOrder,/packingorder/packingOrderEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4780,2944" />
+      <AbsolutePoint location="4780,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,showMachineUpload,/order/uploadCheckMachine.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5210,0" />
+      <AbsolutePoint location="5210,-15" />
+      <AbsolutePoint location="7130,-15" />
+      <AbsolutePoint location="7130,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryChildElements,/commonQuery/childEleQuery.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,52" />
+      <AbsolutePoint location="14929,850" />
+      <AbsolutePoint location="17677,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,assign,/order/orderfacEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8280,0" />
+      <AbsolutePoint location="8280,-15" />
+      <AbsolutePoint location="10212,-15" />
+      <AbsolutePoint location="10212,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotdatatone.do,Failure,/system/combination/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2182,4422" />
+      <AbsolutePoint location="2013,4422" />
+      <AbsolutePoint location="2013,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotemps.do,addEmps,/system/emps/empsEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1674,3266" />
+      <AbsolutePoint location="1674,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpopedom.do,querySuccess,/system/emps/emppopedom.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2094,5078" />
+      <AbsolutePoint location="2094,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryPrice,/order/priceToOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5150,0" />
+      <AbsolutePoint location="5150,-105" />
+      <AbsolutePoint location="8770,-105" />
+      <AbsolutePoint location="8770,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,queryCus,/price/cusTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1727,104" />
+      <AbsolutePoint location="1727,439" />
+      <AbsolutePoint location="3194,439" />
+      <AbsolutePoint location="3194,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,queryEleFrame,/price/eleFrame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1534,15" />
+      <AbsolutePoint location="851,15" />
+      <AbsolutePoint location="851,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,queryOrderPc,/orderfac/orderPc.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8355,104" />
+      <AbsolutePoint location="8355,2369" />
+      <AbsolutePoint location="729,2369" />
+      <AbsolutePoint location="729,2303" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpackingorder.do,queryDetail,/packingorder/packingOrderEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4810,2944" />
+      <AbsolutePoint location="4810,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryTrailCar,/commonQuery/queryTrailCar.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="15040,4" />
+      <AbsolutePoint location="19438,4" />
+      <AbsolutePoint location="19438,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,uploadPhoto,/customer/customer/uploadPhoto.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1247,2188" />
+      <AbsolutePoint location="837,2188" />
+      <AbsolutePoint location="837,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotgiventype.do,querySuccess,/systemdic/giventype/giventype.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="535,5682" />
+      <AbsolutePoint location="535,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,givenToOrder,/order/givenToOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="15019,104" />
+      <AbsolutePoint location="15019,595" />
+      <AbsolutePoint location="17979,595" />
+      <AbsolutePoint location="17979,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotlabel.do,showOtherPic,/label/uploadOtherPic.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1281,4474" />
+      <AbsolutePoint location="1281,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderstatus.do,querySuccess,/system/seq/seq.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5722,2302" />
+      <AbsolutePoint location="6839,2302" />
+      <AbsolutePoint location="6839,5425" />
+      <AbsolutePoint location="1800,5425" />
+      <AbsolutePoint location="1800,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotclause.do,querySuccess,/systemdic/clause/clause.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2264,5984" />
+      <AbsolutePoint location="2264,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotgiven.do,queryRecv,/given/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3284,4120" />
+      <AbsolutePoint location="3131,4120" />
+      <AbsolutePoint location="3131,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,showUpload,/order/uploadMB.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5042,104" />
+      <AbsolutePoint location="5042,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcheck.do,queryOrder,/check/queryOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2524,2840" />
+      <AbsolutePoint location="2524,2810" />
+      <AbsolutePoint location="3189,2810" />
+      <AbsolutePoint location="3189,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,addDetail,/price/priceAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1801,82" />
+      <AbsolutePoint location="1904,82" />
+      <AbsolutePoint location="1904,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryRecv,/order/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5259,69" />
+      <AbsolutePoint location="6069,69" />
+      <AbsolutePoint location="6069,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/index.do,loginSuccess,/framework.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="203,5984" />
+      <AbsolutePoint location="203,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryEleFrame,/orderout/eleFrame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,956" />
+      <AbsolutePoint location="391,956" />
+      <AbsolutePoint location="391,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/elepriceexcel.do,show,/sample/report/reportElePrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1279,5682" />
+      <AbsolutePoint location="1279,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,addElements,/commonQuery/newEleAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14839,104" />
+      <AbsolutePoint location="14839,349" />
+      <AbsolutePoint location="13651,349" />
+      <AbsolutePoint location="13651,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpwd.do,pwdSuccess,/system/emps/changepwd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2314,3266" />
+      <AbsolutePoint location="2314,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmodule.do,queryHtmlSuccess,/system/module/moduleTest.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="835,3214" />
+      <AbsolutePoint location="987,3214" />
+      <AbsolutePoint location="987,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmodule.do,querySuccess,/menu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="835,3184" />
+      <AbsolutePoint location="1235,3184" />
+      <AbsolutePoint location="1235,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrpttype.do,querySuccess,/sample/rpttype/cotrpttypelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5644,4120" />
+      <AbsolutePoint location="5820,4120" />
+      <AbsolutePoint location="5820,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotshipcompany.do,querySuccess,/systemdic/shipcompany/shipCompanylist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2032,3516" />
+      <AbsolutePoint location="2259,3516" />
+      <AbsolutePoint location="2259,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryFacOther,/orderout/orderFacDealToOrderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1288,1026" />
+      <AbsolutePoint location="1288,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/custcontact.do,add,/customer/custcontact/custcontactAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2727,3870" />
+      <AbsolutePoint location="2727,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpricefac.do,modify,/sample/cotpricefac/cotpricefacModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4684,3818" />
+      <AbsolutePoint location="4465,3818" />
+      <AbsolutePoint location="4465,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfile.do,queryFileSuccess,/sample/file/cotfiledetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4870,4422" />
+      <AbsolutePoint location="4711,4422" />
+      <AbsolutePoint location="4711,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailcheck.do,queryMailSuccess,/mail/check/mailCheck.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="372,4776" />
+      <AbsolutePoint location="372,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotqueryall.do,queryGiven,/queryAll/queryGiven.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4199,2188" />
+      <AbsolutePoint location="4509,2188" />
+      <AbsolutePoint location="4509,2416" />
+      <AbsolutePoint location="4549,2416" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,priceToPrice,/price/priceToPrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,52" />
+      <AbsolutePoint location="14929,850" />
+      <AbsolutePoint location="16828,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,queryTable,/price/price.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1667,0" />
+      <AbsolutePoint location="1667,-15" />
+      <AbsolutePoint location="60,-15" />
+      <AbsolutePoint location="60,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittings.do,addPriceOut,/fittings/hisPriceEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="712,2888" />
+      <AbsolutePoint location="579,2888" />
+      <AbsolutePoint location="579,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottradetype.do,querySuccess,/systemdic/tradetype/tradetypelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="671,4120" />
+      <AbsolutePoint location="863,4120" />
+      <AbsolutePoint location="863,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotshipcompany.do,modify,/systemdic/shipcompany/shipCompanyModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1685,3516" />
+      <AbsolutePoint location="1446,3516" />
+      <AbsolutePoint location="1446,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmodprice.do,querySuccess,/sample/elements/modPrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="860,5984" />
+      <AbsolutePoint location="860,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfactory.do,modify,/system/factory/factoryEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1026,2540" />
+      <AbsolutePoint location="415,2540" />
+      <AbsolutePoint location="415,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,queryOrderPic,/customer/customer/orderPic.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1247,2158" />
+      <AbsolutePoint location="481,2158" />
+      <AbsolutePoint location="481,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotlogininfo.do,querySuccess,/system/logininfo/loginInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1914,5984" />
+      <AbsolutePoint location="1914,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrptfile.do,uploadImg,/sample/rptfile/uploadImg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2983,3546" />
+      <AbsolutePoint location="3147,3546" />
+      <AbsolutePoint location="3147,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotnationcity.do,querySuccess,/systemdic/nationcity/nationcitylist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="907,5682" />
+      <AbsolutePoint location="907,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/report.do,show,/sample/report/report.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3986,5984" />
+      <AbsolutePoint location="3986,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfinacerecv.do,querySuccess,/finace/finacerecv/finacerecv.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5939,4724" />
+      <AbsolutePoint location="6075,4724" />
+      <AbsolutePoint location="6075,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustlog.do,add,/customer/custlog/custlogAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3140,5078" />
+      <AbsolutePoint location="3140,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotstatistics.do,queryRptSuccess,/statistics/report.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1288,4724" />
+      <AbsolutePoint location="1387,4724" />
+      <AbsolutePoint location="1387,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpricesituation.do,querySuccess,/systemdic/pricesitu/pricesitu.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4169,5380" />
+      <AbsolutePoint location="4169,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsplitinfo.do,querySuccess,/split/split.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2950,2488" />
+      <AbsolutePoint location="2950,2458" />
+      <AbsolutePoint location="2374,2458" />
+      <AbsolutePoint location="2374,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotemplog.do,add,/worklog/emplog/emplogAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2561,5078" />
+      <AbsolutePoint location="2561,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpackingorder.do,queryDeal,/packingorder/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4590,2944" />
+      <AbsolutePoint location="4590,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,claimEdit,/customer/claim/claimEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1567,2188" />
+      <AbsolutePoint location="2071,2188" />
+      <AbsolutePoint location="2071,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcompany.do,modify,/system/company/companyEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="814,5078" />
+      <AbsolutePoint location="814,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,queryCustPc,/customer/custPc/custPc.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1462,2136" />
+      <AbsolutePoint location="1462,1268" />
+      <AbsolutePoint location="4046,1268" />
+      <AbsolutePoint location="4046,1350" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,oOutDetail,/orderout/orderOutAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1288,974" />
+      <AbsolutePoint location="1288,1562" />
+      <AbsolutePoint location="4654,1562" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryRecvOther,/orderout/finaceRecvOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1164,1026" />
+      <AbsolutePoint location="1164,1679" />
+      <AbsolutePoint location="104,1679" />
+      <AbsolutePoint location="104,1589" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,addToMessage,/order/addToMessage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5254,104" />
+      <AbsolutePoint location="5254,129" />
+      <AbsolutePoint location="6827,129" />
+      <AbsolutePoint location="6827,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/importPicture.do,importPicture,/sample/importPicture/importPicture.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5970,5682" />
+      <AbsolutePoint location="5970,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottargetport.do,querySuccess,/systemdic/targetport/targetportlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6077,5380" />
+      <AbsolutePoint location="6077,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotarea.do,queryAreaSuccess,/system/factory/tree.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5845,5078" />
+      <AbsolutePoint location="5845,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotstatistics.do,querySuccess,/statistics/stattree.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1163,4776" />
+      <AbsolutePoint location="1163,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotimportresult.do,querySuccess,/sample/cotimportresult/cotimportresult.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="163,5682" />
+      <AbsolutePoint location="163,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryCus,/commonQuery/cusTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14869,0" />
+      <AbsolutePoint location="14869,-135" />
+      <AbsolutePoint location="12423,-135" />
+      <AbsolutePoint location="12423,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,loadFittingInfo,/sample/elements/elefitting.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2943,1738" />
+      <AbsolutePoint location="2943,1865" />
+      <AbsolutePoint location="1026,1865" />
+      <AbsolutePoint location="1026,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrptfile.do,querySuccess,/sample/rptfile/cotrptfilelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2983,3516" />
+      <AbsolutePoint location="3451,3516" />
+      <AbsolutePoint location="3451,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittingorder.do,querySuccess,/fittingorder/fittingOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3927,2892" />
+      <AbsolutePoint location="4314,2892" />
+      <AbsolutePoint location="4314,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryOrderByLabel,/commonQuery/orderTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14818,22" />
+      <AbsolutePoint location="11063,22" />
+      <AbsolutePoint location="11063,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcompany.do,querySuccess,/system/company/company.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="944,5078" />
+      <AbsolutePoint location="944,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,importPic,/importPic/importPic.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1787,104" />
+      <AbsolutePoint location="1787,119" />
+      <AbsolutePoint location="2697,119" />
+      <AbsolutePoint location="2697,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,givenToSign,/sign/sign/givenTosign.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14818,82" />
+      <AbsolutePoint location="13019,82" />
+      <AbsolutePoint location="13019,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotstatistics.do,queryStatsEdit,/statistics/statrpt/statrptEddit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1133,4776" />
+      <AbsolutePoint location="1133,4821" />
+      <AbsolutePoint location="-57,4821" />
+      <AbsolutePoint location="-57,2176" />
+      <AbsolutePoint location="50,2176" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,showOrderByFac,/orderfac/orderToOrderFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14818,52" />
+      <AbsolutePoint location="11820,52" />
+      <AbsolutePoint location="11820,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,querySuccess,/order/order.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5090,0" />
+      <AbsolutePoint location="5090,-135" />
+      <AbsolutePoint location="3905,-135" />
+      <AbsolutePoint location="3905,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessagetype.do,add,/worklog/msgtype/cotmsgtypeAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1536,4172" />
+      <AbsolutePoint location="1536,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryTable,/order/order.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5030,0" />
+      <AbsolutePoint location="5030,-75" />
+      <AbsolutePoint location="3935,-75" />
+      <AbsolutePoint location="3935,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittingorder.do,queryFitFrame,/fittingorder/fittingFrame.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3603,2888" />
+      <AbsolutePoint location="3391,2888" />
+      <AbsolutePoint location="3391,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,queryFinanceOther,/orderfac/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8280,104" />
+      <AbsolutePoint location="8280,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfinancegiven.do,add,/finace/financegiven/financeGivenEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4544,4776" />
+      <AbsolutePoint location="4544,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotlibrary.do,querySuccess,/library/libraryInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="798,5380" />
+      <AbsolutePoint location="798,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmail.do,querySuccess,/mail/inbox/inbox.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4375,4172" />
+      <AbsolutePoint location="4375,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,querySuccess,/price/price.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1607,104" />
+      <AbsolutePoint location="1607,439" />
+      <AbsolutePoint location="90,439" />
+      <AbsolutePoint location="90,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,showOtherPic,/sample/elements/uploadOtherPic.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3125,1718" />
+      <AbsolutePoint location="3307,1718" />
+      <AbsolutePoint location="3307,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailsend.do,querySign,/mail/send/signature.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4711,4172" />
+      <AbsolutePoint location="4711,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryPackOrderDetail,/orderout/conToAllocate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1173,922" />
+      <AbsolutePoint location="1173,892" />
+      <AbsolutePoint location="634,892" />
+      <AbsolutePoint location="634,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpriceout.do,add,/sample/cotpriceout/cotpriceoutAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3791,3870" />
+      <AbsolutePoint location="3791,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotlibrary.do,add,/library/libraryInfoEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="668,5380" />
+      <AbsolutePoint location="668,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryOrderFacToAdd,/orderout/queryOrderFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1378,1026" />
+      <AbsolutePoint location="1378,1418" />
+      <AbsolutePoint location="2887,1418" />
+      <AbsolutePoint location="2887,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryOrderFac,/orderout/conToAllocate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1325,922" />
+      <AbsolutePoint location="1325,914" />
+      <AbsolutePoint location="664,914" />
+      <AbsolutePoint location="664,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryTime,/order/timeOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4981,35" />
+      <AbsolutePoint location="3705,35" />
+      <AbsolutePoint location="3705,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryPrintAll,/commonQuery/printAll.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14959,104" />
+      <AbsolutePoint location="14959,783" />
+      <AbsolutePoint location="10490,783" />
+      <AbsolutePoint location="10490,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfinacerecv.do,add,/finace/finacerecv/finacerecvEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5757,4776" />
+      <AbsolutePoint location="5757,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryOrderFacOther,/orderout/orderFacDealToOrderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1318,1026" />
+      <AbsolutePoint location="1318,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcontainertype.do,querySuccess,/systemdic/containertype/containertype.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3776,5380" />
+      <AbsolutePoint location="3776,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprovince.do,querySuccess,/systemdic/province/provincelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2735,5682" />
+      <AbsolutePoint location="2735,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsysdic.do,add,/system/sysdic/cotsysdicAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3121,4422" />
+      <AbsolutePoint location="2937,4422" />
+      <AbsolutePoint location="2937,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotboxtype.do,querySuccess,/system/boxtype/boxtype.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2959,5984" />
+      <AbsolutePoint location="2959,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryFacOther,/order/facToOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5180,0" />
+      <AbsolutePoint location="5180,-75" />
+      <AbsolutePoint location="5807,-75" />
+      <AbsolutePoint location="5807,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottaxtype.do,modify,/systemdic/taxtype/taxtypeModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="307,4422" />
+      <AbsolutePoint location="124,4422" />
+      <AbsolutePoint location="124,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cothscompany.do,modify,/systemdic/hscompany/hscompanyModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1472,3818" />
+      <AbsolutePoint location="1256,3818" />
+      <AbsolutePoint location="1256,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessagetype.do,modify,/worklog/msgtype/cotmsgtypeModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1380,4120" />
+      <AbsolutePoint location="1171,4120" />
+      <AbsolutePoint location="1171,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfinancegiven.do,queryDealDetail,/finace/financegiven/financeGivenEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4574,4776" />
+      <AbsolutePoint location="4574,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrole.do,querySuccess,/system/role/role.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4974,5984" />
+      <AbsolutePoint location="4974,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotqueryall.do,queryOrderFac,/queryAll/queryOrderFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4081,2240" />
+      <AbsolutePoint location="4081,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotstatistics.do,queryStats,/statistics/statrpt/statrpt.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1132,4672" />
+      <AbsolutePoint location="1132,4519" />
+      <AbsolutePoint location="7125,4519" />
+      <AbsolutePoint location="7125,1976" />
+      <AbsolutePoint location="6542,1976" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,queryOrderFac,/order/orderToFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8093,35" />
+      <AbsolutePoint location="7421,35" />
+      <AbsolutePoint location="7421,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittingorder.do,queryDeal,/fittingorder/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3735,2944" />
+      <AbsolutePoint location="3735,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsymbol.do,querySuccess,/split/cotsplitlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4097,2592" />
+      <AbsolutePoint location="4097,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotdatatone.do,Success,/system/combination/success.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2486,4422" />
+      <AbsolutePoint location="2659,4422" />
+      <AbsolutePoint location="2659,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,showExcel,/price/report.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1577,104" />
+      <AbsolutePoint location="1577,850" />
+      <AbsolutePoint location="1604,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotstatistics.do,queryChkTreeSuccess,/statistics/statpopedom.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="979,4724" />
+      <AbsolutePoint location="861,4724" />
+      <AbsolutePoint location="861,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittingorder.do,queryDetail,/fittingorder/fittingOrderEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3913,2944" />
+      <AbsolutePoint location="3913,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryContract,/commonQuery/contractTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14818,100" />
+      <AbsolutePoint location="14602,100" />
+      <AbsolutePoint location="14602,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,queryTable,/orderfac/orderFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8190,104" />
+      <AbsolutePoint location="8190,499" />
+      <AbsolutePoint location="7979,499" />
+      <AbsolutePoint location="7979,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessage.do,queryOverMessage,/worklog/message/messagelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5575,2592" />
+      <AbsolutePoint location="5575,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryOrderNo,/commonQuery/queryOrderNo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14899,0" />
+      <AbsolutePoint location="14899,-135" />
+      <AbsolutePoint location="15260,-135" />
+      <AbsolutePoint location="15260,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmail.do,printContent,/mail/inbox/print.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4246,4120" />
+      <AbsolutePoint location="4122,4120" />
+      <AbsolutePoint location="4122,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittings.do,loadPriceInfo,/fittings/hisPriceTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="857,2944" />
+      <AbsolutePoint location="857,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcontact.do,querySuccess,/system/contact/contact.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4404,5078" />
+      <AbsolutePoint location="4404,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottype.do,querySuccess,/systemdic/typelv/typelv.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1212,5984" />
+      <AbsolutePoint location="1212,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,priceDetail,/price/priceAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1757,104" />
+      <AbsolutePoint location="1757,850" />
+      <AbsolutePoint location="1832,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotqueryall.do,queryOrder,/queryAll/queryOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4081,2136" />
+      <AbsolutePoint location="4081,2018" />
+      <AbsolutePoint location="5126,2018" />
+      <AbsolutePoint location="5126,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrecv.do,querySuccess,/finace/recv/recv.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1284,5380" />
+      <AbsolutePoint location="1284,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelecfg.do,modify,/sample/cotelecfg/cotelecfg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3105,3214" />
+      <AbsolutePoint location="2603,3214" />
+      <AbsolutePoint location="2603,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsplitinfo.do,queryOrderOut,/split/split.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2821,2510" />
+      <AbsolutePoint location="2404,2510" />
+      <AbsolutePoint location="2404,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcheck.do,queryOrderFac,/check/queryOrderFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2515,2944" />
+      <AbsolutePoint location="2515,3311" />
+      <AbsolutePoint location="2126,3311" />
+      <AbsolutePoint location="2126,3117" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,querySuccess,/customer/customer/customerlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1482,2136" />
+      <AbsolutePoint location="1482,2106" />
+      <AbsolutePoint location="2676,2106" />
+      <AbsolutePoint location="2676,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryRemainOrderDetail,/order/orderfacEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14818,4" />
+      <AbsolutePoint location="10242,4" />
+      <AbsolutePoint location="10242,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotdeal.do,queryDeal,/finace/deal/dealDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5655,4422" />
+      <AbsolutePoint location="5504,4422" />
+      <AbsolutePoint location="5504,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcurrency.do,querySuccess,/systemdic/currency/currency.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2011,5682" />
+      <AbsolutePoint location="2011,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,queryTime,/orderfac/timeOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8325,104" />
+      <AbsolutePoint location="8325,1118" />
+      <AbsolutePoint location="794,1118" />
+      <AbsolutePoint location="794,1850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfactory.do,loadPriceFac,/system/factory/cotpricefac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1318,2570" />
+      <AbsolutePoint location="1612,2570" />
+      <AbsolutePoint location="1612,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfactory.do,queryContact,/system/factory/contactGird.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1117,2592" />
+      <AbsolutePoint location="1117,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpackingorder.do,queryFinanceOther,/packingorder/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4620,2944" />
+      <AbsolutePoint location="4620,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,queryClaim,/customer/claim/claim.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1567,2158" />
+      <AbsolutePoint location="2363,2158" />
+      <AbsolutePoint location="2363,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotshipport.do,querySuccess,/systemdic/shipport/shipport.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3096,5682" />
+      <AbsolutePoint location="3096,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,querySuccess,/orderfac/orderFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8116,104" />
+      <AbsolutePoint location="8116,439" />
+      <AbsolutePoint location="7949,439" />
+      <AbsolutePoint location="7949,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotexpcompany.do,add,/systemdic/expcompany/expCompanyEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1785,4776" />
+      <AbsolutePoint location="1785,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpricefac.do,queryList,/sample/cotpricefac/cotpricefaclist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4983,3818" />
+      <AbsolutePoint location="5190,3818" />
+      <AbsolutePoint location="5190,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,loadChildInfo,/sample/elements/child.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2821,1709" />
+      <AbsolutePoint location="104,1709" />
+      <AbsolutePoint location="104,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,modifyElements,/sample/elements/elementsBatchUpdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3065,1634" />
+      <AbsolutePoint location="3065,1478" />
+      <AbsolutePoint location="5675,1478" />
+      <AbsolutePoint location="5675,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittings.do,goFitEle,/fittings/fitEleTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1002,2888" />
+      <AbsolutePoint location="1117,2888" />
+      <AbsolutePoint location="1117,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,importPic,/importPic/importPic.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4982,104" />
+      <AbsolutePoint location="4982,169" />
+      <AbsolutePoint location="2763,169" />
+      <AbsolutePoint location="2763,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmeettype.do,modify,/systemdic/meettype/meettypeUpdate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2383,4120" />
+      <AbsolutePoint location="2180,4120" />
+      <AbsolutePoint location="2180,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcontact.do,modifyWithPan,/pan/contactEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4336,4974" />
+      <AbsolutePoint location="4336,4340" />
+      <AbsolutePoint location="8206,4340" />
+      <AbsolutePoint location="8206,1076" />
+      <AbsolutePoint location="4398,1076" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/custcontact.do,querySuccess,/customer/custcontact/custcontactlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2894,3818" />
+      <AbsolutePoint location="3098,3818" />
+      <AbsolutePoint location="3098,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotseq.do,add,/system/seq/seqEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1619,5380" />
+      <AbsolutePoint location="1619,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottypelv.do,querySuccess,/systemdic/typelv2/typelv2.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5255,5682" />
+      <AbsolutePoint location="5255,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryOverFee,/orderout/orderFacDealToOrderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1339,922" />
+      <AbsolutePoint location="1339,914" />
+      <AbsolutePoint location="1482,914" />
+      <AbsolutePoint location="1482,1562" />
+      <AbsolutePoint location="1442,1562" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotElePicShow.do,queryPicSuccess,/sample/elements/elepiclist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1383,5078" />
+      <AbsolutePoint location="1383,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotaudit.do,querySuccess,/audit/cotaudit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4138,4724" />
+      <AbsolutePoint location="4252,4724" />
+      <AbsolutePoint location="4252,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrptfile.do,uploadFile,/sample/rptfile/uploadFile.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2837,3568" />
+      <AbsolutePoint location="2837,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryOrderPc,/order/orderPc.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5126,104" />
+      <AbsolutePoint location="5126,1574" />
+      <AbsolutePoint location="5150,1574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrptfile.do,add,/sample/rptfile/upload.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2692,3546" />
+      <AbsolutePoint location="2574,3546" />
+      <AbsolutePoint location="2574,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotbank.do,modify,/systemdic/bank/bankEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5348,5078" />
+      <AbsolutePoint location="5348,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmail.do,querySign,/mail/send/signature.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4505,4120" />
+      <AbsolutePoint location="4639,4120" />
+      <AbsolutePoint location="4639,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryOrderElePrice,/order/orderElePrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4981,65" />
+      <AbsolutePoint location="4466,65" />
+      <AbsolutePoint location="4466,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfactory.do,queryMainSuccess,/system/factory/main.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1247,2592" />
+      <AbsolutePoint location="1247,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotlabel.do,showPicture,/label/showPicture.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1416,4452" />
+      <AbsolutePoint location="1551,4452" />
+      <AbsolutePoint location="1551,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottrailcar.do,querySuccess,/systemdic/trailcar/trailcarList.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="341,5078" />
+      <AbsolutePoint location="341,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,orderToGiven,/given/orderToGiven.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,52" />
+      <AbsolutePoint location="14929,850" />
+      <AbsolutePoint location="15832,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrpttype.do,add,/sample/rpttype/cotrpttypeAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5494,4172" />
+      <AbsolutePoint location="5494,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotlabel.do,addLabel,/label/labelAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1147,4452" />
+      <AbsolutePoint location="1049,4452" />
+      <AbsolutePoint location="1049,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,loadOrderFacInfo,/sample/elements/orderfacInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3003,1634" />
+      <AbsolutePoint location="3003,1328" />
+      <AbsolutePoint location="5306,1328" />
+      <AbsolutePoint location="5306,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,orderPcEdit,/order/orderPcEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5259,99" />
+      <AbsolutePoint location="5903,99" />
+      <AbsolutePoint location="5903,1550" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryOrder,/customer/customer/order.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5202,104" />
+      <AbsolutePoint location="5202,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottradetype.do,add,/systemdic/tradetype/tradetypeAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="506,4172" />
+      <AbsolutePoint location="506,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfitanys.do,querySuccess,/order/fitAnys.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2046,5380" />
+      <AbsolutePoint location="2046,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,givenToPrice,/price/givenToPrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,104" />
+      <AbsolutePoint location="14929,729" />
+      <AbsolutePoint location="11352,729" />
+      <AbsolutePoint location="11352,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotemps.do,queryListSuccess,/system/emps/cotemps.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1815,3244" />
+      <AbsolutePoint location="1971,3244" />
+      <AbsolutePoint location="1971,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelements.do,loadGivenInfo,/sample/elements/givenInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2913,1738" />
+      <AbsolutePoint location="2913,1818" />
+      <AbsolutePoint location="1651,1818" />
+      <AbsolutePoint location="1651,2038" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfactory.do,loadMail,/system/factory/cust/cust.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1026,2570" />
+      <AbsolutePoint location="719,2570" />
+      <AbsolutePoint location="719,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryCus,/price/cusTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5012,104" />
+      <AbsolutePoint location="5012,469" />
+      <AbsolutePoint location="3224,469" />
+      <AbsolutePoint location="3224,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfinancegiven.do,querySuccess,/finace/financegiven/financeGiven.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4704,4724" />
+      <AbsolutePoint location="4855,4724" />
+      <AbsolutePoint location="4855,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryOrderToOrderFac,/order/orderToFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5060,0" />
+      <AbsolutePoint location="5060,-105" />
+      <AbsolutePoint location="4085,-105" />
+      <AbsolutePoint location="4085,439" />
+      <AbsolutePoint location="7391,439" />
+      <AbsolutePoint location="7391,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryConsignCompany,/commonQuery/consignCompanyTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="15040,100" />
+      <AbsolutePoint location="16159,100" />
+      <AbsolutePoint location="16159,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmodule.do,queryListSuccess,/system/module/module.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="687,3266" />
+      <AbsolutePoint location="687,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpriceout.do,queryList,/sample/cotpriceout/cotpriceoutlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3942,3818" />
+      <AbsolutePoint location="4152,3818" />
+      <AbsolutePoint location="4152,3970" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelecfg.do,openCalculator,/sample/cotelecfg/calculator.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3394,3244" />
+      <AbsolutePoint location="3576,3244" />
+      <AbsolutePoint location="3576,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/customervisitedlog.do,querySuccess,/customer/custvisitedlog/custvisitedlog.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2649,4776" />
+      <AbsolutePoint location="2649,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,oOutDetailDel,/orderoutdel/orderOutAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1430,1026" />
+      <AbsolutePoint location="1430,1148" />
+      <AbsolutePoint location="5555,1148" />
+      <AbsolutePoint location="5555,1650" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryPackOrder,/orderout/orderFacDealToOrderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1228,1026" />
+      <AbsolutePoint location="1228,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,addToMessage,/orderout/addToMessage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1195,922" />
+      <AbsolutePoint location="1195,681" />
+      <AbsolutePoint location="-75,681" />
+      <AbsolutePoint location="-75,1977" />
+      <AbsolutePoint location="4355,1977" />
+      <AbsolutePoint location="4355,1589" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryEle,/price/eleTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5000,0" />
+      <AbsolutePoint location="5000,-15" />
+      <AbsolutePoint location="2983,-15" />
+      <AbsolutePoint location="2983,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfactory.do,addContact,/system/factory/contactEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1026,2510" />
+      <AbsolutePoint location="105,2510" />
+      <AbsolutePoint location="105,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotemps.do,loginSuccess,/main.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1533,3214" />
+      <AbsolutePoint location="1432,3214" />
+      <AbsolutePoint location="1432,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,priceToOrder,/order/priceToOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14821,104" />
+      <AbsolutePoint location="14821,289" />
+      <AbsolutePoint location="8800,289" />
+      <AbsolutePoint location="8800,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomer.do,add,/customer/customer/customerAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1407,2240" />
+      <AbsolutePoint location="1407,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,showUpload,/orderfac/uploadMB.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8407,52" />
+      <AbsolutePoint location="8496,52" />
+      <AbsolutePoint location="8496,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,detail,/order/orderDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5232,104" />
+      <AbsolutePoint location="5232,625" />
+      <AbsolutePoint location="5545,625" />
+      <AbsolutePoint location="5545,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,queryOrderFittings,/order/orderFitting.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5172,104" />
+      <AbsolutePoint location="5172,801" />
+      <AbsolutePoint location="3446,801" />
+      <AbsolutePoint location="3446,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcuttype.do,querySuccess,/systemdic/cuttype/cuttype.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4537,5682" />
+      <AbsolutePoint location="4537,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfactory.do,queryOrderFac,/system/factory/orderFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1318,2540" />
+      <AbsolutePoint location="1910,2540" />
+      <AbsolutePoint location="1910,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,showPrint,/commonQuery/showPrint.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14821,0" />
+      <AbsolutePoint location="14821,-15" />
+      <AbsolutePoint location="12725,-15" />
+      <AbsolutePoint location="12725,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryFac,/commonQuery/facTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,0" />
+      <AbsolutePoint location="14929,-105" />
+      <AbsolutePoint location="19749,-105" />
+      <AbsolutePoint location="19749,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotbarcode.do,querySuccess,/barcode/cotbarcode.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="507,5984" />
+      <AbsolutePoint location="507,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="failure;6,null,/common/error.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6067,5967" />
+      <AbsolutePoint location="6067,6067" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcustomerlv.do,querySuccess,/systemdic/customerlv/cotcustomerlvlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5324,5380" />
+      <AbsolutePoint location="5324,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotlabel.do,queryLabelDetail,/label/labelAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1147,4422" />
+      <AbsolutePoint location="1019,4422" />
+      <AbsolutePoint location="1019,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmeettype.do,querySuccess,/systemdic/meettype/meettype.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2708,4120" />
+      <AbsolutePoint location="2879,4120" />
+      <AbsolutePoint location="2879,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfitanys.do,queryFitting,/order/fittingQuery.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2176,5380" />
+      <AbsolutePoint location="2176,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryTargetPort,/commonQuery/targetPortTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,52" />
+      <AbsolutePoint location="14929,850" />
+      <AbsolutePoint location="13976,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryEle,/commonQuery/eleTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14869,104" />
+      <AbsolutePoint location="14869,409" />
+      <AbsolutePoint location="12125,409" />
+      <AbsolutePoint location="12125,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryDeal,/orderout/dealFinaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1142,1026" />
+      <AbsolutePoint location="1142,1562" />
+      <AbsolutePoint location="1079,1562" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,addToMessage,/price/addToMessage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1801,22" />
+      <AbsolutePoint location="2420,22" />
+      <AbsolutePoint location="2420,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpan.do,queryOtherPic,/pan/otherPics.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4145,550" />
+      <AbsolutePoint location="4145,529" />
+      <AbsolutePoint location="6679,529" />
+      <AbsolutePoint location="6679,3132" />
+      <AbsolutePoint location="418,3132" />
+      <AbsolutePoint location="418,2903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpackingorder.do,queryDealDetail,/packingorder/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4650,2944" />
+      <AbsolutePoint location="4650,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotgiven.do,add,/given/givenEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3420,4172" />
+      <AbsolutePoint location="3420,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotemps.do,pwdSuccess,/system/emps/changepwd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1815,3214" />
+      <AbsolutePoint location="2162,3214" />
+      <AbsolutePoint location="2162,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpan.do,editFac,/pan/panFacAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4076,654" />
+      <AbsolutePoint location="4076,759" />
+      <AbsolutePoint location="-27,759" />
+      <AbsolutePoint location="-27,2876" />
+      <AbsolutePoint location="50,2876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotrecv.do,queryRecv,/finace/recv/recvDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1154,5380" />
+      <AbsolutePoint location="1154,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittingorder.do,queryDealDetail,/fittingorder/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3765,2944" />
+      <AbsolutePoint location="3765,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprod.do,queryProdSuccess,/sample/prod/cotprodModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4161,4474" />
+      <AbsolutePoint location="4161,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpackingorder.do,querySuccess,/packingorder/packingOrder.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4903,2892" />
+      <AbsolutePoint location="5220,2892" />
+      <AbsolutePoint location="5220,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,chaDetail,/orderout/orderOuthsdetailInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1273,922" />
+      <AbsolutePoint location="1273,595" />
+      <AbsolutePoint location="2569,595" />
+      <AbsolutePoint location="2569,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/newpreviewrpt.do,previewSuccess,/applet1.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4153,3568" />
+      <AbsolutePoint location="4153,3668" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotdept.do,querySuccess,/system/dept/cotdept.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4652,5984" />
+      <AbsolutePoint location="4652,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpan.do,editHw,/pan/panAddHw.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4025,550" />
+      <AbsolutePoint location="4025,409" />
+      <AbsolutePoint location="-105,409" />
+      <AbsolutePoint location="-105,2810" />
+      <AbsolutePoint location="1324,2810" />
+      <AbsolutePoint location="1324,2850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpaytype.do,querySuccess,/systemdic/paytype/paytypelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4177,5682" />
+      <AbsolutePoint location="4177,5782" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsyslog.do,querySuccess,/worklog/syslog/cotsyslog.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3839,5078" />
+      <AbsolutePoint location="3839,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,querySuccess,/orderout/orderOut.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1447,935" />
+      <AbsolutePoint location="3823,935" />
+      <AbsolutePoint location="3823,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottaxtype.do,querySuccess,/systemdic/taxtype/taxtypelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="622,4422" />
+      <AbsolutePoint location="793,4422" />
+      <AbsolutePoint location="793,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotqueryall.do,queryPriceFac,/queryAll/queryPriceFac.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3963,2158" />
+      <AbsolutePoint location="2938,2158" />
+      <AbsolutePoint location="2938,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotdeal.do,queryTrans,/finace/deal/transDetail.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5790,4474" />
+      <AbsolutePoint location="5790,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpan.do,showSupplierPan,/pan/supplier.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4115,550" />
+      <AbsolutePoint location="4115,409" />
+      <AbsolutePoint location="6965,409" />
+      <AbsolutePoint location="6965,2959" />
+      <AbsolutePoint location="1622,2959" />
+      <AbsolutePoint location="1622,2903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderfac.do,queryDealDetail,/orderfac/finaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8250,104" />
+      <AbsolutePoint location="8250,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotlabel.do,querySuccess,/label/label.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1416,4422" />
+      <AbsolutePoint location="1790,4422" />
+      <AbsolutePoint location="1790,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcalculation.do,querySuccess,/price/calculation/calculation.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5380,4776" />
+      <AbsolutePoint location="5380,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotbacktax.do,addAudit,/backtax/backtaxEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3310,4776" />
+      <AbsolutePoint location="3310,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfinancegiven.do,queryDeal,/finace/financegiven/financeGivenEdit.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4514,4776" />
+      <AbsolutePoint location="4514,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotcheck.do,queryPrice,/check/queryPrice.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2449,2944" />
+      <AbsolutePoint location="2449,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfile.do,uploadFile,/sample/file/uploadFile.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5005,4474" />
+      <AbsolutePoint location="5005,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cottradetype.do,modify,/systemdic/tradetype/tradetypeModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="342,4120" />
+      <AbsolutePoint location="138,4120" />
+      <AbsolutePoint location="138,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotemplog.do,querySuccess,/worklog/emplog/emplog.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2691,5078" />
+      <AbsolutePoint location="2691,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotdays.do,querySuccess,/systemdic/days/cotdayslist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3194,154" />
+      <AbsolutePoint location="3194,379" />
+      <AbsolutePoint location="156,379" />
+      <AbsolutePoint location="156,950" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryFinanceDeal,/orderout/dealFinaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1213,922" />
+      <AbsolutePoint location="1213,529" />
+      <AbsolutePoint location="975,529" />
+      <AbsolutePoint location="975,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessage.do,modify,/worklog/message/handleMessage.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5322,2540" />
+      <AbsolutePoint location="4795,2540" />
+      <AbsolutePoint location="4795,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotfittings.do,querySuccess,/fittings/fittings.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1002,2918" />
+      <AbsolutePoint location="1377,2918" />
+      <AbsolutePoint location="1377,3064" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryByCondition,/test.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14839,0" />
+      <AbsolutePoint location="14839,-45" />
+      <AbsolutePoint location="11574,-45" />
+      <AbsolutePoint location="11574,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotdeal.do,querySuccess,/finace/deal/deal.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5925,4422" />
+      <AbsolutePoint location="6059,4422" />
+      <AbsolutePoint location="6059,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,queryPrice,/customer/customer/price.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1637,104" />
+      <AbsolutePoint location="1637,469" />
+      <AbsolutePoint location="322,469" />
+      <AbsolutePoint location="322,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryPackFacDetail,/orderout/conToAllocate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1133,1026" />
+      <AbsolutePoint location="1133,1198" />
+      <AbsolutePoint location="724,1198" />
+      <AbsolutePoint location="724,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailcheck.do,querySuccess,/mail/check/check.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="519,4724" />
+      <AbsolutePoint location="652,4724" />
+      <AbsolutePoint location="652,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsyslog.do,add,/worklog/syslog/showsyslog.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3709,5078" />
+      <AbsolutePoint location="3709,5178" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprice.do,queryEle,/price/eleTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1697,104" />
+      <AbsolutePoint location="1697,499" />
+      <AbsolutePoint location="2953,499" />
+      <AbsolutePoint location="2953,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotaudit.do,auditCreate,/audit/auditCreate.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4003,4776" />
+      <AbsolutePoint location="4003,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpan.do,edit,/pan/panAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4055,550" />
+      <AbsolutePoint location="4055,379" />
+      <AbsolutePoint location="7547,379" />
+      <AbsolutePoint location="7547,3019" />
+      <AbsolutePoint location="2223,3019" />
+      <AbsolutePoint location="2223,2903" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryElements,/commonQuery/eleQuery.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="15040,22" />
+      <AbsolutePoint location="18534,22" />
+      <AbsolutePoint location="18534,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprod.do,add,/sample/prod/cotprodAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4021,4422" />
+      <AbsolutePoint location="3843,4422" />
+      <AbsolutePoint location="3843,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailcontrol.do,querySuccess,/mail/control/control.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2613,5984" />
+      <AbsolutePoint location="2613,6084" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelecfg.do,querySuccess,/sample/cotelecfg/elecfg.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3394,3214" />
+      <AbsolutePoint location="3883,3214" />
+      <AbsolutePoint location="3883,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderout.do,queryDealDetail,/orderout/dealFinaceOther.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1129,996" />
+      <AbsolutePoint location="1005,996" />
+      <AbsolutePoint location="1005,1536" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorderstatus.do,queryOrderStatus,/queryAll/orderorderfacstatus.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5586,2250" />
+      <AbsolutePoint location="5586,2188" />
+      <AbsolutePoint location="6050,2188" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotpackanys.do,querySuccess,/order/packAnys.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4558,5380" />
+      <AbsolutePoint location="4558,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotsplitinfo.do,queryTable,/split/cotsplitlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2980,2592" />
+      <AbsolutePoint location="2980,2665" />
+      <AbsolutePoint location="4062,2665" />
+      <AbsolutePoint location="4062,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryEmp,/commonQuery/empTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="15019,0" />
+      <AbsolutePoint location="15019,-15" />
+      <AbsolutePoint location="20414,-15" />
+      <AbsolutePoint location="20414,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotquery.do,queryPriceFac,/orderfac/showPriceInfo.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="14929,52" />
+      <AbsolutePoint location="14929,850" />
+      <AbsolutePoint location="14292,850" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotqueryall.do,querySuccess,/queryAll/queryAllTable.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4199,2158" />
+      <AbsolutePoint location="4914,2158" />
+      <AbsolutePoint location="4914,2390" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotexpcompany.do,querySuccess,/systemdic/expcompany/expcompanylist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1915,4776" />
+      <AbsolutePoint location="1915,4876" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotprod.do,querySuccess,/sample/prod/cotprodlist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4301,4422" />
+      <AbsolutePoint location="4474,4422" />
+      <AbsolutePoint location="4474,4574" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,showExcel,/order/report.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5120,0" />
+      <AbsolutePoint location="5120,-135" />
+      <AbsolutePoint location="6316,-135" />
+      <AbsolutePoint location="6316,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmessage.do,queryUnreadMessage,/worklog/message/messagelist.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5545,2592" />
+      <AbsolutePoint location="5545,2742" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotgiven.do,queryGiven,/customer/customer/given.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3557,4150" />
+      <AbsolutePoint location="3674,4150" />
+      <AbsolutePoint location="3674,4272" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotmailcfg.do,add,/mail/mailcfg/mailCfgAdd.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="186,5380" />
+      <AbsolutePoint location="186,5480" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotorder.do,modDetail,/order/orderModify.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5096,104" />
+      <AbsolutePoint location="5096,759" />
+      <AbsolutePoint location="4188,759" />
+      <AbsolutePoint location="4188,824" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/cotelecfg.do,openFacCalculator,/sample/cotelecfg/faccalculator.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3249,3266" />
+      <AbsolutePoint location="3249,3366" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

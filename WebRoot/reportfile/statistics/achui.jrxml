@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"  ?>
+<!-- Created with iReport - A designer for JasperReports -->
+<!DOCTYPE jasperReport PUBLIC "//JasperReports//DTD Report Design//EN" "http://jasperreports.sourceforge.net/dtds/jasperreport.dtd">
+<jasperReport
+		 name="achui"
+		 columnCount="1"
+		 printOrder="Vertical"
+		 orientation="Portrait"
+		 pageWidth="595"
+		 pageHeight="842"
+		 columnWidth="535"
+		 columnSpacing="0"
+		 leftMargin="30"
+		 rightMargin="30"
+		 topMargin="20"
+		 bottomMargin="20"
+		 whenNoDataType="NoPages"
+		 isTitleNewPage="false"
+		 isSummaryNewPage="false">
+	<property name="ireport.scriptlethandling" value="2" />
+	<property name="ireport.encoding" value="UTF-8" />
+	<import value="java.util.*" />
+	<import value="net.sf.jasperreports.engine.*" />
+	<import value="net.sf.jasperreports.engine.data.*" />
+
+	<queryString><![CDATA[select * from cot_sign where 1=1 order by factory_id]]></queryString>
+
+	<field name="ID" class="java.lang.Integer"/>
+	<field name="SIGN_NO" class="java.lang.String"/>
+	<field name="SIGN_TIME" class="java.sql.Timestamp"/>
+	<field name="REQUIRE_TIME" class="java.sql.Timestamp"/>
+	<field name="CUST_TIME" class="java.sql.Timestamp"/>
+	<field name="SIGN_REMARK" class="java.lang.String"/>
+	<field name="ADD_TIME" class="java.sql.Timestamp"/>
+	<field name="ADD_PERSON" class="java.lang.String"/>
+	<field name="FOLLOW_PERSON" class="java.lang.String"/>
+	<field name="SIGN_STATUS" class="java.math.BigDecimal"/>
+	<field name="SIGN_ISCHECK" class="java.math.BigDecimal"/>
+	<field name="CHECK_REASON" class="java.lang.String"/>
+	<field name="FACTORY_ID" class="java.lang.Integer"/>
+	<field name="SIGN_TYPE_ID" class="java.lang.Integer"/>
+	<field name="CUST_ID" class="java.lang.Integer"/>
+	<field name="BUSINESS_PERSON" class="java.lang.Integer"/>
+	<field name="EMP_ID" class="java.lang.Integer"/>
+
+	<variable name="faccount" class="java.lang.Integer" resetType="Group" resetGroup="testgroup" calculation="Count">
+		<variableExpression><![CDATA[$F{FACTORY_ID}]]></variableExpression>
+		<initialValueExpression><![CDATA[new Integer(0)]]></initialValueExpression>
+	</variable>
+
+		<group  name="testgroup" >
+			<groupExpression><![CDATA[$F{FACTORY_ID}]]></groupExpression>
+			<groupHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+			</groupHeader>
+			<groupFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+			</groupFooter>
+		</group>
+		<background>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</background>
+		<title>
+			<band height="80"  isSplitAllowed="true" >
+				<staticText>
+					<reportElement
+						x="0"
+						y="0"
+						width="535"
+						height="72"
+						key="staticText-1"/>
+					<box></box>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="22"/>
+					</textElement>
+				<text><![CDATA[销售分析(按地区)]]></text>
+				</staticText>
+			</band>
+		</title>
+		<pageHeader>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageHeader>
+		<columnHeader>
+			<band height="0"  isSplitAllowed="false" >
+			</band>
+		</columnHeader>
+		<detail>
+			<band height="0"  isSplitAllowed="false" >
+			</band>
+		</detail>
+		<columnFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</columnFooter>
+		<pageFooter>
+			<band height="0"  isSplitAllowed="true" >
+			</band>
+		</pageFooter>
+		<summary>
+			<band height="400"  isSplitAllowed="true" >
+				<pieChart>
+					<chart evaluationTime="Report" evaluationGroup="test"  hyperlinkTarget="Self" >
+					<reportElement
+						x="10"
+						y="20"
+						width="521"
+						height="304"
+						key="element-1"/>
+					<box></box>
+						<chartLegend textColor="#000000" backgroundColor="#FFFFFF" >
+					</chartLegend>
+					</chart>
+					<pieDataset>
+						<dataset resetType="None" >
+						</dataset>
+						<keyExpression><![CDATA[$F{FACTORY_ID}]]></keyExpression>
+						<valueExpression><![CDATA[$V{faccount}]]></valueExpression>
+						<labelExpression><![CDATA[String.valueOf($V{faccount})]]></labelExpression>
+				<sectionHyperlink >
+				</sectionHyperlink>
+					</pieDataset>
+					<piePlot 
+>
+						<plot />
+					</piePlot>
+				</pieChart>
+			</band>
+		</summary>
+</jasperReport>

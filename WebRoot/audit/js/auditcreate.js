@@ -1,0 +1,88 @@
+Ext.onReady(function(){
+	var MyForm=new Ext.form.FormPanel({
+	title:"",
+	labelWidth:80,
+	labelAlign:"right",
+	layout:"column",
+	width:520,
+	height:260,
+	padding:"5px",
+	hideBorders:true,
+	frame:true,
+	renderTo:Ext.getBody(),
+	defaults:{
+		allowBlank:false,
+		blankText:"该项不能为空"
+	},
+	buttonAlign:"center",
+	defaults:{
+		allowBlank:false
+	},
+	monitorValid:true,
+	fbar:[
+		{
+			text:"保存",
+			iconCls:"page_table_save",
+			formBind:true,
+			handler:save
+		},
+		{
+			text:"取消",
+			iconCls:"page_cancel",
+			handler:function(){
+				closeandreflashEC('true','auditGrid',false);
+			}
+		}
+	],
+	items:[
+		{
+			xtype:"panel",
+			title:"",
+			columnWidth:0.5,
+			layout:"form",
+
+			items:[
+				{
+					xtype:"textfield",
+					fieldLabel:"<font color=red>单据编号</font>",
+					id:"auditNo",
+					name:"auditNo",
+					anchor:"100%"
+				},
+				{
+					xtype:"datefield",
+					fieldLabel:"<font color=red>订单日期</font>",
+					id:"receiveDate",
+					name:"receiveDate",
+					format:'Y-m-d',
+					anchor:"100%"
+				}
+			]
+		},
+		{
+			xtype:"panel",
+			title:"",
+			columnWidth:0.5,
+			layout:"form",
+			items:[
+				{
+					xtype:"textfield",
+					fieldLabel:"<font color=red>核销单数量</font>",
+					id:"auditNum",
+					name:"auditNum",					
+					anchor:"100%"
+				},
+				{
+					xtype:"datefield",
+					fieldLabel:"<font color=red>有效期至</font>",
+					id:"effectDate",
+					name:"effectDate",	
+					format:'Y-m-d',
+					anchor:"100%"
+				}
+			]
+		}
+	]
+});
+initForm();
+});

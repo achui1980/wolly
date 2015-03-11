@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotTrailCar" match="com.sail.cot.domain.CotTrailCar"/>	
+	<create creator="spring" javascript="cotTrailCarService">
+    	<param name="beanName" value="CotTrailCarService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.systemdic.impl.CotTrailCarServiceImpl; 
+import com.sail.cot.domain.CotTrailCar; 
+cotTrailCarService.saveOrUpdateTrailCar(List<CotTrailCar> trailcarList);
+cotTrailCarService.deleteTrailCarByList(List<Integer> ids);
+]]> 
+
+</signatures>
+</dwr>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>/WEB-INF/jdbc.properties</value>
+            </list>
+        </property> 
+    </bean>
+      
+	<bean id="dataSource"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource" destroy-method="close">
+		<property name="driverClass"><value>${jdbc.driverClassName}</value></property>
+		<property name="jdbcUrl"><value>${jdbc.url}</value></property>
+		<property name="user"><value>${jdbc.username}</value></property>
+		<property name="password"><value>${jdbc.password}</value></property>
+		
+		 <property name="maxPoolSize"><value>${c3p0.maxPoolSize}</value></property>
+         <property name="minPoolSize"><value>${c3p0.minPoolSize}</value></property>
+         <property name="initialPoolSize"><value>${c3p0.initialPoolSize}</value></property>
+         <property name="maxIdleTime"><value>${c3p0.maxIdleTime}</value></property> 
+	</bean>
+	<!--
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+	<property name="driverClassName"><value>com.mysql.jdbc.Driver</value></property>
+		<property name="url"><value>jdbc:mysql://192.168.1.105:3306/cotsystem?useUnicode=true</value></property>
+		<property name="username"><value>root</value></property>
+		<property name="password"><value>admin</value></property>
+	</bean>
+	-->
+	<bean id="hibernateProperties" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="properties">
+            <props>
+                <prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.HashtableCacheProvider</prop>
+				<prop key="hibernate.show_sql">true</prop>
+               
+                <prop key="hibernate.jdbc.batch_size">30</prop>
+                
+                <!--<prop key="hibernate.query.factory_class">org.hibernate.hql.classic.ClassicQueryTranslatorFactory</prop>-->
+                <prop key="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</prop>
+			</props>
+        </property>
+    </bean>
+    <!-- 处理Blob对象的配置 -->
+    <bean id="lobHandler" class="org.springframework.jdbc.support.lob.DefaultLobHandler" lazy-init="true" />
+    
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource"><ref bean="dataSource" /></property>
+		<property name="lobHandler" ref="lobHandler"/>
+		<property name="hibernateProperties"><ref local="hibernateProperties"/></property>
+		<property name="mappingLocations">
+			<list>
+				<value>classpath:com/sail/cot/domain/*.hbm.xml</value>
+			</list>
+		</property></bean>
+		<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory"><ref local="sessionFactory"/></property>
+	</bean>
+	
+	<bean id="baseTxProxy" lazy-init="false" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean" abstract="true">
+        <property name="transactionManager"><ref local="transactionManager"/></property>
+        <property name="transactionAttributes">
+            <props>
+				<prop key="save*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="move*">PROPAGATION_REQUIRED</prop>
+				<prop key="add*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="update*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="modify*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED,-Exception</prop>
+				<prop key="load*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="get*">PROPAGATION_REQUIRED</prop>
+				<prop key="find*">PROPAGATION_REQUIRED,readOnly</prop>	
+				<prop key="is*">PROPAGATION_REQUIRED,readOnly</prop>
+				<prop key="saveReciveMail">PROPAGATION_NOT_SUPPORTED</prop>	
+				<prop key="saveMailToEmpNode">PROPAGATION_NOT_SUPPORTED</prop>	
+            </props>
+        </property>
+    </bean>
+    <!-- 配置基础Dao -->
+    <bean id="CotBaseDao" class="com.sail.cot.dao.impl.CotBaseDaoImpl">
+    	<property name="sessionFactory"><ref local="sessionFactory"/></property>
+    </bean> 
+    <bean id="CotRptDao" class="com.sail.cot.dao.impl.CotExportRptDaoImpl">
+    	<property name="sessionFactory"><ref local="sessionFactory"/></property>
+     </bean>
+     <!-- 配置基础Service -->
+     <bean id="QueryService" parent="baseTxProxy">
+     	<property name="target">
+     		<bean class="com.sail.cot.service.impl.QueryServiceImpl">
+     			<property name="baseDao"><ref bean="CotBaseDao"/></property>
+     			<property name="exportRptDao"><ref local="CotRptDao"/></property>
+     		</bean>
+     	</property>
+     </bean>  
+     <bean id="SeqService" parent="baseTxProxy">
+     	<property name="target">
+     		<bean class="com.sail.cot.seq.BaseSeq">
+     			<property name="cotBaseDao"><ref bean="CotBaseDao"/></property>
+     		</bean>
+     	</property>
+     </bean>    
+</beans>

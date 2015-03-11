@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow> 
+	    <convert converter="bean" javascript="CotRolePopedom" match="com.sail.cot.domain.CotRolepopedom"/>	
+		<create creator="spring" javascript="cotRolePopedomService">
+	    	<param name="beanName" value="CotRolePopedomService"/>
+	 	 </create>					 
+	</allow> 
+
+ 
+	<signatures>
+	<![CDATA[ 
+		import com.sail.cot.service.system.impl.CotRolePopedomServiceImpl;
+		import com.sail.cot.domain.CotRolepopedom;
+		cotRolePopedomService.addRolePopedom(List<CotRolepopedom> popedomList);
+		cotRolePopedomService.deleteRolePopedom(List<Integer> popedomList);
+		cotRolePopedomService.updateEmpsPopedom(Integer roleId,List<CotRolepopedom> rolePopedomList);
+	]]> 
+	
+	</signatures>
+</dwr>

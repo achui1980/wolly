@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<convert converter="bean" javascript="CotSignType"
+			match="com.sail.cot.domain.CotSignType" />
+		<create creator="spring" javascript="cotSignTypeService">
+			<param name="beanName" value="CotSignTypeService" />
+		</create>
+	</allow>
+ 
+	<signatures>
+		<![CDATA[ 
+			import java.util.List; 
+			import com.sail.cot.domain.CotSignType; 
+			
+			cotSignTypeService.addSignTypes(List<CotSignType> signTypesList);
+			cotSignTypeService.deleteSignTypes(List<CotSignType> signTypesList);
+			cotSignTypeService.modifySignTypes(List<CotSignType> signTypesList);
+		]]> 
+	
+	</signatures>
+</dwr>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<convert match="java.lang.StackTraceElement" converter="bean"/>
+		<convert converter="bean" javascript="CotPrice"
+			match="com.sail.cot.domain.CotPrice" />
+		<convert converter="bean" javascript="CotPriceVO"
+			match="com.sail.cot.domain.vo.CotPriceVO" />
+		<convert converter="bean" javascript="CotPriceDetail"
+			match="com.sail.cot.domain.CotPriceDetail" />
+		<convert converter="bean" javascript="CotNewPriceVO"
+			match="com.sail.cot.domain.vo.CotNewPriceVO" />
+			
+		<create creator="spring" javascript="cotPriceService">
+			<param name="beanName" value="CotPriceService"/>
+		</create>
+	</allow>
+	<signatures>
+	<![CDATA[ 
+		import com.sail.cot.domain.CotPrice; 
+		import com.sail.cot.domain.CotPriceDetail; 
+		cotPriceService.saveOrUpdatePrice(CotPrice cotPrice,String priceTime,boolean flag,Map<String, String> map, String liRunCau);
+		cotPriceService.modifyPriceDetail(CotPriceDetail e,String eleProTime);
+		cotPriceService.deletePrices(List<Integer> prices);
+		cotPriceService.findDetailByEleId(CotPriceDetail detail,Map<String, String> map, String liRunCau);
+		cotPriceService.findDetailByEleIdExcel(String eleId,boolean isUsePriceOut, Map<String, String> map, String liRunCau);
+		cotPriceService.getNewPrice(String eleId,Map<String, String> map, String liRunCau);
+		cotPriceService.getNewPriceByCurreny(String eleId,Map<String, String> map, String liRunCau,Integer oldCur);
+		cotPriceService.saveMail(Map<String, String> map);
+		cotPriceService.getCotMailId(Map<String, String> map);
+		cotPriceService.setPriceMap(String eleId,CotPriceDetail cotPriceDetail);
+		cotPriceService.getNewLiRun(Map<String, String> map, String eleId);
+		cotPriceService.getNewPriceByLiRun(Map<String, String> map, String eleId);
+		cotPriceService.saveByExcel(CotPrice cotPrice,String priceTime);
+		cotPriceService.getNewPriceByTuiLv(Map<String, String> map, String rdm);
+		cotPriceService.setExcelMap(String rdm, CotPriceDetail cotPriceDetail);
+		cotPriceService.updatePriceFac(Integer priceDetailId,Integer rdm,Map map);
+		cotPriceService.calLiRun(Map<String, String> map, List<String> rdmAry);
+	]]> 
+	</signatures>
+</dwr>

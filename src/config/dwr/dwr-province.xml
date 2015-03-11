@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotProvince" match="com.sail.cot.domain.CotProvince"/>	
+	<create creator="spring" javascript="cotProvinceService">
+    	<param name="beanName" value="CotProvinceService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.systemdic.impl.CotProvinceServiceImpl; 
+import com.sail.cot.domain.CotProvince; 
+cotProvinceService.addProvince(List<CotProvince> provinceList);
+cotProvinceService.modifyProvince(List<CotProvince> provinceList);
+cotProvinceService.deleteProvince(List<CotProvince> provinceList);
+]]> 
+
+</signatures>
+</dwr>

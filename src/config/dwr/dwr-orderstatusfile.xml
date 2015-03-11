@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<convert converter="bean" javascript="CotOrderStatusFile"
+			match="com.sail.cot.domain.CotOrderstatusFile" />
+		<create creator="spring" javascript="cotOrderStatusFileService">
+			<param name="beanName" value="CotOrderStatusFileService"/>
+		</create>
+	</allow>
+	<signatures>
+	<![CDATA[ 
+		import com.sail.cot.domain.CotOrderstatusFile; 
+		cotOrderStatusFileService.saveFile(CotOrderstatusFile file,String orderStatus,Integer currentEmpId);
+		cotOrderStatusFileService.delFile(List<Integer> ids,List<String> filePath);
+		cotOrderStatusFileService.saveNewRemark(Integer orderId, String emps,String remark);
+	]]> 
+	</signatures>
+</dwr>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotTaxType" match="com.sail.cot.domain.CotTaxType"/>	
+	<create creator="spring" javascript="cotTaxTypeService">
+    	<param name="beanName" value="CotTaxTypeService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.systemdic.impl.CotTaxTypeServiceImpl; 
+import com.sail.cot.domain.CotTaxType;
+cotTaxTypeService.deleteTaxType(List<CotTaxType> TaxTypeList);
+]]> 
+
+</signatures>
+</dwr>
+

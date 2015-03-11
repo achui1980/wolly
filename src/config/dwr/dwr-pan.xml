@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotPan" match="com.sail.cot.domain.CotPan"/>	
+    <convert converter="bean" javascript="CotPanEle" match="com.sail.cot.domain.CotPanEle"/>	
+    <convert converter="bean" javascript="PanView" match="com.sail.cot.domain.PanView"/>	
+    <convert converter="bean" javascript="CotPanDetail" match="com.sail.cot.domain.CotPanDetail"/>	
+	<create creator="spring" javascript="cotPanService">
+    	<param name="beanName" value="CotPanService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+	<![CDATA[
+		import com.sail.cot.domain.CotPan;
+		import com.sail.cot.domain.CotPanDetail;
+		import com.sail.cot.domain.CotPanEle;
+		cotPanService.saveOrUpdatePan(CotPan cotPan, String addTime);
+		cotPanService.deletePans(List<Integer> ids);
+		cotPanService.saveOtherPans(String fdsIds, List<Integer> pIds);
+		cotPanService.savePanDetail(List<CotPanDetail> list);
+		cotPanService.updatePanEles(List<CotPanEle> list);
+	]]> 
+</signatures>
+</dwr>
+
+

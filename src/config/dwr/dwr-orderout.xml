@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<convert converter="bean" javascript="CotOrderOut"
+			match="com.sail.cot.domain.CotOrderOut" />
+		<convert converter="bean" javascript="CotOrderOutDel"
+			match="com.sail.cot.domain.CotOrderOutDel" />
+		<convert converter="bean" javascript="CotOrderOutVO"
+			match="com.sail.cot.domain.vo.CotOrderOutVO" />
+		<convert converter="bean" javascript="CotShipment"
+			match="com.sail.cot.domain.CotShipment" />
+		<convert converter="bean" javascript="CotHsInfo"
+			match="com.sail.cot.domain.CotHsInfo" />
+		<convert converter="bean" javascript="CotOrderOuthsdetail"
+			match="com.sail.cot.domain.CotOrderOuthsdetail" />
+		<convert converter="bean" javascript="CotOrderouthsRpt"
+			match="com.sail.cot.domain.CotOrderouthsRpt" />
+		<convert converter="bean" javascript="CotOrdeNameRptVO"
+			match="com.sail.cot.domain.vo.CotOrdeNameRptVO" />
+		<convert converter="bean" javascript="CotOrderOutdetail"
+			match="com.sail.cot.domain.CotOrderOutdetail" />
+		<convert converter="bean" javascript="CotOrderOutdetailDel"
+			match="com.sail.cot.domain.CotOrderOutdetailDel" />		
+		<create creator="spring" javascript="cotOrderOutService">
+			<param name="beanName" value="CotOrderOutService"/>
+		</create>
+	</allow>
+	<signatures>
+	<![CDATA[ 
+		import com.sail.cot.domain.CotOrderOut; 
+		import com.sail.cot.domain.CotOrderOutdetail;
+		import com.sail.cot.domain.CotOrderOuthsdetail;
+		import com.sail.cot.domain.CotSymbol;
+		import com.sail.cot.domain.CotShipment;
+		import com.sail.cot.domain.CotHsInfo;
+		import com.sail.cot.domain.CotOrderouthsRpt;
+		import com.sail.cot.domain.CotFinaceAccountdeal;		
+		import com.sail.cot.domain.CotFinaceAccountrecv;		
+		cotOrderOutService.saveOrUpdateOrderOut(CotOrderOut cotOrderOut,CotSymbol cotSymbol, CotHsInfo cotHsInfo,CotOrderouthsRpt cotOrderouthsRpt, String orderTime,String orderLcDate, boolean oldFlag);
+		cotOrderOutService.deleteOrders(List<Integer> ids,String invalidNo);
+		cotOrderOutService.setOrderMap(String eleId, CotOrderOutdetail cotOrderDetail);
+		cotOrderOutService.setChaOrderMap(String eleId, CotOrderOuthsdetail cotOrderDetail);
+		cotOrderOutService.saveMail(Map<String, String> map);
+		cotOrderOutService.findIsExistDetail(CotOrderOutdetail detail);
+		cotOrderOutService.findIsExistCha(CotOrderOuthsdetail detail);
+		cotOrderOutService.saveAccountdeal(Integer otherId,CotFinaceAccountdeal dealDetail,String amountDate);
+		cotOrderOutService.deleteByIds(List<Integer> ids);
+		cotOrderOutService.updateFacDetail(Integer orderfacDetailId,Long outCurrent);
+		cotOrderOutService.updateFacDetailForDel(Integer orderfacDetailId);
+		cotOrderOutService.saveOrderFacOther(Integer orderfacDetailId,Integer orderoutId);
+		cotOrderOutService.saveAccountRecv(CotFinaceAccountrecv recvDetail,String otherIds,String amountDate);
+		cotOrderOutService.deleteByRecvDetail(List<Integer> ids);
+		cotOrderOutService.deleteByDealDetail(List<Integer> ids);
+		cotOrderOutService.updateOrderFacOutRemain(Integer orderId,String eleId,Integer orderoutId);
+		cotOrderOutService.saveOthers(Integer orderDetailId,Integer orderoutId);
+		cotOrderOutService.checkIsHaveDetail(List<Integer> ids);
+		cotOrderOutService.calPriceAll(CotOrderOuthsdetail elements);
+		cotOrderOutService.checkCanDeleteBatch(List<Integer> ids);
+		cotOrderOutService.deleteDealByIds(List<Integer> ids);
+		cotOrderOutService.deleteDealList(List<Integer> details,Integer mainId);
+	]]> 
+	</signatures>
+</dwr>

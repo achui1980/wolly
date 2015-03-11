@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotAudit" match="com.sail.cot.domain.CotAudit"/>	
+	<create creator="spring" javascript="cotAuditService">
+    	<param name="beanName" value="CotAuditService"/>
+ 	 </create>		
+ 	 			 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.audit.impl.CotAuditServiceImpl; 
+import com.sail.cot.domain.CotAudit; 
+cotAuditService.addOrSaveCotAudit(List<CotAudit> cotAuditList);
+cotAuditService.saveAudit(String auditNo,Integer auditNum, String receiveDate, String effectDate);
+cotAuditService.savaOrUpdateAudit(CotAudit cotAudit);
+]]> 
+
+</signatures>
+</dwr>
+

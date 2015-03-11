@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rule-execution-set>
+	<name>Mail Rule For Public</name>
+	<description>Mail RuleSet For Admin</description>
+	<synonymn name="mailExecuteAction_1" class="com.sail.cot.mail.MailExecuteAction"/>
+	<rule name="Rule_YJKMEVZWKH">
+		
+		<if leftTerm="com.sail.cot.domain.CotMailRecv.getCustEmail" op="contains" rightTerm="achui_0724@sina.com"/>
+		
+		<then method="mailExecuteAction_1.setEmpId" arg1="22"/>
+	
+	</rule>
+</rule-execution-set>

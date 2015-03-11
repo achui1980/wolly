@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow> 
+	    <convert converter="bean" javascript="CotMailEmpsRule" match="com.sail.cot.domain.CotMailEmpsRule"/>	
+		<convert converter="bean" javascript="CotMailExecute" match="com.sail.cot.domain.CotMailExecute"/>
+		<convert converter="bean" javascript="CotMailRule" match="com.sail.cot.domain.CotMailRule"/>	
+	    <convert converter="bean" javascript="CotRuleVO" match="com.sail.cot.domain.vo.CotRuleVO"/>	 
+	    <convert converter="bean" javascript="CotCustomer" match="com.sail.cot.domain.CotCustomer"/>
+	    <convert converter="bean" javascript="CotFactoryVO" match="com.sail.cot.domain.vo.CotFactoryVO"/>	
+	 	<convert converter="bean" javascript="CotCustomerVO" match="com.sail.cot.domain.vo.CotCustomerVO"/>	
+	 	<create javascript="mailCheckService" creator="spring">
+			<param name="beanName" value="MailCheckService"></param>
+		</create>
+	</allow>  
+		
+	<signatures>
+	<![CDATA[ 
+		mailCheckService.deleteEmpsRuleList(List<Integer> ruleIds);
+	]]> 
+	</signatures>
+</dwr>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+	<allow>
+		<convert converter="bean" javascript="CotDays"
+			match="com.sail.cot.domain.CotDays" />
+		<create creator="spring" javascript="cotDaysService">
+			<param name="beanName" value="CotDaysService" />
+		</create>
+	</allow>
+	<signatures>
+		<![CDATA[ 
+			import com.sail.cot.domain.CotDays; 
+			cotDaysService.saveOrUpdate(CotDays cotDays);
+			cotDaysService.deleteDays(List<Integer> ids);
+		]]>
+	</signatures>
+</dwr>

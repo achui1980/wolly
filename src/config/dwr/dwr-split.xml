@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotSplitInfo" match="com.sail.cot.domain.CotSplitInfo"/>	
+    <convert converter="bean" javascript="CotSplitDetail" match="com.sail.cot.domain.CotSplitDetail"/>	
+	<create creator="spring" javascript="cotSplitService">
+    	<param name="beanName" value="CotSplitService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.split.impl.CotSplitServiceImpl; 
+import com.sail.cot.domain.CotSplitInfo; 
+import com.sail.cot.domain.CotSplitDetail;
+cotSplitService.addSplit(List<CotSplitInfo> SplitList);
+cotSplitService.modifySplit(List<CotSplitInfo> SplitList);
+cotSplitService.deleteSplit(List<CotSplitInfo> SplitList);
+cotSplitService.deleteSplitDetailList(List<CotSplitDetail> splitDetailList);
+cotSplitService.modifySplitDetail(List<CotSplitDetail> detailList); 
+cotSplitService.setSplitMap(String eleId,CotSplitDetail cotSplitDetail);
+]]> 
+ 
+</signatures>
+</dwr>

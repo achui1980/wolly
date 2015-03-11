@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<customizefile>
+	<modelset>
+		<model>
+			<title id='CotPriceDetail'>报价明细</title>
+			<fieldset>
+				<field value='eleId'>货号</field>
+				<field value='custNo'>客号</field>
+				<field value='eleName'>中文名称</field>
+				<field value='eleNameEn'>英文名称</field>
+				<field value='eleColeleCol'>颜色</field>
+				<field value='pricePrice'>价格</field>				
+				<field value='taoUnit'>报价单位</field>
+				<field value='eleUnit'>单位</field>
+				<field value='boxWeigth'>单重</field>
+				<field value='liRun'>利润率％</field>
+				<field value='tuiLv'>退税率％</field>
+				<field value='factoryId'>厂家</field>				
+				<field value='factoryNo'>厂号</field>
+				<field value='priceFac'>生产价</field>
+				<field value='priceFacUint'>币种</field>
+				<field value='eleTypeidLv1'>材质</field>
+				<field value='boxIbCount'>内</field>
+				<field value='boxMbCount'>中</field>				
+				<field value='boxObCount'>外</field>
+				<field value='boxObL'>外箱长</field>
+				<field value='boxObW'>外箱宽</field>
+				<field value='boxObH'>外箱高</field>
+				<field value='boxCbm'>CBM</field>
+				<field value='boxGrossWeigth'>毛重</field>				
+				<field value='boxNetWeigth'>净重</field>
+				<field value='eleSizeDesc'>产品规格(CM)</field>
+				<field value='eleInchDesc'>产品规格(INCH)</field>	
+			</fieldset>
+		</model>	
+		<model>
+			<title id='CotOrderDetail'>订单明细</title>
+			<fieldset>
+				<field value='eleId'>货号</field>
+				<field value='custNo'>客号</field>
+				<field value='eleName'>中文名称</field>
+				<field value='eleNameEn'>英文名称</field>
+				<field value='eleCol'>颜色</field>
+				<field value='orderPrice'>价格</field>				
+				<field value='taoUnit'>报价单位</field>
+				<field value='eleUnit'>单位</field>
+				<field value='boxWeigth'>单重</field>
+				<field value='liRun'>利润率％</field>
+				<field value='tuiLv'>退税率％</field>
+				<field value='boxCount'>数量</field>
+				<field value='containerCount'>箱数</field>				
+				<field value='totalMoney'>金额</field>
+				<field value='boxCbm'>单箱CBM</field>
+				<field value='totalCbm'>总CBM</field>				
+				<field value='factoryId'>厂家</field>				
+				<field value='factoryNo'>厂号</field>
+				<field value='priceFac'>生产价</field>
+				<field value='priceFacUint'>币种</field>
+				<field value='eleTypeidLv1'>材质</field>
+				<field value='boxIbCount'>内</field>
+				<field value='boxMbCount'>中</field>				
+				<field value='boxObCount'>外</field>
+				<field value='boxObL'>外箱长</field>
+				<field value='boxObW'>外箱宽</field>
+				<field value='boxObH'>外箱高</field>
+				<field value='boxCbm'>CBM</field>
+				<field value='boxGrossWeigth'>毛重</field>				
+				<field value='boxNetWeigth'>净重</field>
+				<field value='eleSizeDesc'>产品规格(CM)</field>
+				<field value='eleInchDesc'>产品规格(INCH)</field>
+			</fieldset>
+		</model>	
+		<model>
+			<title id='CotOrderFacdetail'>采购明细</title>
+			<fieldset>
+				<field value='eleId'>货号</field>
+				<field value='custNo'>客号</field>
+				<field value='eleName'>中文名称</field>
+				<field value='eleNameEn'>英文名称</field>
+				<field value='factoryNo'>厂号</field>
+				<field value='moldCharge'>模具费用</field>		
+				<field value='taoUnit'>报价单位</field>
+				<field value='eleUnit'>单位</field>
+				<field value='boxCount'>数量</field>
+				<field value='containerCount'>箱数</field>				
+				<field value='totalFac'>金额</field>
+				<field value='priceFac'>生成价</field>
+				<field value='eleSizeDesc'>中文规格</field>
+				<field value='eleInchDesc'>英文规格</field>	
+				<field value='boxIbCount'>内</field>
+				<field value='boxMbCount'>中</field>				
+				<field value='boxObCount'>外</field>
+				<field value='boxObL'>外箱长</field>
+				<field value='boxObW'>外箱宽</field>
+				<field value='boxObH'>外箱高</field>
+				<field value='boxCbm'>CBM</field>
+				<field value='boxGrossWeigth'>毛重</field>				
+				<field value='boxNetWeigth'>净重</field>
+				<field value='eleSizeDesc'>产品规格(CM)</field>
+				<field value='eleInchDesc'>产品规格(INCH)</field>
+			</fieldset>
+		</model>	
+		<model>
+			<title id='CotFittingsOrderdetail'>配件合同</title>
+			<fieldset> 
+				<field value='fitNo'>配件编号</field>
+				<field value='fitName'>配件名称</field>
+				<field value='fitDesc'>规格型号</field>
+				<field value='useUnit'>领用单位</field>
+				<field value='requeirCount'>需求数量</field>		
+				<field value='fitTrans'>换算率</field>
+				<field value='orderCount'>采购数量</field>
+				<field value='buyUnit'>采购单位</field>
+				<field value='fitPrice'>采购单价</field>				
+				<field value='totalAmmount'>总价</field>
+			</fieldset>
+		</model>	
+		<model>
+			<title id='CotPackingOrderdetail'>包材合同</title>
+			<fieldset> 
+				<field value='eleId'>货号</field>
+				<field value='custNo'>客号</field>
+				<field value='eleName'>品名</field>
+				<field value='boxObCount'>包装率</field>
+				<field value='boxRemark'>包装要求</field>
+				<field value='boxPackingId'>包装名称</field>
+				<field value='boxTypeId'>包装类型</field>		
+				<field value='sizeL'>长</field>
+				<field value='sizeW'>宽</field>
+				<field value='sizeH'>高</field>
+				<field value='packCount'>采购数量</field>				
+				<field value='packPrice'>单价</field>
+				<field value='totalAmmount'>金额</field>				
+				<field value='remark'>备注</field>
+			</fieldset>
+		</model>
+		<model>
+			<title id='CotElements'>样品管理</title>
+			<fieldset>
+				<field value='eleId'>产品货号</field>
+				<field value='id'>图片</field>
+				<field value='eleUnit'>单位</field>
+				<field value='facShortName'>厂家</field>
+				<field value='eleCol'>颜色</field>
+				<field value='priceFac'>生产价</field>				
+				<field value='priceFacUintName'>币种</field>
+				<field value='priceOut'>外销价</field>
+				<field value='priceOutUintName'>币种</field>
+				<field value='boxWeigth'>单重</field>
+				<field value='eleName'>中文品名</field>
+				<field value='eleNameEn'>英文品名</field>
+				<field value='eleSizeDesc'>产品规格(CM)</field>
+				<field value='eleInchDesc'>产品规格(INCH)</field>
+				<field value='boxIbCount'>内</field>
+				<field value='boxMbCount'>中</field>				
+				<field value='boxObCount'>外</field>
+				<field value='boxObL'>外箱长</field>
+				<field value='boxObW'>外箱宽</field>
+				<field value='boxObH'>外箱高</field>
+				<field value='boxCbm'>CBM</field>
+				<field value='eleMod'>MOQ</field>
+				<field value='eleRemark'>备注</field>				
+				<field value='id'>操作</field>
+			</fieldset>
+		</model>
+		<model>
+			<title id='CotGiven'>送样明细</title>
+			<fieldset>
+				<field value='eleId'>货号</field>
+				<field value='custNo'>客号</field>
+				<field value='eleName'>中文名</field>
+				<field value='signRequire'>改样要求</field>
+				<field value='givenCount'>数量</field>
+				<field value='priceOut'>单价</field>
+				<field value='totalMoney'>金额</field>
+				<field value='priceOutUint'>币种</field>				
+				<field value='boxTypeId'>包装方式</field>
+				<field value='boxObL'>外箱长</field>
+				<field value='boxObW'>外箱宽</field>
+				<field value='boxObH'>外箱高</field>
+				<field value='priceOut'>外销价</field>
+				<field value='eleUnit'>单位</field>
+				<field value='eleTypeidLv1'>材质</field>
+				<field value='boxGrossWeigth'>毛重</field>
+				<field value='boxNetWeigth'>净重</field>
+				<field value='boxCbm'>CBM</field>
+				<field value='eleSizeDesc'>产品规格(CM)</field>
+				<field value='eleInchDesc'>产品规格(INCH)</field>
+				<field value='factoryId'>厂家</field>
+				<field value='signCount'>征样数量</field>				
+				<field value='priceFac'>生产价</field>
+			</fieldset>
+		</model>
+		<model>
+			<title id='CotSign'>征样明细</title>
+			<fieldset>
+				<field value='eleId'>货号</field>
+				<field value='custNo'>客号</field>
+				<field value='eleName'>中文名</field>
+				<field value='givenCount'>送样数量</field>
+				<field value='signCount'>征样数量</field>
+				<field value='priceFac'>单价</field>
+				<field value='signRequire'>改样要求</field>				
+				<field value='boxTypeId'>包装方式</field>
+				<field value='boxObL'>外箱长</field>
+				<field value='boxObW'>外箱宽</field>
+				<field value='boxObH'>外箱高</field>
+				<field value='eleUnit'>单位</field>
+				<field value='eleTypeidLv1'>材质</field>
+				<field value='boxGrossWeigth'>毛重</field>
+				<field value='boxNetWeigth'>净重</field>
+				<field value='boxCbm'>CBM</field>
+				<field value='eleSizeDesc'>产品规格(CM)</field>
+				<field value='eleInchDesc'>产品规格(INCH)</field>
+			</fieldset>
+		</model>
+		<model>
+			<title id='CotOrderOut'>出货明细</title>
+			<fieldset>
+				<field value='eleId'>货号</field>
+				<field value='custNo'>客号</field>
+				<field value='orderNo'>合同号</field>
+				<field value='poNo'>Po#</field>
+				<field value='orderName'>分类品名</field>
+				<field value='eleName'>中文名</field>
+				<field value='eleNameEn'>英文名</field>
+				<field value='orderPrice'>单价</field>
+				<field value='eleUnit'>单位</field>				
+				<field value='taoUnit'>报价单位</field>
+				<field value='boxCount'>出货数量</field>
+				<field value='containerCount'>出货箱数</field>
+				<field value='totalMoney'>出货金额</field>
+				<field value='unSendNum'>未出货数</field>
+				<field value='remainBoxCount'>未排载数</field>
+				<field value='remainTotalCount'>未排载箱数</field>
+				<field value='factoryId'>厂家</field>				
+				<field value='factoryNo'>厂号</field>
+				<field value='priceFac'>生产价</field>
+				<field value='priceFacUint'>币种</field>
+				<field value='boxIbCount'>内</field>
+				<field value='boxMbCount'>中</field>				
+				<field value='boxObCount'>外</field>
+				<field value='boxObL'>外箱长</field>
+				<field value='boxObW'>外箱宽</field>
+				<field value='boxObH'>外箱高</field>
+				<field value='boxCbm'>CBM</field>
+				<field value='boxGrossWeigth'>毛重</field>
+				<field value='boxNetWeigth'>净重</field>、
+				<field value='eleSizeDesc'>产品规格(CM)</field>
+				<field value='eleInchDesc'>产品规格(INCH)</field>
+			</fieldset>
+		</model>
+		<model>
+			<title id='CotOrderOutBG'>报关明细</title>
+			<fieldset>
+				<field value='eleId'>货号</field>
+				<field value='custNo'>客号</field>
+				<field value='orderName'>报关品名</field>
+				<field value='eleName'>中文名</field>
+				<field value='eleNameEn'>英文名</field>
+				<field value='orderPrice'>单价</field>
+				<field value='eleUnit'>单位</field>			
+				<field value='boxCount'>报关数量</field>
+				<field value='containerCount'>报关箱数</field>
+				<field value='totalMoney'>报关金额</field>
+				<field value='factoryId'>厂家</field>				
+				<field value='factoryNo'>厂号</field>
+				<field value='priceFac'>生产价</field>
+				<field value='priceFacUint'>币种</field>
+				<field value='boxIbCount'>内</field>
+				<field value='boxMbCount'>中</field>				
+				<field value='boxObCount'>外</field>
+				<field value='boxObL'>外箱长</field>
+				<field value='boxObW'>外箱宽</field>
+				<field value='boxObH'>外箱高</field>
+				<field value='boxCbm'>CBM</field>
+				<field value='boxGrossWeigth'>毛重</field>
+				<field value='boxNetWeigth'>净重</field>、
+				<field value='eleSizeDesc'>产品规格(CM)</field>
+				<field value='eleInchDesc'>产品规格(INCH)</field>
+			</fieldset>
+		</model>
+	</modelset>
+</customizefile>
+
+	

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<!--转换配件 -->
+		<convert converter="bean" javascript="CotEleFittings"
+			match="com.sail.cot.domain.CotEleFittings" />
+		<!--转换样品VO -->
+		<convert converter="bean" javascript="CotElementsVO"
+			match="com.sail.cot.domain.vo.CotElementsVO" />
+		<!--转换样品VO用来打印 -->
+		<convert converter="bean" javascript="CotEleVOForPrint"
+			match="com.sail.cot.domain.vo.CotEleVOForPrint" />
+		<!--转换样品图片 -->
+		<convert converter="bean" javascript="CotPicture"
+			match="com.sail.cot.domain.CotPicture" >
+			<param name="exclude" value="picImg"></param>
+		</convert>	
+		<!--转换报表 -->
+		<convert converter="bean" javascript="CotReport"
+			match="com.sail.cot.domain.vo.CotReport" />
+		<create creator="spring" javascript="cotElementsService">
+			<param name="beanName" value="CotElementsService" />
+		</create>
+	</allow>
+ 
+	<signatures>
+		<![CDATA[ 
+			import java.util.List; 
+			import java.util.Map;
+			import com.sail.cot.domain.CotElementsNew; 
+			import com.sail.cot.domain.CotEleFittings; 
+			import com.sail.cot.domain.CotPicture; 
+			import com.sail.cot.domain.CotBox; 
+			import com.sail.cot.domain.vo.CotElementsVO;
+			import com.sail.cot.domain.vo.CotEleVOForPrint;
+			cotElementsService.saveElement(CotElementsNew e,String eleProTime);
+			cotElementsService.saveOrUpdateChild(CotElementsNew e,String eleProTime);
+			cotElementsService.saveByCopy(CotElementsNew e,String newEleId,String eleProTime);
+			cotElementsService.deleteElements(List<Integer> ids);
+			cotElementsService.modifyElements(CotElementsNew e,String eleProTime);
+			cotElementsService.modifyBatch(String ids,Map<String,String> map,Integer flag,boolean fit,boolean price,boolean pack);
+			cotElementsService.modifyBatchAll(Map<String,String> queryMap,Map<String,String> map,Integer flag,boolean fit,boolean price,boolean pack);
+			cotElementsService.findEleCount(Map<String,String> map);
+			cotElementsService.getEleImgHtml(int CurrentIndex, int countOnEachPage,CotElementsVO queryCondition ,int imgHeigth,int imgWidth);
+			cotElementsService.findByParms(Map<String,String> map);
+			cotElementsService.getCountByCondition(Map<String,String> map);
+			cotElementsService.setFitMap(String fitNo,CotEleFittings eleFitting);
+			cotElementsService.modifyPriceFac(Integer id,Float priceFac);
+			cotElementsService.saveOrUpdateElePacking(Integer eleId,CotElementsNew element,String [] priceAry,String [] oldIdAry);
+			cotElementsService.calPrice(CotElementsNew elements,Integer boxPackingId);
+			cotElementsService.deleteEleFittingByIds(List<Integer> list);
+		]]> 
+	
+	</signatures>
+</dwr>

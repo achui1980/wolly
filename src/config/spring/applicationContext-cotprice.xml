@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+     
+     <!-- 配置Service层逻辑 -->
+   	<bean id="CotExportRptDao" class="com.sail.cot.dao.impl.CotExportRptDaoImpl">
+    	<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+   	</bean>
+   	<bean id="CotReportDao" class="com.sail.cot.dao.sample.impl.CotReportDaoImpl">
+    	<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+    </bean>
+     <bean id="CotPriceService" parent="baseTxProxy">
+     	<property name="target">
+     		<bean class="com.sail.cot.service.price.impl.CotPriceServiceImpl">
+     			<property name="priceDao"><ref bean="CotBaseDao"/></property>
+     			<property name="exportRptDao"><ref local="CotExportRptDao"/></property>
+     			<property name="reportDao"><ref local="CotReportDao"/></property>
+     			<!-- <property name="mailService"><ref bean="mailService"/></property> -->
+     			<property name="sysLogService"><ref bean="CotSysLogService"/></property>
+     			<property name="cotElementsService"><ref bean="CotElementsService"/></property>
+     			<property name="custService"><ref bean="CotCustomerService"/></property>
+     		</bean>
+     	</property>
+     </bean>    
+
+</beans>

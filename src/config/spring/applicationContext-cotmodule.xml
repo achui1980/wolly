@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    
+     <!-- 配置Service层逻辑 -->
+
+     <!-- 模块管理配置 -->
+     <bean id="CotModuleDao" class="com.sail.cot.dao.system.impl.CotMoudleDaoImpl">
+    	<property name="sessionFactory"><ref bean="sessionFactory"/></property>
+    	</bean>
+     <bean id="CotModuelService" parent="baseTxProxy">
+     	<property name="target">
+     		<bean class="com.sail.cot.service.system.impl.CotModuleServiceImpl">
+     			<property name="moduleDao"><ref local="CotModuleDao"/></property>
+     		</bean>
+     	</property>
+     </bean>    
+
+</beans>

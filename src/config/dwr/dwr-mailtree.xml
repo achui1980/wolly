@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>  
+	<allow> 
+		<create creator="spring" javascript="mailTreeService">
+	    	<param name="beanName" value="MailTreeService"/>
+	 	 </create>					 
+	</allow> 
+
+ 
+	<signatures>
+	<![CDATA[ 
+		mailTreeService.moveMailToNode(Integer nodeId,List<String> mailIds);
+		mailTreeService.moveMailToInbox(Integer empId,List<String> mailIds);
+		mailTreeService.moveMailToSend(Integer empId,List<String> mailIds);
+		mailTreeService.moveMailToDraft(Integer empId,List<String> mailIds);
+		mailTreeService.moveMailToDel(Integer empId,List<String> mailIds);
+		mailTreeService.moveDelMailToRevert(Integer empId, List<String> mailIds);
+	]]> 
+	</signatures>
+</dwr>

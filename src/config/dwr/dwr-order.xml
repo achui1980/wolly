@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow>
+		<convert converter="bean" javascript="CotOrder"
+			match="com.sail.cot.domain.CotOrder" />
+		<convert converter="bean" javascript="CotOrderVO"
+			match="com.sail.cot.domain.vo.CotOrderVO" />
+		<convert converter="bean" javascript="CotOrderDetail"
+			match="com.sail.cot.domain.CotOrderDetail" />
+		<convert converter="bean" javascript="CotNewOrderVO"
+			match="com.sail.cot.domain.vo.CotNewOrderVO" />
+		<convert converter="bean" javascript="CotFinaceOther"
+			match="com.sail.cot.domain.CotFinaceOther" />
+		<convert converter="bean" javascript="CotOrderPc" match="com.sail.cot.domain.CotOrderPc"/>
+		<create creator="spring" javascript="cotOrderService">
+			<param name="beanName" value="CotOrderService"/>
+		</create>
+	</allow>
+	<signatures>
+	<![CDATA[ 
+		import com.sail.cot.domain.CotOrder; 
+		import com.sail.cot.domain.CotOrderDetail; 
+		import com.sail.cot.domain.CotOrderFacdetail; 
+		import com.sail.cot.domain.CotOrderPc; 
+		import com.sail.cot.domain.CotFinaceAccountrecv;
+		cotOrderService.saveOrUpdateOrder(CotOrder cotOrder, String orderTime,String sendTime,String orderLcDate,String orderLcDelay,String addTime, boolean oldFlag,String designTime);
+		cotOrderService.modifyOrderDetails(List<CotOrderDetail> details);
+		cotOrderService.deleteOrderDetails(List<Integer> details);
+		cotOrderService.deleteOrders(List<Integer> orderIds);
+		cotOrderService.findDetailByEleId(CotOrderDetail detail,Map<String, String> map, String liRunCau[]);
+		cotOrderService.findDetailByEleIdExcel(String eleId,boolean isUsePriceOut, Map<String, String> map, String liRunCau[]);
+		cotOrderService.getNewOrder(String eleId,Map<String, String> map, String liRunCau[]);
+		cotOrderService.getNewOrderCurreny(String eleId,Map<String, String> map, String liRunCau,Integer oldCur);
+		cotOrderService.setOrderMap(String eleId,CotOrderDetail cotOrderDetail);
+		cotOrderService.saveOrderFacDetail(Integer factoryId, HashMap<Integer, Integer> map, CotOrderFacdetail cotOrderFacdetail);
+		cotOrderService.getNewLiRun(Map<String, String> map, String eleId);
+		cotOrderService.getNewPriceByLiRun(Map<String, String> map, String eleId);
+		cotOrderService.saveByExcel(CotOrder cotOrder, String orderTime,String sendTime, boolean oldFlag);
+		cotOrderService.saveOrderFacIdAndNo(Integer factoryId, HashMap<Integer, Integer> map,Integer orderId);
+		cotOrderService.deleteByIds(List<Integer> ids,List<Integer> isImport,Float curRate);
+		cotOrderService.deleteByAccount(List<Integer> ids);
+		cotOrderService.deleteByRecvDetail(List<Integer> ids);
+		cotOrderService.saveAccountRecv(CotFinaceAccountrecv recvDetail,String amountDate, String priceScal, String prePrice);
+		cotOrderService.getCotOrderFacByFacId(Integer factoryId, HashMap<Integer, Integer> map);
+		cotOrderService.checkIsImport(List<Integer> ids);
+		cotOrderService.setExcelMap(String rdm, CotOrderDetail cotOrderDetail);
+		cotOrderService.updatePriceFac(Integer priceDetailId,Integer rdm,Map map);
+		cotOrderService.calLiRun(Map<String, String> map, List<String> rdmAry);
+		cotOrderService.saveOrderPc(CotOrderPc e, String picPath);
+		cotOrderService.deleteOrderPcs((List<Integer> ids);
+	]]> 
+	</signatures>
+</dwr>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+	<allow>
+		<convert converter="bean" javascript="CotCustLog"
+			match="com.sail.cot.domain.CotCustLog" />
+		<create creator="spring" javascript="cotCustLogService">
+			<param name="beanName" value="CotCustLogService" />
+		</create>	
+	</allow>
+
+	<signatures>
+		<![CDATA[ 
+			import com.sail.cot.domain.CotCustLog;
+			cotCustLogService.saveOrUpdateCustLog(CotCustLog custLog,String logDate);
+			cotCustLogService.deleteCustLogByList(List<Integer> ids);
+		]]>
+	</signatures>
+</dwr>

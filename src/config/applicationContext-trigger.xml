@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+    <!-- 配置触发器的触发类 -->
+     <bean id="mailSenderJob" class="com.sail.cot.mail.service.impl.TriggerServiceImpl">
+  		<property name="mailService"><ref bean="mailService"/></property>
+	</bean>
+	<!-- 配置触发器的触发任务方法 -->
+    <bean id="mailTriggerJob" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+  		<property name="targetObject"><ref local="mailSenderJob"/></property>
+  		<property name="targetMethod" value="doSendMail" />
+	</bean> 
+  	
+  	<!-- 配置触发器的出发细节 -->
+	<bean id="mailJob" class="org.springframework.scheduling.quartz.SimpleTriggerBean">
+	    <!-- see the example of method invoking job above -->
+	    <property name="jobDetail"><ref local="mailTriggerJob"/></property>
+	    <!-- 延迟10秒执行 -->
+	    <property name="startDelay" value="10000" />
+	    <!-- 每隔1分钟执行一次 -->
+	    <property name="repeatInterval" value="60000" />
+	</bean>
+  	<!-- 执行出发任务 -->
+	<!--<bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+	    <property name="triggers">
+	        <list>
+	            <ref bean="mailJob" />
+	        </list>
+	    </property>
+	</bean>-->
+	</beans>

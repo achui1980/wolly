@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CustomerVisitedLog" match="com.sail.cot.domain.CustomerVisitedLog"/>	
+	<create creator="spring" javascript="customerVisitedLogService">
+    	<param name="beanName" value="CustomerVisitedLogService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.customer.impl.CustomerVisitedLogServiceImpl; 
+import com.sail.cot.domain.CustomerVisitedLog; 
+customerVisitedLogService.addCustomerVisitedLog(List<CustomerVisitedLog> CustomerVisitedLogList);
+customerVisitedLogService.modifyCustomerVisitedLog(List<CustomerVisitedLog> CustomerVisitedLogList);
+customerVisitedLogService.deleteCustomerVisitedLog(List<CustomerVisitedLog> CustomerVisitedLogList);
+customerVisitedLogService.getTimestamp(String time);
+]]> 
+ 
+</signatures>
+</dwr>
+

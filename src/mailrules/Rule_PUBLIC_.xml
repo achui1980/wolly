@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rule-execution-set>
+	<name>Mail Rule For Public</name>
+	<description>Mail RuleSet For Public</description>
+	<synonymn name="mailExecuteAction_21" class="com.sail.cot.mail.MailExecuteAction"/>
+	<synonymn name="mailExecuteAction_1" class="com.sail.cot.mail.MailExecuteAction"/>
+	<rule name="Rule_YJKMEVZWKH">
+		
+		<if leftTerm="com.sail.cot.domain.CotMailRecv.getCustEmail" op="contains" rightTerm="achui_0724@sina.com"/>
+		
+		<then method="mailExecuteAction_1.setEmpId" arg1="22"/>
+	
+	</rule>
+	<rule name="Rule_AHLXTRIXBK">
+		
+		<if leftTerm="com.sail.cot.domain.CotMailRecv.getCustEmail" op="contains" rightTerm="achui_1980@163.com"/>
+		
+		<then method="mailExecuteAction_21.setEmpId" arg1="152"/>
+		
+	</rule>
+</rule-execution-set>

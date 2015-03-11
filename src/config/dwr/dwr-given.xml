@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotGiven" match="com.sail.cot.domain.CotGiven"/>	
+    <convert converter="bean" javascript="CotGivenDetail" match="com.sail.cot.domain.CotGivenDetail"/>	
+	<create creator="spring" javascript="cotGivenService">
+    	<param name="beanName" value="CotGivenService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.given.impl.CotGivenServiceImpl; 
+import com.sail.cot.domain.CotGiven; 
+import com.sail.cot.domain.CotSign; 
+import com.sail.cot.domain.CotGivenDetail;
+cotGivenService.saveOrUpdateGiven(CotGiven cotGiven, String givenTime, String custRequiretime, String realGiventime);
+cotGivenService.deleteGivenList(List<CotGiven> givenList);
+cotGivenService.deleteGivenDetailList(List<CotGivenDetail> givenDetailList);
+cotGivenService.modifyGivenDetail(List<CotGivenDetail> detailList);
+cotGivenService.modifyGivenList(List<CotGiven> givenList);
+cotGivenService.setGivenMap(String eleId,CotGivenDetail cotGivenDetail);
+cotGivenService.deleteSignList(List<CotSign> signList);
+cotGivenService.deleteByAccount(List<Integer> ids);
+cotGivenService.deleteByRecvDetail(List<Integer> ids);
+cotGivenService.saveByExcel(CotGiven cotGiven, String givenTime, String custRequiretime,String realGiventime);
+cotGivenService.findDetailByEleIdExcel(String eleId,Map<String, String> map, String liRunCau);
+cotGivenService.givenIsChecks(List<CotGiven> givenList);
+cotGivenService.saveGivenStatus(Integer id,Long status);
+cotGivenService.setExcelMap(String rdm, CotGivenDetail cotGivenDetail);
+]]> 
+ 
+</signatures>
+</dwr>

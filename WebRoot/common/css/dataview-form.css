@@ -1,0 +1,60 @@
+
+#dataview-form{
+    background: white;
+    font: 8px Arial, Helvetica, sans-serif;
+}
+#dataview-form .thumb{
+    padding: 3px;
+}
+#dataview-form .thumb-wrap{
+    float: left;
+    margin: 4px;
+    margin-right: 0;
+    padding: 5px;
+    width:150px;
+    height:180px;
+    border:1 solid #dddddd
+}
+#dataview-form .thumb-wrap span{
+    display: block;
+    overflow: hidden;
+    text-align: center;
+}
+#dataview-form .x-view-over{
+    border:1px solid #dddddd;
+    background: #efefef url(/CotSystem/common/ext/resources/images/default/grid/row-over.gif) repeat-x left top;
+    padding: 5px;
+}
+#dataview-form .x-view-selected{
+    background: #DFEDFF;
+    border: 1px solid #6593cf;
+    padding: 5px;
+}
+#dataview-form .x-view-selected .thumb{
+    background:transparent;
+}
+#dataview-form .x-view-selected span{
+    color:#1A4D8F;
+}
+#dataview-form .loading-indicator {
+    font-size:8px;
+    background-image:url('/CotSystem/common/ext/resources/images/grid/loading.gif');
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left:20px;
+    margin:10px;
+}
+.thumb-wrap-form{
+	cursor:pointer;
+	width:1550px;
+	height:250px;
+}
+.thumb-textfield{
+	width:100%;
+}
+.grid-head{
+	background: #9DBEE6;
+}
+.grid-head-confirm{
+	background: yellow;
+}

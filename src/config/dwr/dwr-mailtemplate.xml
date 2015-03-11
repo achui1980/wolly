@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+	<allow> 
+	    <convert converter="bean" javascript="CotMail" match="com.sail.cot.domain.CotMail"/>
+	 	<create javascript="mailTemplateService" creator="spring">
+			<param name="beanName" value="MailTemplateService"></param>
+		</create>
+	</allow>  
+		
+	<signatures>
+	<![CDATA[
+	    import com.sail.cot.domain.CotMail; 
+		mailTemplateService.saveCotEmpsMailTemplate(Integer empsId,String template,String nodeText);
+		mailTemplateService.getCurrentMailTemplate(Integer empsId,String nodeText);
+		mailTemplateService.getMailTemplate(Integer empId,String logo,CotMail cotMail);
+		
+	]]> 
+	</signatures>
+</dwr>

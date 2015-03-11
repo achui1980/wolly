@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>
+	<allow>
+		<convert converter="bean" javascript="CotBarcode"
+			match="com.sail.cot.domain.CotBarcode" />
+		<create creator="spring" javascript="cotBarcodeService">
+			<param name="beanName" value="CotBarcodeService" />
+		</create>
+
+	</allow>
+	<signatures>
+		<![CDATA[ 
+			import com.sail.cot.service.barcode.impl.CotBarcodeServiceImpl; 
+			import com.sail.cot.domain.CotBarcode;  
+			cotBarcodeService.addBarcode(List<CotBarcode> barcodeList);
+		]]>
+	</signatures>
+</dwr>
+

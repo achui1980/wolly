@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+
+<struts-config>
+
+	<global-exceptions />
+	<global-forwards>
+		<forward name="failure" path="/common/error.jsp"
+			contextRelative="true" />
+		<forward name="success" path="/common/success.jsp"
+			contextRelative="true" />
+	</global-forwards>
+	<action-mappings>
+		<!-- 模块菜单 -->
+		<action parameter="method" path="/cotmodule" scope="request"
+			type="com.sail.cot.action.system.CotModuleAction">
+			<forward path="/menu.jsp" name="querySuccess" />
+			<forward path="/system/module/module.jsp"
+				name="queryListSuccess" />
+			<forward path="/system/module/moduledetail.jsp"
+				name="queryModuleSuccess" />
+			<forward path="/system/module/moduleTest.jsp"
+				name="queryHtmlSuccess" />
+			<forward path="/systemdic/stattree.jsp" name="querySysDic" />
+		</action>
+
+		<action parameter="method" path="/cotrole" scope="request"
+			type="com.sail.cot.action.system.CotRoleAction">
+			<forward name="querySuccess" path="/system/role/role.jsp" />
+		</action>
+
+		<action parameter="method" path="/cotqueryall" scope="request"
+			type="com.sail.cot.action.QueryAllAction">
+			<forward name="querySuccess"
+				path="/queryAll/queryAllTable.jsp" />
+			<forward name="queryPrice" path="/queryAll/queryPrice.jsp" />
+			<forward name="queryOrder" path="/queryAll/queryOrder.jsp" />
+			<forward name="queryOrderOut"
+				path="/queryAll/queryOrderOut.jsp" />
+			<forward name="querySign" path="/queryAll/querySign.jsp" />
+			<forward name="queryGiven" path="/queryAll/queryGiven.jsp" />
+			<forward name="queryOrderFac"
+				path="/queryAll/queryOrderFac.jsp" />
+			<forward name="querySample"
+				path="/queryAll/querySample.jsp" />
+			<forward name="queryPriceFac"
+				path="/queryAll/queryPriceFac.jsp" />
+		</action>
+
+		<action parameter="method" path="/cotcheck" scope="request"
+			type="com.sail.cot.action.CheckAction">
+			<forward name="querySuccess"
+				path="/check/checkAllTable.jsp" />
+			<forward name="queryPrice" path="/check/queryPrice.jsp" />
+			<forward name="queryOrder" path="/check/queryOrder.jsp" />
+			<forward name="queryOrderOut"
+				path="/check/queryOrderOut.jsp" />
+			<forward name="queryGiven" path="/check/queryGiven.jsp" />
+			<forward name="queryOrderFac"
+				path="/check/queryOrderFac.jsp" />
+		</action>
+
+
+		<action parameter="method" path="/cotcompany" scope="request"
+			type="com.sail.cot.action.system.CotCompanyAction">
+			<forward path="/system/company/companyEdit.jsp"
+				name="modify" />
+			<forward path="/system/company/company.jsp"
+				name="querySuccess" />
+		</action>
+		<!-- 模块列设置 -->
+		<action parameter="method" path="/cotcustomize" scope="request"
+			type="com.sail.cot.action.system.CotCustomizeFieldAction">
+			<forward path="/system/customize/customize.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotdept" scope="request"
+			type="com.sail.cot.action.system.CotDeptAction">
+			<forward path="/system/dept/cotdept.jsp" name="querySuccess" />
+		</action>
+
+
+		<action parameter="method" path="/cotcity" scope="request"
+			type="com.sail.cot.action.system.CotCityAction">
+			<forward path="/system/city/cotcitylist.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<action parameter="method" path="/cotdays" scope="request"
+			type="com.sail.cot.action.systemdic.CotDaysAction">
+			<forward path="/systemdic/days/cotdayslist.jsp"
+				name="querySuccess" />
+		</action>
+
+
+
+		<action parameter="method" path="/cotemps" scope="request"
+			type="com.sail.cot.action.system.CotEmpsAction">
+			<forward path="/menu.jsp" name="querySuccess" />
+			<forward path="/system/emps/cotemps.jsp" name="queryListSuccess" />
+			<forward path="/system/emps/empsEdit.jsp" name="addEmps" />
+			<forward path="/system/emps/changepwd.jsp" name="pwdSuccess" />
+			<forward path="/main.jsp" name="loginSuccess"></forward>
+		</action>
+
+		<action parameter="method" path="/cotarea" scope="request"
+			type="com.sail.cot.action.system.CotAreaAction">
+			<forward path="/system/area/cotarealist.jsp"
+				name="querySuccess" />
+			<forward path="/system/factory/tree.jsp"
+				name="queryAreaSuccess" />
+		</action>
+
+		<action parameter="method" path="/cotfactory" scope="request"
+			type="com.sail.cot.action.system.CotFactoryAction">
+			<forward path="/system/factory/factory.jsp" name="querySuccess" />
+			<forward path="/system/factory/factoryEdit.jsp" name="modify" />
+			<forward path="/system/factory/contactGird.jsp" name="queryContact" />
+			<forward path="/system/factory/orderFac.jsp" name="queryOrderFac" />
+			<forward path="/system/factory/orderFacFen.jsp" name="queryOrderFacFen" />
+			<forward path="/system/factory/contactEdit.jsp" name="addContact" />
+			<forward path="/system/factory/main.jsp" name="queryMainSuccess" />
+			<forward path="/system/factory/cust/cust.jsp" name="loadMail" />
+			<forward path="/system/factory/cotpricefac.jsp" name="loadPriceFac" />
+		</action>
+
+
+		<action parameter="method" path="/cotelements" scope="request"
+			type="com.sail.cot.action.sample.CotElementsAction">
+			<forward path="/sample/elements/elementsAdd.jsp"
+				name="addElements" />
+			<forward path="/sample/elements/elements.jsp"
+				name="queryListSuccess" />
+			<forward path="/sample/elements/elementsUpdate.jsp"
+				name="queryElementsSuccess" />
+			<forward path="/sample/elements/treeframe.jsp"
+				name="querySuccess" />
+			<forward path="/sample/elements/elementsBatchUpdate.jsp"
+				name="modifyElements" />
+			<forward path="/sample/elements/priceInfo.jsp"
+				name="loadPriceInfo" />
+			<forward path="/sample/elements/orderInfo.jsp"
+				name="loadOrderInfo" />
+			<forward path="/sample/elements/givenInfo.jsp"
+				name="loadGivenInfo" />
+			<forward path="/sample/elements/signInfo.jsp"
+				name="loadSignInfo" />
+			<forward path="/sample/elements/custNoInfo.jsp"
+				name="loadCustNoInfo" />
+			<forward path="/sample/elements/uploadOtherPic.jsp"
+				name="showOtherPic" />
+			<forward path="/sample/elements/showPicture.jsp"
+				name="showPicture" />
+			<forward path="/sample/elements/child.jsp"
+				name="loadChildInfo" />
+			<forward path="/sample/elements/childAdd.jsp"
+				name="queryChild" />
+			<forward path="/sample/elements/childMod.jsp"
+				name="queryChildMod" />
+			<forward path="/sample/elements/elefitting.jsp"
+				name="loadFittingInfo" />
+			<forward path="/sample/eleprice/elePrice.jsp"
+				name="loadElePrice" />
+			<forward path="/sample/elements/cotelepacking.jsp"
+				name="loadPackingInfo" />
+			<forward path="/sample/elements/orderfacInfo.jsp"
+				name="loadOrderFacInfo" />
+		</action>
+
+		<action parameter="method" path="/cotcontact" scope="request"
+			type="com.sail.cot.action.system.CotContactAction">
+			<forward path="/system/contact/contact.jsp" name="querySuccess" />
+			<forward path="/system/contact/contactEdit.jsp" name="modify" />
+			<forward path="/pan/contactEdit.jsp" name="modifyWithPan" />
+		</action>
+
+		<action parameter="method" path="/custcontact" scope="request"
+			type="com.sail.cot.action.customer.CotCustContactAction">
+			<forward path="/customer/custcontact/custcontactAdd.jsp"
+				name="add" />
+			<forward path="/customer/custcontact/custcontactlist.jsp"
+				name="querySuccess" />
+			<forward path="/customer/custcontact/custcontactModify.jsp"
+				name="modify" />
+		</action>
+
+		<action parameter="method" path="/customervisitedlog"
+			scope="request"
+			type="com.sail.cot.action.customer.CustomerVisitedLogAction">			
+			<forward
+				path="/customer/custvisitedlog/custvisitedlog.jsp"
+				name="querySuccess" />
+			<forward
+				path="/customer/custvisitedlog/custvisitedlogEdit.jsp"
+				name="modify" />
+		</action>
+
+		<action parameter="method" path="/cotfile" scope="request"
+			type="com.sail.cot.action.sample.CotFileAction">
+			<forward path="/sample/file/fileGird.jsp"
+				name="querySuccess" />
+			<forward path="/sample/file/cotfiledetail.jsp"
+				name="queryFileSuccess" />
+			<forward path="/sample/file/uploadFile.jsp"
+				name="uploadFile" />
+		</action>
+
+		<action parameter="method" path="/cotpricefac" scope="request"
+			type="com.sail.cot.action.sample.CotPriceFacAction">
+			<forward path="/sample/cotpricefac/cotPriceFacEdit.jsp"
+				name="add" />
+			<forward path="/sample/cotpricefac/cotpricefaclist.jsp"
+				name="queryList" />
+			<forward path="/sample/cotpricefac/cotpricefacModify.jsp"
+				name="modify" />
+		</action>
+
+		<action parameter="method" path="/cotpriceout" scope="request"
+			type="com.sail.cot.action.sample.CotPriceOutAction">
+			<forward path="/sample/cotpriceout/cotpriceoutAdd.jsp"
+				name="add" />
+			<forward path="/sample/cotpriceout/cotpriceoutlist.jsp"
+				name="queryList" />
+			<forward path="/sample/cotpriceout/cotpriceoutModify.jsp"
+				name="modify" />
+		</action>
+
+		<action parameter="method" path="/cotprod" scope="request"
+			type="com.sail.cot.action.sample.CotProdAction">
+			<forward path="/sample/prod/cotprodAdd.jsp" name="add" />
+			<forward path="/sample/prod/cotprodlist.jsp"
+				name="querySuccess" />
+			<forward path="/sample/prod/cotprodModify.jsp"
+				name="queryProdSuccess" />
+		</action>
+
+		<action parameter="method" path="/cotrpttype" scope="request"
+			type="com.sail.cot.action.sample.CotRptTypeAction">
+			<forward path="/sample/rpttype/cotrpttypeAdd.jsp"
+				name="add" />
+			<forward path="/sample/rpttype/cotrpttypelist.jsp"
+				name="querySuccess" />
+			<forward path="/sample/rpttype/cotrpttypeModify.jsp"
+				name="modify" />
+		</action>
+
+		<action parameter="method" path="/cotrptfile" scope="request"
+			type="com.sail.cot.action.sample.CotRptFileAction">
+			<forward path="/sample/rptfile/upload.jsp"
+				name="add" />
+			<forward path="/sample/rptfile/cotrptfilelist.jsp"
+				name="querySuccess" />
+			<forward path="/sample/rptfile/upload.jsp"
+				name="modify" />
+			<forward path="/sample/rptfile/uploadImg.jsp"
+				name="uploadImg" />
+			<forward path="/sample/rptfile/uploadFile.jsp"
+				name="uploadFile" />
+		</action>
+
+		<action parameter="method" path="/report" scope="request"
+			type="com.sail.cot.action.sample.CotReportAction">
+			<forward path="/sample/report/report.jsp" name="show" />
+		</action>
+		
+		<action parameter="method" path="/elepriceexcel" scope="request"
+			type="com.sail.cot.action.sample.CotElePriceExcelAction">
+			<forward path="/sample/report/reportElePrice.jsp" name="show" />
+		</action>
+
+		<action parameter="method" path="/importPicture" scope="request"
+			type="com.sail.cot.action.sample.ImportPictureAction">
+			<forward path="/sample/importPicture/importPicture.jsp"
+				name="importPicture" />
+		</action>
+
+		<action parameter="method" path="/cotimportresult"
+			scope="request"
+			type="com.sail.cot.action.sample.CotImportResultAction">
+			<forward path="/sample/cotimportresult/cotimportresult.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotpopedom" scope="request"
+			type="com.sail.cot.action.system.CotPodedomAction">
+			<forward path="/system/emps/emppopedom.jsp"
+				name="querySuccess" />
+			<forward path="/system/role/rolepopedom.jsp"
+				name="queryRolePopedomSuccess" />
+		</action>
+
+		<action parameter="method" path="/index" scope="request"
+			type="com.sail.cot.action.LoginAction">
+			<forward path="/framework.jsp" name="loginSuccess"></forward>
+			<forward path="/index.jsp" name="logoutSuccess"></forward>
+		</action>
+
+		<action parameter="method" path="/cotpwd" scope="request"
+			type="com.sail.cot.action.system.CotPwdAction">
+			<forward path="/system/emps/changepwd.jsp"
+				name="pwdSuccess" />
+
+		</action>
+
+		<action parameter="method" path="/cotsysdic" scope="request"
+			type="com.sail.cot.action.system.CotSysDicAction">
+			<forward path="/system/sysdic/cotsysdicAdd.jsp" name="add" />
+			<forward path="/system/sysdic/cotsysdiclist.jsp"
+				name="querySuccess" />
+			<forward path="/system/sysdic/cotsysdicModify.jsp"
+				name="queryDetailSuccess" />
+		</action>
+
+		<action parameter="method" path="/cotboxtype" scope="request"
+			type="com.sail.cot.action.system.CotBoxTypeAction">
+			<forward path="/system/boxtype/boxtype.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotpicture" scope="request"
+			type="com.sail.cot.action.sample.CotPictureAction">
+			<forward path="/sample/elements/elepicture.jsp"
+				name="queryPictureSuccess" />
+
+		</action>
+
+		<action parameter="method" path="/previewrpt" scope="request"
+			type="com.sail.cot.action.report.ReportAppletAction">
+			<forward path="/report.jsp" name="previewSuccess" />
+			<forward path="/applet1.jsp" name="queryApplet" />
+		</action>
+
+		<action parameter="method" path="/newpreviewrpt" scope="request"
+			type="com.sail.cot.action.report.NewReportAction">
+			<forward path="/applet1.jsp" name="previewSuccess" />
+		</action>
+
+		<action parameter="method" path="/cotlogininfo" scope="request"
+			type="com.sail.cot.action.system.CotLoginInfoAction">
+			<forward path="/system/logininfo/loginInfo.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotgiventype" scope="request"
+			type="com.sail.cot.action.systemdic.CotGivenTypeAction">
+			<forward path="/systemdic/giventype/giventype.jsp"
+				name="querySuccess" />			
+		</action>
+
+		<action parameter="method" path="/cotbalancetype"
+			scope="request"
+			type="com.sail.cot.action.systemdic.CotBalanceTypeAction">
+			<forward path="/systemdic/balancetype/balancetype.jsp"
+				name="querySuccess" />
+			<forward path="/systemdic/balancetype/balancetypeAdd.jsp"
+				name="add" />
+			<forward path="/systemdic/balancetype/balancetypeUpdate.jsp"
+				name="modify" />
+		</action>
+
+		<action parameter="method" path="/cotmeettype" scope="request"
+			type="com.sail.cot.action.systemdic.CotMeetTypeAction">
+			<forward path="/systemdic/meettype/meettype.jsp"
+				name="querySuccess" />
+			<forward path="/systemdic/meettype/meettypeAdd.jsp"
+				name="add" />
+			<forward path="/systemdic/meettype/meettypeUpdate.jsp"
+				name="modify" />
+		</action>
+
+		<action parameter="method" path="/cotprovince" scope="request"
+			type="com.sail.cot.action.systemdic.CotProvinceAction">
+			<forward path="/systemdic/province/provincelist.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotnation" scope="request"
+			type="com.sail.cot.action.systemdic.CotNationAction">
+			<forward path="/systemdic/nation/nationlist.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotnationcity" scope="request"
+			type="com.sail.cot.action.systemdic.CotNationCityAction">
+			<forward path="/systemdic/nationcity/nationcitylist.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotshipport" scope="request"
+			type="com.sail.cot.action.systemdic.CotShipPortAction">			
+			<forward path="/systemdic/shipport/shipport.jsp" name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotsigntype" scope="request"
+			type="com.sail.cot.action.systemdic.CotSignTypeAction">
+			<forward path="/systemdic/signtype/signtype.jsp"
+				name="querySuccess" />			
+		</action>
+
+		<action parameter="method" path="/cotcuttype" scope="request"
+			type="com.sail.cot.action.systemdic.CotCutTypeAction">
+			<forward path="/systemdic/cuttype/cuttype.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotcustomertype" scope="request"
+		        type="com.sail.cot.action.systemdic.CotCustomerTypeAction">
+			<forward path="/systemdic/customertype/customertypelist.jsp"
+					 name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotcustomer" scope="request"
+			type="com.sail.cot.action.customer.CotCustomerAction">
+			<forward path="/customer/customer/customerAdd.jsp"
+				name="add" />
+			<forward path="/customer/customer/customerlist.jsp"
+				name="querySuccess" />
+			<forward path="/customer/customer/customerModify.jsp"
+				name="modify" />
+			<forward path="/mail/cust/cust.jsp" name="loadMail" />
+			<forward path="/customer/customer/uploadPhoto.jsp"
+				name="uploadPhoto" />
+			<forward path="/customer/customer/uploadMb.jsp"
+				name="uploadMb" />
+			<forward path="/customer/customer/orderPic.jsp"
+				name="queryOrderPic" />
+				
+			<forward path="/customer/claim/claim.jsp"
+				name="queryClaim" />				
+			<forward path="/customer/claim/claimEdit.jsp"
+				name="claimEdit" />
+				
+			<forward path="/customer/custPc/custPc.jsp"
+				name="queryCustPc" />				
+			<forward path="/customer/custPc/custPcEdit.jsp"
+				name="custPcEdit" />
+				
+			<!--<forward path="/customer/customer/custBaseInfo.jsp"
+				name="loadBaseInfo" />
+				<forward path="/customer/customer/custMb.jsp"
+				name="loadCustMb" />
+				<forward path="/customer/customer/custBusinessInfo.jsp"
+				name="loadBusinessInfo" />
+			-->
+		</action>
+
+		<action parameter="method" path="/cotsign" scope="request"
+			type="com.sail.cot.action.sign.CotSignAction">
+			
+			<forward path="/sign/sign/signEdit.jsp" name="add" />
+			
+		</action>
+
+		<action parameter="method" path="/cottargetport" scope="request"
+			type="com.sail.cot.action.systemdic.CotTargetPortAction">
+			<forward path="/systemdic/targetport/targetportlist.jsp" name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotcustomerlv" scope="request"
+			type="com.sail.cot.action.systemdic.CotCustomerLvAction">
+			<forward path="/systemdic/customerlv/cotcustomerlvlist.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotcommisiontype"
+			scope="request"
+			type="com.sail.cot.action.systemdic.CotCommisionAction">
+			<forward path="/systemdic/commision/cotcommisionAdd.jsp"
+				name="add" />
+			<forward path="/systemdic/commision/cotcommisionlist.jsp"
+				name="querySuccess" />
+			<forward path="/systemdic/commision/cotcommisionModify.jsp"
+				name="modify" />
+		</action>
+
+		<action parameter="method" path="/cotclause" scope="request"
+			type="com.sail.cot.action.systemdic.CotClauseAction">
+			<forward path="/systemdic/clause/clause.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotpricecfg" scope="request"
+			type="com.sail.cot.action.systemdic.CotPriceCfgAction">
+			<forward path="/systemdic/pricecfg/pricecfg.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cottraffictype"
+			scope="request"
+			type="com.sail.cot.action.systemdic.CotTrafficTypeAction">
+			<forward path="/systemdic/traffictype/traffictype.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cottradetype" scope="request"
+			type="com.sail.cot.action.systemdic.CotTradeTypeAction">
+			<forward path="/systemdic/tradetype/tradetypeAdd.jsp"
+				name="add" />
+			<forward path="/systemdic/tradetype/tradetypeModify.jsp"
+				name="modify" />
+			<forward path="/systemdic/tradetype/tradetypelist.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cottaxtype" scope="request"
+			type="com.sail.cot.action.systemdic.CotTaxTypeAction">
+			<forward path="/systemdic/taxtype/taxtypeAdd.jsp"
+				name="add" />
+			<forward path="/systemdic/taxtype/taxtypeModify.jsp"
+				name="modify" />
+			<forward path="/systemdic/taxtype/taxtypelist.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotconsigncompany"
+			scope="request"
+			type="com.sail.cot.action.systemdic.CotConsignCompanyAction">
+			<forward
+				path="/systemdic/consigncompany/consigncompanyAdd.jsp" name="add" />
+			<forward
+				path="/systemdic/consigncompany/consigncompanyModify.jsp"
+				name="modify" />
+			<forward
+				path="/systemdic/consigncompany/consigncompanylist.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cothscompany" scope="request"
+			type="com.sail.cot.action.systemdic.CotHsCompanyAction">
+			<forward path="/systemdic/hscompany/hscompanyAdd.jsp"
+				name="add" />
+			<forward path="/systemdic/hscompany/hscompanyModify.jsp"
+				name="modify" />
+			<forward path="/systemdic/hscompany/hscompanylist.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotinsurecontract"
+			scope="request"
+			type="com.sail.cot.action.systemdic.CotInsureContractAction">
+			<forward
+				path="/systemdic/insurecontract/insurecontract.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotcalculation"
+			scope="request"
+			type="com.sail.cot.action.price.CotCalculationAction">
+			<forward path="/price/calculation/calculationEdit.jsp"
+				name="add" />
+			<forward path="/price/calculation/calculation.jsp"
+				name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotprice" scope="request"
+			type="com.sail.cot.action.price.CotPriceAction">
+			<forward path="/price/price.jsp" name="querySuccess" />
+			<forward path="/price/price.jsp" name="queryTable" />
+			<forward path="/price/priceAdd.jsp" name="priceDetail" />
+			<forward path="/price/priceAdd.jsp" name="addDetail" />
+			<forward path="/price/priceDetail.jsp" name="detail" />
+			<forward path="/price/cusTable.jsp" name="queryCus" />
+			<forward path="/price/eleTable.jsp" name="queryEle" />
+			<forward path="/price/eleFrame.jsp" name="queryEleFrame" />
+			<forward path="/price/uploadCheckMachine.jsp"
+				name="showMachineUpload" />
+			<forward path="/price/report.jsp" name="showExcel" />
+			<forward path="/importPic/importPic.jsp" name="importPic" />
+			<forward path="/price/addToMessage.jsp" name="addToMessage" />
+			<forward path="/price/priceFitting.jsp" name="queryPriceFittings" />
+			<forward path="/price/priceElePrice.jsp" name="queryPriceElePrice" />
+			
+			<forward path="/customer/customer/price.jsp" name="queryPrice" />
+		</action>
+
+		<action parameter="method" path="/cotgiven" scope="request"
+			type="com.sail.cot.action.given.CotGivenAction">
+			
+			<forward path="/given/givenEdit.jsp" name="add" />
+			<forward path="/given/givenlist.jsp" name="querySuccess" />
+			<forward path="/given/givenEdit.jsp" name="givenDetail" />
+			<!-- 应收帐 -->
+			<forward path="/given/finaceOther.jsp" name="queryRecv" />
+			<forward path="/customer/customer/given.jsp" name="queryGiven" />
+			<forward path="/given/finaceOther.jsp" name="queryRecv" />
+		</action>
+
+		<action parameter="method" path="/cotElePicShow" scope="request"
+			type="com.sail.cot.action.sample.CotElepicShowAction">
+			<forward path="/sample/elements/elepicshow.jsp"
+				name="querySuccess" />
+			<forward path="/sample/elements/elepiclist.jsp"
+				name="queryPicSuccess" />
+		</action>
+
+		<action parameter="method" path="/cotorder" scope="request"
+			type="com.sail.cot.action.order.CotOrderAction">
+			<forward path="/order/order.jsp" name="querySuccess" />
+			<forward path="/order/order.jsp" name="queryTable" />
+			<forward path="/order/orderAdd.jsp" name="orderDetail" />
+			<forward path="/order/orderModify.jsp" name="modDetail" />
+			<forward path="/order/orderDetail.jsp" name="detail" />
+			<forward path="/price/cusTable.jsp" name="queryCus" />
+			<forward path="/price/eleTable.jsp" name="queryEle" />
+			<forward path="/order/priceToOrder.jsp" name="queryPrice" />
+			<forward path="/order/uploadMB.jsp" name="showUpload" />
+			<forward path="/order/eleFrame.jsp" name="queryEleFrame" />
+			<forward path="/order/report.jsp" name="showExcel" />
+			<forward path="/importPic/importPic.jsp" name="importPic" />
+			<forward path="/order/addToMessage.jsp" name="addToMessage" />
+			<forward path="/order/orderToFac.jsp" name="queryOrderToOrderFac" />
+			<forward path="/order/uploadCheckMachine.jsp"
+				name="showMachineUpload" />
+				
+			<forward path="/order/orderPc.jsp"
+				name="queryOrderPc" />				
+			<forward path="/order/orderPcEdit.jsp"
+				name="orderPcEdit" />
+
+			<!-- 其他费用 -->
+			<forward path="/order/finaceOther.jsp" name="queryOther" />
+			<forward path="/order/facToOrder.jsp" name="queryFacOther" />
+			<!-- 应收帐 -->
+			<forward path="/order/finaceOther.jsp" name="queryRecv" />
+			
+			<forward path="/order/orderFitting.jsp" name="queryOrderFittings" />
+			<forward path="/order/orderElePrice.jsp" name="queryOrderElePrice" />
+			
+			<forward path="/customer/customer/order.jsp" name="queryOrder" />
+			
+			<!-- 计划日期 -->
+			<forward path="/order/timeOrder.jsp" name="queryTime" />
+		</action>
+		<!-- 邮箱 -->
+		<action parameter="method" path="/cotmail" scope="request"
+			type="com.sail.cot.action.mail.CotMailAction">
+			<forward path="/mail/inbox/inbox.jsp" name="querySuccess" />
+			<forward path="/mail/inbox/print.jsp" name="printContent" />
+			<forward path="/mail/send/signature.jsp" name="querySign" />
+		</action>
+		
+		<action parameter="method" path="/cotmailtemplate" scope="request"
+			type="com.sail.cot.action.mail.CotMailTemplateAction">
+			<forward path="/mail/template/template.jsp" name="querySuccess" />
+		</action>
+		
+		<action parameter="method" path="/cotmailimport" scope="request"
+			type="com.sail.cot.action.mail.CotMailImportAction">
+			<forward path="/mail/import/import.jsp" name="querySuccess" />
+		</action>
+		
+		<action parameter="method" path="/cotmailcontrol" scope="request"
+			type="com.sail.cot.action.mail.CotMailControlAction">
+			<forward path="/mail/control/control.jsp" name="querySuccess" />
+		</action>
+		
+		<action parameter="method" path="/cotmailrule" scope="request"
+			type="com.sail.cot.action.mail.CotMailRuleAction">
+			<forward path="/mail/rule/rule.jsp" name="querySuccess" />
+			<forward path="/mail/rule/ruleAdd.jsp" name="addDetail" />
+		</action>
+		
+		<action parameter="method" path="/cotmailcheck" scope="request"
+			type="com.sail.cot.action.mail.CotMailCheckAction">
+			<forward path="/mail/check/mailCheck.jsp" name="queryMailSuccess" />
+			<forward path="/mail/check/check.jsp" name="querySuccess" />
+			<forward path="/mail/check/checkAdd.jsp" name="addDetail" />
+		</action>
+		
+		<action parameter="method" path="/cotmailcfg" scope="request"
+			type="com.sail.cot.action.mail.CotMailCfgAction">
+			<forward path="/mail/cfg/cfg.jsp"
+				name="querySuccess" />
+			<forward path="/mail/mailcfg/mailCfgAdd.jsp" name="add" />
+			<forward path="/mail/cfg/cfg.jsp" name="queryDetail" />
+		</action>
+		<action parameter="method" path="/cotmailsend" scope="request"
+			type="com.sail.cot.action.mail.CotMailSendAction">
+			<forward path="/mail/send/send.jsp" name="querySuccess" />
+			<forward path="/mail/send/signature.jsp" name="querySign" /> 
+		</action>	
+		
+		<action parameter="method" path="/cotelecfg" scope="request"
+			type="com.sail.cot.action.sample.CotEleCfgAction">
+			<forward path="/sample/cotelecfg/elecfg.jsp"
+				name="querySuccess" />
+			<forward path="/sample/cotelecfg/elecfgAdd.jsp" name="add" />
+			<forward path="/sample/cotelecfg/cotelecfg.jsp"
+				name="modify" />
+			<forward path="/sample/cotelecfg/calculator.jsp"
+				name="openCalculator" />
+			<forward path="/sample/cotelecfg/faccalculator.jsp"
+				name="openFacCalculator" />
+		</action>
+
+		<action parameter="method" path="/cotquery" scope="request"
+			type="com.sail.cot.action.QueryAction">
+			<forward path="/commonQuery/cusTable.jsp" name="queryCus" />
+			<forward path="/commonQuery/cusTableToContract.jsp"
+				name="queryCustomerToContract" />
+			<forward path="/commonQuery/companyTable.jsp"
+				name="queryCompanyToContract" />
+			<forward path="/commonQuery/eleTable.jsp" name="queryEle" />
+			<forward path="/commonQuery/childEleQuery.jsp"
+				name="queryChildElements" />
+			<forward path="/commonQuery/eleQuery.jsp"
+				name="queryElements" />
+			<forward path="/commonQuery/empTable.jsp" name="queryEmp" />
+			<forward path="/commonQuery/facTable.jsp" name="queryFac" />
+			<forward path="/commonQuery/queryTrailCar.jsp"
+				name="queryTrailCar" />
+			<forward path="/commonQuery/showPrint.jsp" name="showPrint" />
+			<forward path="/commonQuery/targetPortTable.jsp"
+				name="queryTargetPort" />
+			<forward path="/commonQuery/nationTable.jsp"
+				name="queryNation" />
+			<forward path="/commonQuery/hsCompanyTable.jsp"
+				name="queryHsCompany" />
+			<forward path="/commonQuery/consignCompanyTable.jsp"
+				name="queryConsignCompany" />
+			<forward path="/commonQuery/orderTable.jsp"
+				name="queryOrderByLabel" />
+				<forward path="/commonQuery/contractTable.jsp" name="queryContract" />
+
+
+			<forward path="/price/orderToPrice.jsp" name="orderToPrice" />
+			<forward path="/price/priceToPrice.jsp" name="priceToPrice" />
+			<forward path="/price/givenToPrice.jsp" name="givenToPrice" />
+			<forward path="/order/priceToOrder.jsp" name="priceToOrder" />
+			<forward path="/order/givenToOrder.jsp" name="givenToOrder" />
+			<forward path="/order/orderToOrder.jsp" name="orderToOrder" />
+
+			<forward path="/given/orderToGiven.jsp" name="orderToGiven" />
+			<forward path="/given/priceToGiven.jsp" name="priceToGiven" />
+
+			<forward path="/sign/sign/givenTosign.jsp"
+				name="givenToSign" />
+
+			<forward path="/commonQuery/newEleAdd.jsp"
+				name="addElements" />
+			<forward path="/orderfac/orderToOrderFac.jsp"
+				name="orderToOrderFac" />
+			<forward path="/orderfac/orderToOrderFac.jsp"
+				name="showOrderByFac" />
+			<forward path="/commonQuery/printAll.jsp"
+				name="queryPrintAll" />
+			<forward path="/commonQuery/queryOrderNo.jsp"
+				name="queryOrderNo" />
+			<forward path="/commonQuery/queryPriceNo.jsp"
+				name="queryPriceNo" />
+
+			<forward path="/test.jsp" name="queryByCondition" />
+
+			<forward path="/price/showPriceInfo.jsp" name="queryPrice" />
+			<forward path="/order/showPriceInfo.jsp"
+				name="queryOrderPrice" />
+			<forward path="/orderfac/showPriceInfo.jsp"
+				name="queryPriceFac" />
+
+			<forward path="/commonQuery/tong.jsp"
+				name="queryTong" />
+				
+			<forward path="/order/orderfacEdit.jsp"
+				name="queryRemainOrderDetail" />
+		</action>
+
+
+		<action parameter="method" path="/cotstatistics" scope="request"
+			type="com.sail.cot.action.statistics.CotStatisticsAction">
+			<forward path="/statistics/stattree.jsp"
+				name="querySuccess" />
+			<forward path="/statistics/report.jsp"
+				name="queryRptSuccess" />
+			<forward path="/statistics/statpopedom.jsp"
+				name="queryChkTreeSuccess" />
+			<forward path="/statistics/statrpt/statrpt.jsp" name="queryStats" />
+			<forward path="/statistics/statrpt/statrptEddit.jsp" name="queryStatsEdit" />
+		</action>
+
+		<action parameter="method" path="/cotbarcode" scope="request"
+			type="com.sail.cot.action.barcode.CotBarcodeAction">
+			<forward path="/barcode/cotbarcode.jsp" name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotorderout" scope="request"
+			type="com.sail.cot.action.orderout.CotOrderOutAction">
+			<forward path="/orderout/orderOut.jsp" name="querySuccess" />
+			<forward path="/orderoutdel/orderOut.jsp" name="querySuccessDel" />
+			<forward path="/orderout/orderOutAdd.jsp" name="oOutDetail" />
+			<forward path="/orderoutdel/orderOutAdd.jsp" name="oOutDetailDel" />
+			<forward path="/orderout/orderOut.jsp" name="queryTable" />
+			<forward path="/orderout/eleFrame.jsp" name="queryEleFrame" />
+			<forward path="/orderout/eleFrameOut.jsp" name="queryEleFrameOut" />
+			<forward path="/orderout/orderToOrderOut.jsp" name="orderToOrderOut" />
+			<forward path="/orderout/orderOutDetail.jsp" name="detail" />
+			<forward path="/orderout/uploadMB.jsp" name="showUpload" />
+			<forward path="/orderout/orderOuthsdetailInfo.jsp" name="chaDetail" />
+			<forward path="/orderoutdel/orderOuthsdetailInfo.jsp" name="chaDetailDel" />
+			<forward path="/orderout/addToMessage.jsp" name="addToMessage" />
+			
+			<forward path="/orderout/dealFinaceOther.jsp" name="queryFinanceDeal" />
+			<forward path="/orderout/orderFacDealToOrderOut.jsp" name="queryFacDeal" />
+			<forward path="/orderout/orderFacDealToOrderOut.jsp" name="queryFacOther" />
+			<forward path="/orderout/orderFacDealToOrderOut.jsp" name="queryOverFee" />
+			<forward path="/orderout/dealFinaceOther.jsp" name="queryDeal" />
+			<forward path="/orderout/dealFinaceOther.jsp" name="queryDealDetail" />
+			<forward path="/orderout/conToAllocate.jsp" name="conToAllocate" />
+			<forward path="/orderout/conToAllocate.jsp" name="orderOutDetail" />
+			<forward path="/orderout/conToAllocate.jsp" name="queryOrderFac" />
+			<forward path="/orderout/conToAllocate.jsp" name="queryAllocateDetail" />
+			<forward path="/orderout/queryOrderFac.jsp" name="queryOrderFacToAdd" />	
+			<forward path="/orderout/orderFacDealToOrderOut.jsp" name="queryOrderFacOther" />
+			<forward path="/orderout/orderFacDealToOrderOut.jsp" name="queryFitOrder" />
+			<forward path="/orderout/orderFacDealToOrderOut.jsp" name="queryPackOrder" />
+			<forward path="/orderout/conToAllocate.jsp" name="queryFitOrderDetail" />		
+			<forward path="/orderout/conToAllocate.jsp" name="queryFitFacDetail" />
+			<forward path="/orderout/conToAllocate.jsp" name="queryPackOrderDetail" />		
+			<forward path="/orderout/conToAllocate.jsp" name="queryPackFacDetail" />
+			
+			<forward path="/orderout/finaceRecvOther.jsp" name="queryRecvOther" />
+			<forward path="/orderout/orderRecvToOrderOut.jsp" name="queryOther" />
+			<forward path="/orderout/orderAndAccount.jsp" name="queryOrderNo" />
+			
+			<forward path="/orderout/report.jsp" name="showExcel" />
+			
+			<!-- 应收帐 -->
+			<forward path="/orderout/finaceRecvOther.jsp" name="queryRecv" />
+		</action>
+
+		<action parameter="method" path="/cotorderfac" scope="request"
+			type="com.sail.cot.action.orderfac.CotOrderFacAction">
+			<forward path="/orderfac/orderFac.jsp" name="querySuccess" />
+			<forward path="/orderfac/orderFac.jsp" name="queryTable" />
+			<forward path="/orderfac/orderfacEdit.jsp" name="add" />
+			<forward path="/orderfac/orderFacAdd.jsp" name="orderFacDetail" />
+			<forward path="/orderfac/eleFrame.jsp" name="queryEleFrame" />
+			<forward path="/orderfac/orderFacDetail.jsp" name="openDetail" />
+			<forward path="/orderfac/uploadMB.jsp" name="showUpload" />
+			<forward path="/orderfac/finaceOther.jsp" name="queryFinanceOther" />
+			<forward path="/orderfac/finaceOther.jsp" name="queryDeal" />
+			<forward path="/orderfac/finaceOther.jsp" name="queryDealDetail" />
+			<forward path="/orderfac/addToMessage.jsp" name="addToMessage" />
+			<forward path="/order/orderToFac.jsp" name="queryOrderFac" />
+			<forward path="/order/orderToFac.jsp" name="orderToOrderFac" />
+			<forward path="/order/orderfacEdit.jsp" name="assign" />
+			<!-- 计划日期 -->
+			<forward path="/orderfac/timeOrder.jsp" name="queryTime" />
+			<forward path="/orderfac/orderPc.jsp" name="queryOrderPc" />
+			<forward path="/orderfac/orderPcEdit.jsp"
+				name="orderPcEdit" />	
+			<forward path="/orderfac/artWork.jsp"
+				name="queryArtWork" />	
+		</action>
+
+		<action parameter="method" path="/cotmessagetype"
+			scope="request"
+			type="com.sail.cot.action.worklog.CotMsgTypeAction">
+			<forward path="/worklog/msgtype/cotmsgtype.jsp"
+				name="querySuccess" />
+			<forward path="/worklog/msgtype/cotmsgtypeAdd.jsp"
+				name="add" />
+			<forward path="/worklog/msgtype/cotmsgtypeModify.jsp"
+				name="modify" />
+		</action>
+
+		<action parameter="method" path="/cotsplitinfo" scope="request"
+			type="com.sail.cot.action.split.CotSplitAction">
+			<forward path="/split/cotsplitlist.jsp" name="querySuccess" />
+			<forward path="/split/cotsplitlist.jsp" name="queryDetail" />
+			<forward path="/split/cotsplitModify.jsp" name="modify" />
+			
+			<forward path="/split/split.jsp" name="querySuccess" />
+			<forward path="/split/split.jsp" name="queryDetail" />
+			<forward path="/split/split.jsp" name="queryOrderOut" />
+			<forward path="/split/splitEdit.jsp" name="add" />
+			<forward path="/split/splitEdit.jsp" name="splitDetail" />
+			
+			<forward path="/split/cotsplitlist.jsp" name="queryTable" />
+			<forward path="/commonQuery/orderoutTable.jsp"
+				name="queryOrderForm" />
+			<forward path="/commonQuery/orderDetailTable.jsp"
+				name="queryOrderDetail" />
+			<forward path="/split/cotsplitAdd.jsp" name="splitDetail" />
+		</action>
+
+		<action parameter="method" path="/cotsymbol" scope="request"
+			type="com.sail.cot.action.symbol.CotSymbolAction">
+			<forward path="/split/cotsplitlist.jsp" name="querySuccess" />
+		</action>
+
+		<action parameter="method" path="/cotmessage" scope="request"
+			type="com.sail.cot.action.worklog.CotMessageAction">
+			
+			<forward path="/worklog/message/message.jsp" name="querySuccess" />
+			<forward path="/worklog/message/addMessage.jsp" name="add" />			
+			<forward path="/worklog/message/handleMessage.jsp" name="modify" />
+			<forward path="/worklog/message/sendMessage.jsp" name="send" />
+			
+			<forward path="/worklog/message/messagelist.jsp"
+				name="queryUnreadMessage" />
+			<forward path="/worklog/message/messagelist.jsp"
+				name="queryUnHandleMessage" />
+			<forward path="/worklog/message/messagelist.jsp"
+				name="queryOverMessage" />
+			<forward path="/home.jsp" name="queryPlatForm" />
+		</action>
+
+		<action parameter="method" path="/reportApplet" scope="request"
+			type="com.sail.cot.action.report.ReportAppletAction">
+			<forward path="/applet1.jsp" name="queryApplet" />
+		</action>
+
+		<action parameter="method" path="/cotsyslog" scope="request"
+			type="com.sail.cot.action.worklog.CotSyslogAction">
+			<forward path="/worklog/syslog/cotsyslog.jsp"
+				name="querySuccess" />
+			<forward path="/worklog/syslog/showsyslog.jsp" name="add" />
+		</action>
+
+		<action parameter="method" path="/cotbank" scope="request"
+			type="com.sail.cot.action.systemdic.CotBankAction">
+			<forward path="/systemdic/bank/bank.jsp" name="querySuccess" />
+			<forward path="/systemdic/bank/bankEdit.jsp" name="modify" />
+		</action>
+		<action parameter="method" path="/cotshipcompany"
+			scope="request"
+			type="com.sail.cot.action.systemdic.CotShipCompanyAction">
+			<forward path="/systemdic/shipcompany/shipCompanyAdd.jsp"
+				name="add" />
+			<forward path="/systemdic/shipcompany/shipCompanylist.jsp"
+				name="querySuccess" />
+			<forward path="/systemdic/shipcompany/shipCompanyModify.jsp"
+				name="modify" />
+		</action>
+
+		<action parameter="method" path="/backup" scope="request"
+			type="com.sail.cot.action.system.BackupAction">
+			<forward path="/system/bak/backup.jsp" name="backupPage" />
+			<forward path="/system/bak/backupSuccess.jsp"
+				name="backupSuccess" />
+		</action>
+
+		<action parameter="method" path="/importpic" scope="request"
+			type="com.sail.cot.action.importPic.ImportPicAction">
+			<forward path="/importPic/importPic.jsp" name="importPic" />
+		</action>
+
+		<action parameter="method" path="/cotboxpacking" scope="request"
+			type="com.sail.cot.action.systemdic.CotBoxPackingAction">
+			<forward path="/systemdic/boxpacking/boxpacking.jsp"
+				name="querySuccess" />
+			<forward path="/systemdic/boxpacking/boxpackingEdit.jsp"
+				name="add" />
+			<forward path="/systemdic/boxpacking/calculator.jsp"
+				name="openCalculator" />
+			<forward path="/systemdic/boxpacking/addCalculator.jsp"
+				name="addCalculator" />
+		</action>
+
+		<action parameter="method" path="/cottrailcar" scope="request"
+			type="com.sail.cot.action.systemdic.CotTrailCarAction">
+			<forward path="/systemdic/trailcar/trailcarList.jsp"
+				name="querySuccess" />
+			<forward path="/systemdic/trailcar/trailcarEdit.jsp"
+				name="add" />
+		</action>
+
+		<action parameter="method" path="/cotaudit" scope="request"
+			type="com.sail.cot.action.audit.CotAuditAction">
+			<forward path="/audit/cotaudit.jsp" name="querySuccess" />
+			<forward path="/audit/auditCreate.jsp" name="auditCreate" />
+			<forward path="/audit/cotauditEdit.jsp" name="modify" />
+		</action>
+
+		<action parameter="method" path="/cotbacktax" scope="request"
+			type="com.sail.cot.action.backtax.CotBackTaxAction">
+			<forward path="/backtax/backtax.jsp" name="querySuccess" />
+			<forward path="/backtax/backtaxEdit.jsp" name="modify" />
+			<forward path="/backtax/audit.jsp" name="queryAudit" />
+			<forward path="/backtax/backtaxEdit.jsp" name="addAudit" />
+		</action>
+
+		<action parameter="method" path="/cotfinancegiven"
+			scope="request"
+			type="com.sail.cot.action.finace.CotFinanceGivenAction">
+			<forward path="/finace/financegiven/financeGiven.jsp"
+				name="querySuccess" />
+			<forward path="/finace/financegiven/financeGivenEdit.jsp"
+				name="add" />
+			<forward path="/finace/financegiven/financeGivenEdit.jsp"
+				name="queryDealDetail" />
+			<forward path="/finace/financegiven/financeGivenEdit.jsp"
+				name="queryDeal" />
+		</action>
+
+		<action parameter="method" path="/cotlabel" scope="request"
+			type="com.sail.cot.action.label.CotLabelAction">
+			<forward path="/label/label.jsp" name="querySuccess" />
+			<forward path="/label/labelAdd.jsp" name="addLabel" />
+			<forward path="/label/labelAdd.jsp" name="queryLabelDetail" />
+			<forward path="/label/showPicture.jsp" name="showPicture" />
+			<forward path="/label/uploadOtherPic.jsp"
+				name="showOtherPic" />
+		</action>
+
+		<action parameter="method" path="/cotfinacerecv" scope="request"
+			type="com.sail.cot.action.finace.CotFinacerecvAction">
+			<forward path="/finace/finacerecv/finacerecv.jsp"
+				name="querySuccess" />
+			<forward path="/finace/finacerecv/finacerecvEdit.jsp"
+				name="add" />
+			<forward path="/finace/finacerecv/finacerecvEdit.jsp"
+				name="queryRecv" />
+			<forward path="/finace/finacerecv/finacerecvEdit.jsp"
+				name="queryRecvDetail" />
+		</action>
+
+		<action parameter="method" path="/cotdeal" scope="request"
+			type="com.sail.cot.action.finace.CotDealAction">
+			<forward path="/finace/deal/deal.jsp" name="querySuccess" />
+			<forward path="/finace/deal/dealDetail.jsp" name="queryDeal" />
+			<forward path="/finace/deal/transDetail.jsp" name="queryTrans" />
+		</action>
+
+		<action parameter="method" path="/cotrecv" scope="request"
+			type="com.sail.cot.action.finace.CotRecvAction">
+			<forward path="/finace/recv/recv.jsp" name="querySuccess" />
+			<forward path="/finace/recv/recvDetail.jsp" name="queryRecv" />
+		</action>
+
+		<action parameter="method" path="/cotfittings" scope="request"
+			type="com.sail.cot.action.fittings.CotFittingsAction">
+			<forward path="/fittings/fittings.jsp" name="querySuccess" />
+			<forward path="/fittings/fittingsAdd.jsp"
+				name="addFittings" />
+			<forward path="/fittings/hisPriceTable.jsp"
+				name="loadPriceInfo" />
+			<forward path="/fittings/fitEleTable.jsp" name="goFitEle" />
+			<forward path="/fittings/eleTable.jsp" name="queryEle" />
+			<forward path="/fittings/hisPriceEdit.jsp"
+				name="addPriceOut" />
+			<forward path="/fittings/report.jsp" name="showExcel" />
+		</action>
+
+		<action parameter="method" path="/cottypelv3" scope="request"
+			type="com.sail.cot.action.systemdic.CotTypeLv3Action">
+			<forward path="/systemdic/typelv3/typelvlist.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<action parameter="method" path="/cotlibrary"
+			scope="request"
+			type="com.sail.cot.action.library.CotLibraryAction">
+			<forward path="/library/libraryInfo.jsp"
+				name="querySuccess" />
+			<forward path="/library/libraryInfoEdit.jsp"
+				name="add" />
+		</action>
+		
+		<action parameter="method" path="/coteleprice"
+			scope="request"
+			type="com.sail.cot.action.sample.CotElePriceAction">
+			<forward path="/sample/elements/elePrice.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<!-- 配件采购 -->
+		<action parameter="method" path="/cotfittingorder"
+			scope="request"
+			type="com.sail.cot.action.fittingorder.CotFitOrderAction">
+			
+			<forward path="/fittingorder/fittingOrder.jsp" name="querySuccess" />
+			<forward path="/fittingorder/fittingOrderEdit.jsp" name="addFittingOrder" />
+			<forward path="/fittingorder/fittingFrame.jsp" name="queryFitFrame" />
+			<forward path="/fittingorder/fittingOrderEdit.jsp" name="queryDetail" />
+			<forward path="/fittingorder/finaceOther.jsp" name="queryFinanceOther" />
+			<forward path="/fittingorder/finaceOther.jsp" name="queryDeal" />
+			<forward path="/fittingorder/finaceOther.jsp" name="queryDealDetail" />
+		</action>
+		
+		<!-- 配件采购分析 -->
+		<action parameter="method" path="/cotfitanys" scope="request"
+			type="com.sail.cot.action.fittingorder.CotFitAnysAction">
+			<forward name="querySuccess" path="/order/fitAnys.jsp" />
+			<forward path="/order/fittingQuery.jsp"
+				name="queryFitting" />
+		</action>
+		
+		<!-- 包材采购 -->
+		<action parameter="method" path="/cotpackingorder"
+			scope="request"
+			type="com.sail.cot.action.packingorder.CotPackOrderAction">
+			
+			<forward path="/packingorder/packingOrder.jsp" name="querySuccess" />
+			<forward path="/packingorder/packingOrderEdit.jsp" name="addPackingOrder" />
+			<forward path="/packingorder/packingOrderEdit.jsp" name="queryDetail" />
+			<forward path="/packingorder/finaceOther.jsp" name="queryFinanceOther" />
+			<forward path="/packingorder/finaceOther.jsp" name="queryDeal" />
+			<forward path="/packingorder/finaceOther.jsp" name="queryDealDetail" />
+		</action>
+		<!-- 包材采购分析 -->
+		<action parameter="method" path="/cotpackanys"
+			scope="request"
+			type="com.sail.cot.action.packingorder.CotPackAnysAction">
+			<forward name="querySuccess" path="/order/packAnys.jsp" />
+		</action>
+		
+		<!-- 产品分类 -->
+		<action parameter="method" path="/cottypelv" scope="request"
+			type="com.sail.cot.action.systemdic.CotTypeLv2Action">
+			<forward path="/systemdic/typelv2/typelv2.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<!-- 集装箱 -->
+		<action parameter="method" path="/cotcontainertype" scope="request"
+			type="com.sail.cot.action.systemdic.CotContainerTypeAction">
+			<forward path="/systemdic/containertype/containertype.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<!-- HS编码 -->
+		<action parameter="method" path="/coteleother" scope="request"
+			type="com.sail.cot.action.systemdic.CotEleOtherAction">
+			<forward path="/systemdic/eleother/eleother.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<!-- 样品材质 -->
+		<action parameter="method" path="/cottype" scope="request"
+			type="com.sail.cot.action.systemdic.CotTypeLvAction">
+			<forward path="/systemdic/typelv/typelv.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<action parameter="method" path="/cottypelv4" scope="request"
+			type="com.sail.cot.action.systemdic.CotTypeLv4Action">
+			<forward path="/systemdic/typelv4/typelv4.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<!-- 货币类型 -->
+		<action parameter="method" path="/cotcurrency" scope="request"
+			type="com.sail.cot.action.systemdic.CotCurrencyAction">
+			<forward path="/systemdic/currency/currency.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<!-- 报价场合 -->
+		<action parameter="method" path="/cotpricesituation"
+			scope="request"
+			type="com.sail.cot.action.systemdic.CotPriceSituationAction">
+			<forward path="/systemdic/pricesitu/pricesitu.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<!-- 付款方式 -->
+		<action parameter="method" path="/cotpaytype" scope="request"
+			type="com.sail.cot.action.systemdic.CotPayTypeAction">
+			<forward path="/systemdic/paytype/paytypelist.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<!--合同条款 -->
+		<action parameter="method" path="/cotcontract" scope="request"
+			type="com.sail.cot.action.systemdic.CotContractAction">
+			<forward path="/systemdic/contract/contract.jsp"
+				name="querySuccess" />
+		</action>
+		
+		<!-- 快递公司 -->
+		<action parameter="method" path="/cotexpcompany" scope="request"
+			type="com.sail.cot.action.systemdic.CotExpCompanyAction">
+			<forward path="/systemdic/expcompany/expcompanylist.jsp"
+				name="querySuccess" />
+			<forward path="/systemdic/expcompany/expCompanyEdit.jsp"
+				name="add" />
+		</action>
+		
+		<!-- 最小定量价格 -->
+		<action parameter="method" path="/cotmodprice" scope="request"
+			type="com.sail.cot.action.sample.CotModPriceAction">
+			<forward name="querySuccess" path="/sample/elements/modPrice.jsp" />
+		</action>
+		
+		<action parameter="method" path="/cotdatatone" scope="request"
+			type="com.sail.cot.action.system.CombinationAction">
+			<forward path="/system/combination/combination.jsp" name="combinationPage" />
+			<forward path="/system/combination/success.jsp" name="Success" />
+			<forward path="/system/combination/failure.jsp" name="Failure" />
+		</action>
+		
+		<!-- 员工日志 -->
+		<action parameter="method" path="/cotemplog" scope="request"
+			type="com.sail.cot.action.worklog.CotEmpLogAction">
+			<forward path="/worklog/emplog/emplog.jsp"
+				name="querySuccess" />
+			<forward path="/worklog/emplog/emplogAdd.jsp" name="add" />
+		</action>
+		
+		<!-- 客户沟通记录 -->
+		<action parameter="method" path="/cotcustlog" scope="request"
+			type="com.sail.cot.action.customer.CotCustLogAction">
+			<forward path="/customer/custlog/custlog.jsp"
+				name="querySuccess" />
+			<forward path="/customer/custlog/custlogAdd.jsp" name="add" />
+		</action>
+		
+		<!-- 单号设置 -->
+		<action parameter="method" path="/cotseq" scope="request"
+			type="com.sail.cot.action.system.CotSeqAction">
+			<forward path="/system/seq/seq.jsp"
+				name="querySuccess" />
+			<forward path="/system/seq/seqEdit.jsp" name="add" />
+		</action>
+		<!-- 单据状态查询 -->
+		<action parameter="method" path="/cotorderstatus" scope="request"
+			type="com.sail.cot.action.QueryAllAction">
+			<forward path="/system/seq/seq.jsp"
+				name="querySuccess" />
+			<forward path="/queryAll/orderorderfacstatus.jsp" name="queryOrderStatus" />
+			<forward path="/queryAll/querydetailstatus.jsp" name="queryDetailStatus" />
+		</action>
+		
+		<!--faq沟通记录 -->
+		<action parameter="method" path="/cotfaq" scope="request"
+			type="com.sail.cot.action.order.CotFaqAction">
+		</action>
+		
+		<!--询盘-->
+		<action parameter="method" path="/cotpan" scope="request"
+			type="com.sail.cot.action.pan.CotPanAction">
+			<forward path="/pan/pan.jsp" name="querySuccess" />
+			<forward path="/pan/panAdd.jsp" name="edit" />
+			<forward path="/pan/panAddHw.jsp" name="editHw" />
+			<forward path="/pan/panFacAdd.jsp" name="editFac" />
+			<forward path="/pan/otherPics.jsp" name="queryOtherPic" />
+			<forward path="/pan/supplier.jsp" name="showSupplierPan" />
+		</action>
+		
+		<!--admin上传pdf或jpg,让所有员工都能查看-->
+		<action parameter="method" path="/cotorg" scope="request"
+			type="com.sail.cot.action.CotOrgAction">
+			<forward path="/queryAll/orgEdit.jsp"
+				name="orgEdit" />
+		</action>
+	</action-mappings>
+</struts-config>
+

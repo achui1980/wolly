@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rule-execution-set>
+	<name>Mail Rule For achui_sina</name>
+	<description>Mail RuleSet For achui_sina</description>
+	<synonymn name="mailExecuteAction_21" class="com.sail.cot.mail.MailExecuteAction"/>
+	<rule name="Rule_AHLXTRIXBK">
+		<if leftTerm="com.sail.cot.domain.CotMailRecv.getCustEmail" op="contains" rightTerm="achui_1980@163.com"/>
+		<then method="mailExecuteAction_21.setEmpId" arg1="152"/>
+	</rule>
+</rule-execution-set>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr>  
+	<allow> 
+		<convert converter="bean" javascript="CotMailAttach" match="com.sail.cot.domain.CotMailAttach"/>	
+	    <convert converter="bean" javascript="CotMail" match="com.sail.cot.domain.CotMail"/>	
+		<convert match="com.zhao.mail.entity.*" converter="bean"></convert>	
+		<create creator="spring" javascript="mailLocalService">
+	    	<param name="beanName" value="MailLocalService"/>
+	 	 </create>					 
+	</allow> 
+
+ 
+	<signatures>
+	<![CDATA[ 
+		mailLocalService.moveAssignMail(String empId,List<String> mailIds);
+		mailLocalService.deleteMails(List<String> dbIDs);
+		mailLocalService.saveArchivesMail(Integer custId,List<String> dbIDs);
+		mailLocalService.updateMailStatus(List<String> ids, boolean isNew);
+	]]> 
+	</signatures>
+</dwr>

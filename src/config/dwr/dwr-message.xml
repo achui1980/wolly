@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE dwr PUBLIC "-//GetAhead Limited//DTD Direct Web Remoting 2.0//EN" "http://getahead.org/dwr/dwr20.dtd">
+
+<dwr> 
+<allow> 
+    <convert converter="bean" javascript="CotMessage" match="com.sail.cot.domain.CotMessage"/>	
+	<create creator="spring" javascript="cotMessageService">
+    	<param name="beanName" value="CotMessageService"/>
+ 	 </create>					 
+</allow> 
+
+ 
+<signatures>
+<![CDATA[ 
+import com.sail.cot.service.worklog.impl.CotMessageServiceImpl; 
+import com.sail.cot.domain.CotMessage; 
+cotMessageService.addMessage(List<CotMessage> MessageList);
+cotMessageService.saveMessage(CotMessage cotMessage,String url, String msgBeginDate, String msgEndDate);
+cotMessageService.updateMessage(CotMessage cotMessage, String msgBeginDate, String msgEndDate);
+cotMessageService.modifyMessage(List<CotMessage> MessageList);
+cotMessageService.deleteMessage(List<CotMessage> MessageList);
+cotMessageService.checkIsCurUser(List<CotMessage> messageList);
+cotMessageService.getWarnMessage(Integer empId,String empName);
+]]> 
+ 
+</signatures>
+</dwr>
